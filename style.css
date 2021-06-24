@@ -37,6 +37,7 @@ body {
 #heading p {
     margin: 0;
     font-size: 24px;
+    cursor: pointer;
 }
 
 #brand_text {
@@ -121,6 +122,11 @@ body {
 }
 
 /* change opacity when all links are hovered over */
+
+.hover:visited {
+    /* #311557 */
+}
+
 .hover:hover {
     opacity: 0.5;
 }
@@ -443,6 +449,7 @@ form button {
     margin-top: 20px;
     border-radius: 40px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 /* footer */
@@ -578,7 +585,7 @@ footer small {
 
     /* change hero image and font */
     #hero_text {
-        font-size: 8vw;
+        font-size: 5vw;
         text-align: left;
     }
 
