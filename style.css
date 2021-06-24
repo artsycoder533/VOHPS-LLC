@@ -122,11 +122,6 @@ body {
 }
 
 /* change opacity when all links are hovered over */
-
-.hover:visited {
-    /* #311557 */
-}
-
 .hover:hover {
     opacity: 0.5;
 }
@@ -188,11 +183,6 @@ body {
 #mobile_navbar a {
     text-decoration: none;
 }
-
-.link:hover {
-    background-color:#8F78AD;
-}
-
 
 /* cover section */
 #cover {
@@ -702,7 +692,6 @@ footer small {
 /* hide mobile navbar & header */
 .mobile_header, .mobile_nav_wrapper {
     display: none;
-}
 }
 
 /* large displays */
