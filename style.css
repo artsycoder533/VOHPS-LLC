@@ -40,6 +40,11 @@ body {
     cursor: pointer;
 }
 
+#heading a {
+    text-decoration: none;
+    color:#D8A624;
+}
+
 #brand_text {
     display: flex;
     flex-direction: column;
