@@ -5,7 +5,8 @@
 :root {
     --main-text: 'Open Sans', sans-serif;
     --heading-text: 'Cinzel', serif;
-  
+    --primary-clr:  darkgray;
+    --secondary-clr: 
 }
 
 
@@ -23,6 +24,7 @@ body {
     margin: 10px auto;
     font-size: 16px;
     font-family: var(--main-text);
+    color: var(--secondary-clr);
 }
 
 h1 {
@@ -57,7 +59,7 @@ h1 {
 }
 
 .brand-mobile {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .brand-desktop {
@@ -116,6 +118,11 @@ a:hover {
 
 a:active {
     color: red;
+}
+
+/* HERO SECTION */
+.wrapper {
+    height: 100vh-
 }
 
 /* MEDIA QUERIES */
