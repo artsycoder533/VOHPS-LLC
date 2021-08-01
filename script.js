@@ -1,11 +1,10 @@
 //initialize variables
-var hamburger = document.getElementById("hamburger");
-var navbarLinks = document.getElementById("x");
+const hamburgerBtn = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
 
 //add event listeners
-hamburger.addEventListener("click", function(){
-    // alert("hamburger menu clicked!");
-    //toggle mobile nav links class on/off
-    navbarLinks.classList.toggle("hide");
-    // console.log("hidden.links");
+hamburgerBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("show-links");
+    hamburgerBtn.classList.toggle("hamburger-close");
 });
