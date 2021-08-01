@@ -7,7 +7,7 @@
     --heading-text: 'Cinzel', serif;
     --primary-clr:  darkgray;
     /* --secondary-clr:  */
-    --transition: all ease 1s;
+    --transition: all ease 2s;
     --link-clr: #3E007F;
     --brand-clr: #8004CE;
     --accent: #D29402;
@@ -39,7 +39,6 @@ h1 {
 .btn {
     padding: 1rem;
     background: var(--accent);
-    border: none;
     color: white;
     text-transform: uppercase;
     margin: 1rem;
@@ -47,11 +46,13 @@ h1 {
     letter-spacing: 0.1rem;
     transition: var(--transition);
     cursor: pointer;
+    border: none;
 }
 
 .btn:hover {
-    background: transparent;
-} 
+    opacity: 0.5;
+    transform: scale(1.1);
+}
 
 /* MOBILE NAVBAR */
 .navbar {
@@ -203,7 +204,8 @@ a:active {
 }
 
 .learn-more {
-    background-color: var(--brand-clr);
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .buttons {
