@@ -37,7 +37,7 @@ h1 {
 }
 
 .btn {
-    padding: 1rem;
+    padding: 1.6rem;
     background: var(--accent);
     color: white;
     text-transform: uppercase;
@@ -164,6 +164,7 @@ h1 {
     padding: 1rem 1rem;
     display: block;
     transition: var(--transition);
+    text-transform: capitalize;
 }
 
 /* unvisited link */
@@ -187,6 +188,7 @@ a:active {
     height: 100vh;
     top: 0;
     color: var(--accent);
+    /* background: var(--link-clr) url("./images/hero.jpg") no-repeat fixed right/cover; */
     background: var(--link-clr) url("./images/hero.jpg") no-repeat fixed right/cover;
     background-blend-mode: multiply;
     display: flex;
