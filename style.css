@@ -7,7 +7,7 @@
     --heading-text: 'Cinzel', serif;
     --primary-clr:  darkgray;
     /* --secondary-clr:  */
-    --transition: all ease 2s;
+    --transition: all ease 1s;
     --link-clr: #3E007F;
     --brand-clr: #8004CE;
     --accent: #D29402;
@@ -144,7 +144,11 @@ h1 {
     overflow: hidden;
     height: 0;
     align-items: center;
+    /* transition: var(--transition); */
 }
+
+/* dropdown menu */
+
 
 /* to toggle mobile links visibility */
 .show-links {
