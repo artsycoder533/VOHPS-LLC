@@ -5,17 +5,23 @@
 :root {
     --main-text: 'Open Sans', sans-serif;
     --heading-text: 'Cinzel', serif;
-    --primary-clr:  darkgray;
+    --primary-clr:  #303030;
     /* --secondary-clr:  */
-    --transition: all ease 2s;
+    --transition-main: all 0.4s linear;
+    --transition-hamburger:  all 0.5s ease-in-out;
     --link-clr: #3E007F;
     --brand-clr: #8004CE;
+    --background-clr: #EADEDA;
+    --accent-1: #EFBDEB;
     --accent: #D29402;
+
 }
 
 
 /* resets */
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +33,7 @@ body {
     margin: auto;
     font-size: 16px;
     font-family: var(--main-text);
-    color: var(--secondary-clr);
+    color: var(--primary-clr);
 }
 
 h1 {
@@ -62,29 +68,52 @@ h1 {
     left: 0;
     background: white;
     z-index: 2;
-    /* padding: 0.5rem 1rem; */
+    padding: 0.5rem 1rem;
     box-shadow: 1px 1px 5px darkgray;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    /* height: 120px; */
-}
-
-.nav-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem;
-    /* padding: 1rem 1rem; */
-}
-
 .brand-wrapper {
+    
+}
+
+.mobile-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+/* hamburger menu */
+.hamburger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.hamburger-btn {
+    width: 30px;
+    height: 4px;
+    background: var(--brand-clr);
+    transition: var(--transition-hamburger);
+}
+
+.hamburger-btn::before, .hamburger-btn::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: var(--brand-clr);
+    transition: var(--transition-hamburger);
+}
+
+.hamburger-btn::before {
+    transform: translateY(-10px);
+}
+
+.hamburger-btn::after {
+    transform: translateY(10px);
 }
 
 .logo {
@@ -113,30 +142,7 @@ h1 {
     color: var(--brand-clr);
 }
 
-.hamburger {
-    font-size: 2.9rem;
-    background: transparent;
-    color: #D29402;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-}
 
-.hamburger-close {
-    transition: var(--transition);
-    color: #D29402;
-    transform: rotate(90deg);
-}
-
-.hamburger-close:hover {
-    /* transform: rotate(-90deg); */
-    color:var(--brand-clr);
-}
-
-.hamburger:hover {
-    transform: scale(1.3);
-    /* transform: rotate(90deg); */
-}
 
 .nav-links {
     list-style-type: none;
