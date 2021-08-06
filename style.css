@@ -80,6 +80,7 @@ h1 {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* hamburger menu */
@@ -93,7 +94,7 @@ h1 {
 }
 
 .hamburger-btn {
-    width: 30px;
+    width: 40px;
     height: 4px;
     background: var(--brand-clr);
     transition: var(--transition-hamburger);
@@ -102,18 +103,33 @@ h1 {
 .hamburger-btn::before, .hamburger-btn::after {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 40px;
     height: 4px;
     background: var(--brand-clr);
     transition: var(--transition-hamburger);
 }
 
 .hamburger-btn::before {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
 }
 
 .hamburger-btn::after {
-    transform: translateY(10px);
+    transform: translateY(12px);
+}
+
+/* animation to open/close hamburger */
+.open-hamburger {
+    /* hides middle line when clicked */
+    background: none;
+}
+
+.open-hamburger::before {
+    transform: rotate(45deg);
+    
+}
+
+.open-hamburger::after {
+    transform: rotate(-45deg);
 }
 
 .logo {
