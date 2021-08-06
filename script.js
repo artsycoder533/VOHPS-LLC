@@ -6,7 +6,7 @@
 // const dropdown1 = document.getElementById("dropdown-content1");
 const hamburger = document.getElementById("hamburger");
 const hamburgerBtn = document.getElementById("hamburger-btn");
-// const navLinks = document.getElementById("nav-links");
+const navLinks = document.getElementById("nav-links");
 
 // caret.addEventListener("click", () => {
 //     dropdown.classList.toggle("open");
