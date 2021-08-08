@@ -58,7 +58,7 @@ a:visited, a:link {
 
 .btn {
     padding: 1.5rem;
-    background: var(--accent);
+    background: var(--brand-clr);
     color: white;
     text-transform: uppercase;
     margin: 1rem;
@@ -75,6 +75,10 @@ a:visited, a:link {
 
 .center {
     max-width: 1400px;
+}
+
+.highlight {
+    color: var(--accent);
 }
 
 /* MOBILE NAVBAR */
@@ -261,10 +265,12 @@ a:active {
     color: var(--accent);
     background: var(--link-clr) url("./images/hero.jpg") no-repeat fixed right/cover;
     background-blend-mode: multiply;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.hero-text-wrapper {
+    width: 90vw;
 }
 
 .hero-text {
@@ -273,6 +279,8 @@ a:active {
     font-size: 3rem;
     letter-spacing: 0.2rem;
     padding-bottom: 2rem;
+    font-family: var(--main-text);
+    text-transform: capitalize;
 }
 
 .learn-more {
@@ -329,7 +337,6 @@ a:active {
     }
 
     .nav {
-        /* max-width: 1400px;  */
         display: grid;
         grid-template-columns: auto 1fr;
         justify-content: space-between;
@@ -370,8 +377,8 @@ a:active {
     }
 
     .brand-text-desktop {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
     }
 
     .brand {
@@ -383,11 +390,18 @@ a:active {
         letter-spacing: 0.21rem;
     }
 
-    .brand-text-mobile {
-        display:none;
+    .hero-text {
+        text-align: left;
+        font-size: 6rem;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: capitalize;
+        font-weight: 100;
     }
 
-    .hamburger {
-        display: none;
+    .buttons {
+        padding-top: 2rem;
+    }
+    .schedule {
+        margin-left: 0;
     }
 }
