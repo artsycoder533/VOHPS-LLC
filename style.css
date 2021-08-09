@@ -67,6 +67,7 @@ a:visited, a:link {
     transition: var(--transition);
     cursor: pointer;
     border: none;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -275,7 +276,7 @@ a:active {
 .hero-text {
     color: white;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 0.2rem;
     padding-bottom: 2rem;
     font-family: var(--main-text);
@@ -292,7 +293,17 @@ a:active {
     flex-direction: column;
 }
 
+.learn-more:hover {
+    background-color: var(--brand-clr);
+}
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /* MEDIA QUERIES */
 /* TABLET */
@@ -373,12 +384,15 @@ a:active {
 
     .dropdown-content {
         position: fixed;
-        background: white;
-        padding-left: 0px;
+        background: white;   
     }
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    .dropdown-content .nav-link{
+        padding-left: 16px;
     }
 
     .logo {
