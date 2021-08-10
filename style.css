@@ -57,7 +57,9 @@ a:visited, a:link {
 }
 
 .btn {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
+    width: 325px;
+    height: 75px;
     background: var(--brand-clr);
     color: white;
     text-transform: uppercase;
