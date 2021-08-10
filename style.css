@@ -303,6 +303,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: black;
+    color: white;
 }
 
 /* MEDIA QUERIES */
@@ -399,10 +401,10 @@ footer {
         width: 150px;
     }
 
-    .brand-text-desktop {
+    /* .brand-text-desktop {
         /* display: flex;
-        flex-direction: column; */
-    }
+        flex-direction: column; 
+    } */
 
     .brand {
         font-size: 2rem;
