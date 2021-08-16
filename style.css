@@ -109,6 +109,12 @@ a:visited, a:link {
     /* transform: translateX(-1.9rem); */
 }
 
+hr {
+    color: lightgray;
+    margin: 1rem;
+    font-weight: 100;
+}
+
 /* MOBILE NAVBAR */
 .header {
     width: 100%;
@@ -139,6 +145,13 @@ a:visited, a:link {
     align-items: center;
 }
 
+.brand-wrapper .brand {
+    font-size: 1.2rem;
+}
+
+.brand-wrapper .brand-subtext {
+    font-size: 0.8rem;
+}
 .nav-links {
     list-style-type: none;
     background: white;
@@ -219,6 +232,7 @@ a:active {
     align-items: center;
 }
 
+
 .hamburger-btn {
     width: 40px;
     height: 4.5px;
@@ -242,6 +256,10 @@ a:active {
 .hamburger-btn::after {
     transform: translateY(12px);
 }
+
+/* .hamburger-btn:hover {
+    background-color: var(--accent)
+} */
 
 /* animation to open/close hamburger */
 .open-hamburger {
@@ -298,11 +316,13 @@ a:active {
 
 .hero-text-wrapper {
     width: 90vw;
+    margin: auto;
+    border: 2px solid orange;
 }
 
 .hero-text {
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
     padding-bottom: 2rem;
@@ -320,6 +340,11 @@ a:active {
     flex-direction: column;
 }
 
+.buttons .btn {
+    margin: 1rem 0;
+    width: 100%;
+}
+
 .learn-more:hover {
     background-color: var(--brand-clr);
 }
@@ -334,9 +359,9 @@ CONTACT
 }
 
 .contact-modes {
-    width: 100%;
+    width: 90vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1fr);
     margin: auto;
     padding: 3rem 0;
 }
@@ -356,7 +381,7 @@ CONTACT
 form {
     display: grid;
     grid-template-columns: 1fr;
-    width: 500px;
+    max-width: 500px;
     color: white;
     font-family: var(--main-text);
 }
@@ -412,10 +437,9 @@ FOOTER
 */
 footer {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
     background: black;
-    color: white;
+    color: rgb(82, 82, 82);
     width: 100%;
     margin: auto;
     padding: 2rem 0;
@@ -423,9 +447,16 @@ footer {
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr  1fr 1fr 1fr ;
-    column-gap: 4rem;
-    max-width: 1400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 90vw;
+    text-align: center;
+}
+
+.footer-cta .desktop-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
 }
 
 .links a {
