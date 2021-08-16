@@ -100,6 +100,7 @@ a:visited, a:link {
     height: 0.25rem;
     background-color: var(--accent);
     margin: auto;
+    transform: translateX(-1.9rem);
 }
 
 /* MOBILE NAVBAR */
