@@ -363,12 +363,16 @@ ABOUT SECTION
 */
 .about {
     width: 100%;
-    padding: 1.5rem 0;
     background-color: 	#FCFCFD;
 }
 
-.section-about {
-    background: lightgray;
+.about-article {
+    margin: 2rem 0;
+}
+
+.section-about h2{
+    /* background: lightgray; */
+    color: var(--brand-clr);
 }
 
 blockquote {
@@ -389,9 +393,12 @@ blockquote {
     display: none;
 }
 
-.who {
-    position: relative;
-    
+.who, .what, .how {
+    /* position: relative; */
+    border: 3px solid var(--accent);
+    display: grid;
+    /* place-items: center; */
+    margin-bottom: 4rem;
 }
 
 .who h3, .what h3, .how h3 {
@@ -399,7 +406,7 @@ blockquote {
     z-index: 0;
     font-family: var(--main-text);
     font-size: 2rem;
-    transform: translate(20px, 17px);
+    transform: translate(40px, -25px);
     background: white;
     width: 200px;
     padding-left: 0.5rem;
@@ -409,8 +416,7 @@ blockquote {
     width: 100%;
     /* transform: translateX(100px); */
     list-style-type: square;
-    padding: 1rem 2rem;
-    border: 3px solid var(--accent);
+    padding: 0 3rem;
 }
 
 .who ul li, .what ul li, .how ul li {
@@ -422,7 +428,7 @@ blockquote {
 }
 
 .about .btn {
-
+    margin:  3rem auto;
 }
 /*
 CONTACT 
