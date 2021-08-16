@@ -52,6 +52,10 @@ ul {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 a:visited, a:link {
     color: var(--link-clr);
 }
@@ -301,13 +305,55 @@ a:active {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     background: black;
     color: white;
     width: 100%;
+    margin: auto;
+    padding: 2rem 0;
 }
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr 1fr ;
+    column-gap: 4rem;
+    max-width: 1400px;
+}
+
+.links a {
+    font-size: 1rem;
+    letter-spacing: 0.05;
+    padding: 0.15rem;
+    color: lightgray
+}
+.footer-cta .logo {
+    width: 5rem;
+}
+
+.footer-brand {
+    padding-left: 0.25rem;
+}
+
+.brand-footer {
+    font-size: 1.7rem;
+}
+
+.p-footer {
+    color: var(--brand-clr);
+    font-size: 1.15rem;
+}
+
+small {
+    text-align: center;
+    padding: 0.5rem;
+    color: lightgray;
+}
+
+
+
+
+
 
 /* MEDIA QUERIES */
 /* TABLET */
