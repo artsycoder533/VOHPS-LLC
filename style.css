@@ -14,7 +14,6 @@
     --background-clr: #EADEDA;
     --accent-1: #EFBDEB;
     --accent: #D29402;
-
 }
 
 
@@ -86,6 +85,21 @@ a:visited, a:link {
 
 .highlight {
     color: var(--accent);
+}
+
+.section-title h2 {
+    font-family: var(--main-text);
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding-top: 2.5rem;
+}
+
+.underline {
+    width: 100px;
+    height: 0.25rem;
+    background-color: var(--accent);
+    margin: auto;
 }
 
 /* MOBILE NAVBAR */
@@ -303,6 +317,22 @@ a:active {
     background-color: var(--brand-clr);
 }
 
+/*
+CONTACT 
+*/
+.contact {
+    height: 100vh;
+    background-color: var(--link-clr);
+}
+
+
+
+
+
+
+/*
+FOOTER 
+*/
 footer {
     display: grid;
     justify-content: center;
