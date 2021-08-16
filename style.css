@@ -410,7 +410,7 @@ blockquote {
     /* transform: translateX(100px); */
     list-style-type: square;
     padding: 1rem 2rem;
-    border: 3px solid var(--accent)
+    border: 3px solid var(--accent);
 }
 
 .who ul li, .what ul li, .how ul li {
@@ -419,6 +419,10 @@ blockquote {
 
 .how h3 {
     width: 217px;
+}
+
+.about .btn {
+
 }
 /*
 CONTACT 
