@@ -11,73 +11,103 @@
     <link rel="icon" type="image" href="./images/logo.jpg">
     <title>Visions Of Hope Psychological Services, LLC</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="normalize.css">
     <link type="text/css" rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header" id="header">
+    <header class="header " id="header">
 
         <!-- NAVBAR -->
         <nav class="navbar">
-            <!-- NAVBAR HEADER -->
-            <div class="brand-wrapper">
-                <!-- <img src="./images/logo.jpg" class="logo-img" alt="visions of hope company logo"> -->
-            <!-- BRAND LOGO -->
-            <div class="brand">
-                <h2>Visions of Hope </h2>
-                <p>Psychological services, llc</p>
-            </div>
-            <!-- HAMBURGER -->
-            <div class="hamburger" id="hamburger">
-                <div class="hamburger-btn" id="hamburger-btn"></div>
-            </div>
-                <!-- <div class="nav-header">
+        <!-- NAVBAR HEADER -->
+            <!-- BRAND WRAPPER -->
+            <div class="nav center">
+                <div class="mobile-nav">
                     <div class="brand-wrapper">
-                        <div class="mobile-nav">
-                            <h1 class="brand">Visions of Hope</h1>
-                            <p class="brand-subtext">Psychological Services, LLC</p>
-                        </div>
-                        <div class="desktop-nav">
-                            <a href="index.html" class="home"><img src="./images/logo.jpg" class="logo" alt="visions of hope psychological services company logo"></a>
-                            <div class="brand-text-desktop">
-                                <h1 class="brand">Visions of Hope</h1>
-                                <p class="brand-subtext">Psychological Services, LLC</p>
-                            </div>
-                        </div>
+                        <h1 class="brand">Visions of Hope</h1>
+                        <p class="brand-subtext">Psychological Services, LLC</p>
                     </div>
-                    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
-                </div> -->
+                    <!-- HAMBURGER -->
+                    <div class="hamburger" id="hamburger">
+                        <div class="hamburger-btn" id="hamburger-btn"></div>
+                    </div>
+                </div>
+                
+                <div class="desktop-nav">
+                    <a href="index.html" class="home"><img src="./images/logo.jpg" class="logo" alt="visions of hope psychological services company logo"></a>
+                    <div class="brand-text-desktop">
+                        <h1 class="brand">Visions of Hope</h1>
+                        <p class="brand-subtext">Psychological Services, LLC</p>
+                    </div>
+                </div> 
+                <ul class="nav-links scroll-link" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn nav-link" id="caret">Services <span><i class="fas fa-caret-down" id="caret-1"></i></span></a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="#" class="nav-link">individual therapy</a>
+                            <a href="#" class="nav-link">couples therapy</a>
+                            <a href="#" class="nav-link">group therapy</a>
+                            <a href="#" class="nav-link">psychological evaluations</a>
+                        </div>
+                    </li> 
+                    <!-- <br> -->
+                    <li class="dropdown" >
+                        <a href="#" class="dropbtn nav-link" id="caret1" >Get Started <span ><i class="fas fa-caret-down caret" id="caret-2"></i></span></a>
+                        <div class="dropdown-content" id="dropdown-content1">
+                            <a href="#" class="nav-link">Appointment Request</a>
+                            <a href="#" class="nav-link">FAQs</a>
+                            <a href="#" class="nav-link">Rates & Insurance</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
                 <!-- END OF NAV HEADER -->
 
-                <!-- NAV LINKS -->
-    
-            </div>
+            <!-- NAV LINKS -->
+            
+                <!-- <ul class="nav-icons scroll-link">
+                    <li><a href="tel"><i class="fas fa-phone"></i></a></li>
+                </ul> -->
         </nav>
         <!-- END OF NAVBAR -->
+
     </header>
     <!-- END OF HEADER -->
 
     <!-- HERO SECTION -->
-    <!-- <section class="wrapper">
-        <div class="hero-text-wrapper">
-            <h1 class="hero-text">Finding clarity through healing</h1>
+    <section class="wrapper">
+        <div class="hero-text-wrapper center">
+            <h1 class="hero-text">Finding <span class="highlight">clarity</span > through <span class="highlight">healing</span></h1>
             <div class="buttons">
                 <button class="btn schedule">Schedule an Appointment</button>
                 <button class="btn learn-more">learn more</button>
             </div>
         </div>
-        
-    </section> -->
-
+    </section>
     <!-- END OF HERO SECTION -->
+
+    <!-- ABOUT SECTION -->
     <!-- CONTACT SECTION -->
     <!-- END OF CONTACT SECTION -->
     <!-- FOOTER -->
-    <!-- <footer>
+    <footer>
+        <div class="footer-text">
+            <address>
+                Visions of Hope Psychological Services, LLC<br>
+                2002 Bremo Rd, Suite 204<br>
+                Richmond, VA 23226<br>
+                <a href="tel"><i class="fas fa-phone">Call Now</i></a>
+            </address>
+        </div>
+        <div class="cta">
+            <button class="btn schedule">Schedule an Appointment</button>
+        </div>
         <small>&copy; Copyright 2021 Visions Of Hope Psychological Services, LLC | All Rights Reserved | Website Created by Natasha Johnson</small>
-    </footer> -->
+    </footer>
     <!-- END OF FOOTER -->
 </body>
 </html>
