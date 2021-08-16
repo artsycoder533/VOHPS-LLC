@@ -12,7 +12,6 @@
     --link-clr: #3E007F;
     --brand-clr: #8004CE;
     --background-clr: #EADEDA;
-    --accent-1: #EFBDEB;
     --accent: #D29402;
 }
 
@@ -26,6 +25,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* GLOBAL STYLES */
 body {
     height: 100vh;
@@ -90,8 +92,8 @@ a:visited, a:link {
 .section-title {
     padding: 3rem;
     background: black;
-    height: 25vh;
-    /* clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%); */
+    height: 250px;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
     
 }
 .section-title h2 {
@@ -110,7 +112,7 @@ a:visited, a:link {
 }
 
 hr {
-    color: lightgray;
+    visibility: hidden;
     margin: 1rem;
     font-weight: 100;
 }
@@ -124,7 +126,8 @@ hr {
 }
 
 .nav {
-    width: 100%;
+    width: 90vw;
+    margin: auto;
 }
 
 .navbar {
@@ -134,8 +137,9 @@ hr {
     left: 0;
     background: white;
     z-index: 2;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     box-shadow: 1px 1px 5px darkgray;
+
 }
 
 .mobile-nav {
@@ -164,7 +168,9 @@ hr {
 }
 
 .nav-link:hover {
-    background: var(--accent-1);
+    /* background: var(--accent-1); */
+    color: var(--accent);
+    font-weight: bold;
 }
 
 /* dropdown menu */
@@ -303,7 +309,7 @@ a:active {
 }
 
 /* HERO SECTION */
-.wrapper {
+.hero {
     width: 100%;
     height: 100vh;
     top: 0;
@@ -316,18 +322,22 @@ a:active {
 
 .hero-text-wrapper {
     width: 90vw;
+    height: 100%;
     margin: auto;
-    border: 2px solid orange;
+    display: grid;
+    align-content: center;
 }
 
 .hero-text {
     color: white;
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     letter-spacing: 0.2rem;
     padding-bottom: 2rem;
     font-family: var(--main-text);
     text-transform: capitalize;
+    font-weight: 400;
+    height: 100%;
 }
 
 .learn-more {
@@ -338,6 +348,7 @@ a:active {
 .buttons {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .buttons .btn {
@@ -350,10 +361,17 @@ a:active {
 }
 
 /*
+ABOUT SECTION 
+*/
+.about {
+    width: 100%;
+}
+
+
+/*
 CONTACT 
 */
 .contact {
-    height: 100vh;
     width: 100%;
     background-color: var(--link-clr);
 }
@@ -371,6 +389,17 @@ CONTACT
     font-family: var(--main-text);
     width: 100%;
     margin: auto;
+    text-align: center;
+}
+
+.contact-info address {
+    padding-top: 1rem;
+}
+.contact-info a {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--accent);
 }
 
 .form {
@@ -392,12 +421,16 @@ form h3 {
     text-transform: uppercase;
 }
 
+form input, form textarea {
+    color: white;
+    padding: 1rem;
+}
+
 #form {
     border: none;
     border-bottom: 2px solid white;
     background: transparent;
     margin-bottom: 1.5rem;
-    padding: 1rem 0;
 }
 
 #message {
@@ -409,13 +442,20 @@ form h3 {
 ::placeholder {
     color: white;
     font-family: var(--main-text);
-    padding: 1rem;
 }
+
+
 
 .send-message {
     width: 100px;
     height: 50px;
     margin: 1rem 0;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.send-message:hover {
+    background-color: var(--accent)
 }
 
 .map {
@@ -451,22 +491,43 @@ footer {
     grid-template-rows: repeat(4, auto);
     width: 90vw;
     text-align: center;
+    place-items: center;
 }
 
-.footer-cta .desktop-nav {
+.footer-nav {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    width: 100%;
+}
+
+.footer-cta {
+    margin: auto;
+    width: 100%;
+}
+
+.footer-links {
+    text-align: center;
 }
 
 .links a {
     font-size: 1rem;
     letter-spacing: 0.05;
-    padding: 0.15rem;
-    color: lightgray
+    padding: 0.25rem;
+    color: lightgray;
+    display: block;
+}
+
+.links .nav-links:hover {
+    color: var(--accent);
+    background: tr;
 }
 .footer-cta .logo {
     width: 5rem;
+}
+
+.btn-footer {
+    margin: 1rem 0;
 }
 
 .footer-brand {
@@ -486,6 +547,12 @@ small {
     text-align: center;
     padding: 0.5rem;
     color: lightgray;
+}
+
+small a {
+    color: red;
+    display: inline-block;
+    align-items: center;
 }
 
 
