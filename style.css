@@ -372,14 +372,24 @@ ABOUT SECTION
     margin: 2rem 0;
 }
 
+.section-about {
+    padding: 3rem 0;
+}
 .section-about h2{
     /* background: lightgray; */
     color: var(--brand-clr);
 }
 
+.section-about i {
+    font-size: 0.7rem;
+    transform: translateY(-6px);
+}
+
 blockquote {
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
+    width: 100%;
+    margin-top: 1.5rem;
 }
 .about-article {
     width: 90vw;
@@ -408,7 +418,7 @@ blockquote {
     z-index: 0;
     font-family: var(--main-text);
     font-size: 2rem;
-    transform: translate(40px, -25px);
+    transform: translate(10px, -25px);
     background: white;
     width: 200px;
     padding-left: 0.5rem;
@@ -432,12 +442,19 @@ blockquote {
 .about .btn {
     margin:  3rem auto;
 }
+
 /*
 CONTACT 
 */
 .contact {
     width: 100%;
     background-color: var(--link-clr);
+}
+
+.contact-section {
+    padding: 3rem 0;
+    width: 90vw;
+    margin: auto;
 }
 
 .contact-modes {
@@ -466,6 +483,16 @@ CONTACT
     color: var(--accent);
 }
 
+.contact-info a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.contact-info .btn {
+    width: 100%;
+    margin: 0;
+}
+
 .form {
     display: grid;
     width: 100%;
@@ -483,6 +510,7 @@ form h3 {
     color: var(--accent);
     font-family: var(--main-text);
     text-transform: uppercase;
+    padding-bottom: 1.5rem;
 }
 
 form input, form textarea {
@@ -511,9 +539,10 @@ form input, form textarea {
 
 
 .send-message {
-    width: 100px;
-    height: 50px;
-    margin: 1rem 0;
+    /* width: 100px; */
+    width: 100%;
+    height: 50px; 
+    margin: 1.5rem 0;
     background-color: transparent;
     border: 2px solid white;
 }
@@ -524,13 +553,14 @@ form input, form textarea {
 
 .map {
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 .map iframe {
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
-    object-fit: cover
+    height: 400px;
+    object-fit: cover;
 }
 
 
