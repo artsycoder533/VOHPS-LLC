@@ -1,0 +1,35 @@
+{
+	"name": "vohps-llc",
+	"version": "1.0.0",
+	"description": "Visions of Hope Psychological Services, LLC Website",
+	"main": "script.js",
+	"scripts": {
+		"compile:sass": "sass --watch scss:assets/css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/artsycoder533/VOHPS-LLC.git"
+	},
+	"keywords": [
+		"mental",
+		"health",
+		"psychological",
+		"services", 
+		"counseling",
+		"therapy"
+	],
+	"author": "Natasha Johnson",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/artsycoder533/VOHPS-LLC/issues"
+	},
+	"homepage": "https://github.com/artsycoder533/VOHPS-LLC#readme",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"autoprefixer": "^10.3.1",
+		"postcss-cli": "^8.3.1"
+	},
+	"devDependencies": {
+		"sass": "^1.38.0"
+	}
+}
