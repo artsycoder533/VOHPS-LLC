@@ -1,0 +1,32 @@
+//_base.scss
+
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Open+Sans&display=swap');
+
+// variables
+$main-text: 'Open Sans', sans-serif;
+$heading-text: 'Cinzel', serif;
+
+//colors
+$dark-purple: #3E007F;
+$lighter-purple: #8004CE;
+$main-accent-clr: #D29402;
+$text-color: #303030;
+$white: #ffffff;
+$whitesmoke: #F5F5F5;
+$snowwhite: #FFFAFA;
+
+//fonts
+$main-font-size: 1rem;
+
+//transitions
+$transition-main:  all 0.4s linear;
+$transition-hamburger: all 0.5s ease-in-out;
+
+//box shadows
+
+//links
+a:visited, 
+a:link {
+    color: $dark-purple;
+}

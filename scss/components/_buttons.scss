@@ -1,0 +1,12 @@
+@use '../base';
+
+.btn {
+    width: 20rem;
+    height: 4rem;
+    background: $lighter-purple;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2rem;
+    text-transform: uppercase;
+}
