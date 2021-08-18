@@ -536,8 +536,6 @@ form input, form textarea {
     font-family: var(--main-text);
 }
 
-
-
 .send-message {
     /* width: 100px; */
     width: 100%;
@@ -563,12 +561,106 @@ form input, form textarea {
     object-fit: cover;
 }
 
+/*
+FAQ section
+*/
 
+.faq-container {
+    margin: auto;
+}
+.section-faq h2 {
+    color: var(--link-clr);
+}
+
+.img-container {
+    display: none;
+}
+
+.questions-container {
+    max-width: 90vw;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.questions {
+    display: grid;
+    gap: 2rem;
+}
+
+
+.faq-btn {
+    background: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.open-btn:hover {
+    color: var(--accent);
+}
+
+.question {
+    width: 100%;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    background: lightgray;
+    padding: 2rem 1.5rem;
+    align-items: center;
+}
+
+.question-title h4 {
+    font-family: var(--main-text);
+    color: var(--primary-clr);
+    font-size: 1.2rem;
+}
+
+
+.question-text {
+    background: lightgray;
+    padding: 2rem;
+    border-top: 1px solid darkgray;
+    margin-bottom: 2rem;
+}
+
+.question-text p {
+    line-height: 1.7;
+}
+
+.question-text span {
+    font-weight: bold;
+}
+
+/* hide */
+.question-text {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+
+/* show  */
+.show .question-text{
+    display: block;
+}
+
+.show .close-btn {
+    display: inline;
+}
+
+.show .open-btn {
+    display: none;
+}
 
 
 /*
-FOOTER 
+footer
 */
+
 footer {
     display: grid;
     place-items: center;

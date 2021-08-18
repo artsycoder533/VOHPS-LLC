@@ -8,6 +8,9 @@ const hamburger = document.getElementById("hamburger");
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const navLinks = document.getElementById("nav-links");
 
+// target all questions
+const questions = document.querySelectorAll(".question");
+
 caret.addEventListener("click", () => {
 	dropdown.classList.toggle("open");
 	caretRotate1.classList.toggle("caret-open");
@@ -22,3 +25,16 @@ hamburger.addEventListener("click", () => {
 	hamburgerBtn.classList.toggle("open-hamburger");
 	navLinks.classList.toggle("show-links");
 });
+
+questions.forEach(function (question) {
+	const btn = question.querySelector(".faq-btn");
+	btn.addEventListener('click', function () {
+		questions.forEach(function (item) {
+			if (item !== question) {
+				item.classList.remove("show");
+			}
+		});
+		question.classList.toggle("show");
+	});
+	
+})
