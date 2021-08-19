@@ -45,8 +45,9 @@ FAQ section
     cursor: pointer;
 }
 
-.open-btn:hover {
-    color: $main-accent-clr;
+.open-btn:hover, .close-btn:hover {
+    // color: $main-accent-clr;
+    transform: rotate(360deg) scale(1.6);
 }
 
 .question {
@@ -73,6 +74,7 @@ FAQ section
     border-top: 1px solid darkgray;
     margin-bottom: 2rem;
     background: #F5F5F5;
+    transition: $transition-hamburger;
 }
 
 .question-text p {
@@ -96,6 +98,7 @@ FAQ section
 /* show  */
 .show .question-text{
     display: block;
+    transition: $transition-hamburger
 }
 
 .show .close-btn {

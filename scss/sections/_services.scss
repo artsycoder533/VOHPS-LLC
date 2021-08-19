@@ -12,6 +12,8 @@ SERVICES SECTION
     width: 90vw;
     max-width: 1400px;
     display: grid;
+    justify-content: center;
+    // margin: auto;
     
     /* column-gap: 3rem; */
     row-gap: 3rem;
@@ -19,6 +21,7 @@ SERVICES SECTION
 }
 
 .individual, .couples, .group, .evaluations {
+    width: 100%;
     background-color: rgb(250, 245, 245);
     // border: 2px solid black;
     // position: relative;
@@ -42,8 +45,6 @@ SERVICES SECTION
 .img-wrapper img {
     width: 100%;
     object-fit: contain;
-    background: rgba(0, 0, 0, 0.1);
-    mix-blend-mode: multiply;
 }
 
 .button-container {

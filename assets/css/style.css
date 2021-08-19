@@ -455,12 +455,14 @@ SERVICES SECTION
   width: 90vw;
   max-width: 1400px;
   display: grid;
+  justify-content: center;
   /* column-gap: 3rem; */
   row-gap: 3rem;
   margin: 4rem auto;
 }
 
 .individual, .couples, .group, .evaluations {
+  width: 100%;
   background-color: #faf5f5;
   box-shadow: 1px 1px 5px darkgray;
 }
@@ -479,8 +481,6 @@ SERVICES SECTION
 .img-wrapper img {
   width: 100%;
   object-fit: contain;
-  background: rgba(0, 0, 0, 0.1);
-  mix-blend-mode: multiply;
 }
 
 .button-container {
@@ -498,7 +498,7 @@ CONTACT
 */
 .contact {
   width: 100%;
-  background-color: #3E007F;
+  background: #957bc0;
 }
 
 .contact-section {
@@ -558,7 +558,7 @@ form {
 }
 
 form h3 {
-  color: #D29402;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding-bottom: 1.5rem;
@@ -567,6 +567,7 @@ form h3 {
 form input, form textarea {
   color: white;
   padding: 1rem;
+  background: black;
 }
 
 #form {
@@ -652,8 +653,8 @@ FAQ section
   cursor: pointer;
 }
 
-.open-btn:hover {
-  color: #D29402;
+.open-btn:hover, .close-btn:hover {
+  transform: rotate(360deg) scale(1.6);
 }
 
 .question {
@@ -679,6 +680,7 @@ FAQ section
   border-top: 1px solid darkgray;
   margin-bottom: 2rem;
   background: #F5F5F5;
+  transition: all 0.75s ease-in-out;
 }
 
 .question-text p {
@@ -701,6 +703,7 @@ FAQ section
 /* show  */
 .show .question-text {
   display: block;
+  transition: all 0.75s ease-in-out;
 }
 
 .show .close-btn {

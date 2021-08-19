@@ -6,7 +6,7 @@ CONTACT
 */
 .contact {
     width: 100%;
-    background-color: $dark-purple;
+    background: rgb(149, 123, 192);
 }
 
 .contact-section {
@@ -65,7 +65,7 @@ form {
 }
 
 form h3 {
-    color: $main-accent-clr;
+    color: $white;
     font-family: $main-text;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
@@ -74,6 +74,8 @@ form h3 {
 form input, form textarea {
     color: white;
     padding: 1rem;
+    background: black;
+
 }
 
 #form {
