@@ -3,10 +3,6 @@
 //google fonts
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Open+Sans&display=swap');
 
-// variables
-$main-text: 'Open Sans', sans-serif;
-$heading-text: 'Cinzel', serif;
-
 //colors
 $dark-purple: #3E007F;
 $lighter-purple: #8004CE;
@@ -15,18 +11,48 @@ $text-color: #303030;
 $white: #ffffff;
 $whitesmoke: #F5F5F5;
 $snowwhite: #FFFAFA;
+$transparent: transparent;
+
 
 //fonts
 $main-font-size: 1rem;
 
 //transitions
 $transition-main:  all 0.4s linear;
-$transition-hamburger: all 0.5s ease-in-out;
+$transition-hamburger: all 0.75s ease-in-out;
 
-//box shadows
+// variables
+$main-text: 'Open Sans', sans-serif;
+$heading-text: 'Cinzel', serif;
+$border-radius: 0.3rem;
+$letter-spacing: 0.1rem;
+$opacity: 0.5;
+$border: 1px solid $white;
+$border2: 2x solid $white;
+$box-shadow: 1px 1px 5px darkgray;
+
+body {
+    font-family:$main-text;
+    font-size: $main-font-size;
+    color: $text-color;
+}
 
 //links
 a:visited, 
 a:link {
     color: $dark-purple;
 }
+
+ul {
+    overflow: hidden;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+

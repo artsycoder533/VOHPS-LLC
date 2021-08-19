@@ -48,7 +48,7 @@ h5 {
     /* padding-bottom: 2rem; */
 }
 
-ul {
+/* ul {
     list-style-type: none;
     overflow: hidden;
 }
@@ -59,10 +59,10 @@ a {
 
 a:visited, a:link {
     color: var(--link-clr);
-}
+} */
 
-.btn {
-    /* padding: 1.5rem; */
+  /* .btn {
+    
     width: 325px;
     height: 65px;
     background: var(--brand-clr);
@@ -75,11 +75,11 @@ a:visited, a:link {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-}
+}  */
 
-.btn:hover {
+/* .btn:hover {
     opacity: 0.5;
-}
+} */ */
 
 .center {
     max-width: 1400px;
@@ -125,12 +125,12 @@ a:visited, a:link {
     width: 100%;
 }
 
-.nav {
+/* .nav {
     width: 90vw;
     margin: auto;
-}
+} */
 
-.navbar {
+/* .navbar {
     width: 100%;
     position: fixed;
     top: 0;
@@ -140,14 +140,14 @@ a:visited, a:link {
     padding: 0.5rem 0;
     box-shadow: 1px 1px 5px darkgray;
 
-}
+} */
 
-.mobile-nav {
+/* .mobile-nav {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .brand-wrapper .brand {
     font-size: 1.2rem;
@@ -229,17 +229,17 @@ a:active {
 }
 
 /* hamburger menu */
-.hamburger {
+/* .hamburger {
     width: 40px;
     height: 40px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
-.hamburger-btn {
+/* .hamburger-btn {
     width: 40px;
     height: 4.5px;
     background: var(--brand-clr);
@@ -261,7 +261,7 @@ a:active {
 
 .hamburger-btn::after {
     transform: translateY(12px);
-}
+} */
 
 /* .hamburger-btn:hover {
     background-color: var(--accent)
@@ -308,6 +308,8 @@ a:active {
     color: var(--brand-clr);
 }
 
+
+
 /* HERO SECTION */
 .hero {
     width: 100%;
@@ -340,10 +342,10 @@ a:active {
     height: 100%;
 }
 
-.learn-more {
+/* .learn-more {
     background-color: transparent;
     border: 1px solid white;
-}
+} */
 
 .buttons {
     display: flex;
@@ -356,9 +358,9 @@ a:active {
     width: 100%;
 }
 
-.learn-more:hover {
+/* .learn-more:hover {
     background-color: var(--brand-clr);
-}
+} */
 
 /*
 ABOUT SECTION 
@@ -571,8 +573,7 @@ form input, form textarea {
     font-family: var(--main-text);
 }
 
-.send-message {
-    /* width: 100px; */
+/* .send-message {
     width: 100%;
     height: 50px; 
     margin: 1.5rem 0;
@@ -582,7 +583,7 @@ form input, form textarea {
 
 .send-message:hover {
     background-color: var(--accent)
-}
+} */
 
 .map {
     width: 100%;

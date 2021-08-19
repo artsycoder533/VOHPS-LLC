@@ -1,0 +1,46 @@
+
+@use '../base/' as *;
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    // color: $light
+    background: $lighter-purple;
+    background: purple url("/images/hero.jpg") no-repeat fixed right/cover;
+    background-blend-mode: multiply;
+    display: grid;
+    place-items: center;
+}
+
+.hero-text-wrapper {
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    align-content: center;
+}
+
+.hero-text {
+    color: white;
+    text-align: left;
+    font-size: 2.75rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 2rem;
+    font-family: var(--main-text);
+    text-transform: capitalize;
+    font-weight: 400;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.buttons .btn {
+    margin: 1rem 0;
+    width: 100%;
+}
