@@ -163,18 +163,28 @@ select {
 .mobile-nav {
   height: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5vw;
+  max-width: 90vw;
+  margin: auto;
+}
+
+.brand-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
 }
 
 .brand-wrapper .brand {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: #3E007F;
 }
 
 .brand-wrapper .brand-subtext {
   font-size: 0.8rem;
+  display: none;
 }
 
 .nav-links {
@@ -192,6 +202,7 @@ select {
   /* background: var(--accent-1); */
   color: #D29402;
   font-weight: bold;
+  padding-left: 2rem;
 }
 
 /* dropdown menu */
@@ -200,7 +211,7 @@ select {
   font-size: 1.1rem;
   cursor: pointer;
   text-decoration: none;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.2rem;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
 }
@@ -211,6 +222,10 @@ select {
   max-width: 100%;
   z-index: 1;
   /* transition: all 6s ease-in-out; */
+}
+
+.dropdown-content:hover, .dropdown:hover {
+  display: block;
 }
 
 .dropdown-content .nav-link {
@@ -239,6 +254,7 @@ select {
 .show-links {
   padding-bottom: 1rem;
   height: auto;
+  transition: all 0.4s linear;
 }
 
 a:active {
@@ -258,8 +274,7 @@ a:active {
 .hamburger-btn {
   width: 40px;
   height: 3.5px;
-  background: #8004CE;
-  transition: all 0.75s ease-in-out;
+  background: #D29402;
 }
 
 .hamburger-btn::before, .hamburger-btn::after {
@@ -267,7 +282,7 @@ a:active {
   position: absolute;
   width: 40px;
   height: 3.5px;
-  background: #8004CE;
+  background: #D29402;
   transition: all 0.75s ease-in-out;
 }
 
@@ -282,17 +297,21 @@ a:active {
 /* animation to open/close hamburger */
 .open-hamburger {
   /* hides middle line when clicked */
-  background: none;
+  background: transparent;
 }
 
 .open-hamburger::before {
   transform: rotate(45deg);
   background: #D29402;
 }
+.open-hamburger::before:hover {
+  transform: scale(1.6);
+}
 
 .open-hamburger::after {
   transform: rotate(-45deg);
   background: #D29402;
+  color: #3E007F;
 }
 
 .logo {
@@ -307,19 +326,79 @@ a:active {
   transform: scale(1.1);
 }
 
-.desktop-nav {
-  display: none;
-}
+@media screen and (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
 
-.brand {
-  letter-spacing: 0.09rem;
-}
+  .brand-wrapper .brand-subtext {
+    display: inline-block;
+  }
 
-.brand-subtext {
-  letter-spacing: 0.05rem;
-  color: #8004CE;
-}
+  .navbar {
+    width: 100%;
+  }
 
+  .nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .desktop-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    height: 100%;
+    letter-spacing: 0.15rem;
+  }
+
+  .nav-link:active {
+    text-decoration: underline;
+  }
+
+  .nav-link:hover {
+    color: var(--accent);
+    background: transparent;
+    /* padding: 1rem 1rem 1rem 1rem; */
+  }
+
+  .dropdown-content {
+    position: fixed;
+    background: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content .nav-link {
+    padding-left: 16px;
+  }
+
+  .logo {
+    width: 100px;
+    padding-right: 0.5rem;
+  }
+
+  /* .brand-text-desktop {
+      /* display: flex;
+      flex-direction: column; 
+  } */
+}
 /* HERO SECTION */
 .hero {
   width: 100%;
