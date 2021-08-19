@@ -27,8 +27,12 @@ SERVICES SECTION
     // position: relative;
     box-shadow: $box-shadow;
 
-    
+    &:hover {
+        transform: rotateY(20deg);
+    }
 }
+
+
 .img-wrapper {
     width: 100%;
     

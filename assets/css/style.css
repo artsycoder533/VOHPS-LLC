@@ -394,6 +394,7 @@ blockquote {
   text-align: center;
   width: 100%;
   margin-top: 1.5rem;
+  background: #f2e3bf;
 }
 
 .about-article {
@@ -465,6 +466,9 @@ SERVICES SECTION
   width: 100%;
   background-color: #faf5f5;
   box-shadow: 1px 1px 5px darkgray;
+}
+.individual:hover, .couples:hover, .group:hover, .evaluations:hover {
+  transform: rotateY(20deg);
 }
 
 .img-wrapper {
