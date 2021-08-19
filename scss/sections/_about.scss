@@ -1,0 +1,84 @@
+@use '../base/' as *;
+
+/*
+ABOUT SECTION 
+*/
+.about {
+    width: 100%;
+    background-color: 	#FCFCFD;
+}
+
+.about-article {
+    margin: 2rem 0;
+}
+
+.section-about {
+    padding: 3rem 0;
+}
+.section-about h2{
+    /* background: lightgray; */
+    color: $lighter-purple;
+}
+
+.section-about i {
+    font-size: 0.7rem;
+    transform: translateY(-6px);
+}
+
+blockquote {
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.about-article {
+    width: 90vw;
+    margin: auto;
+}
+
+.logo-wrapper {
+    width: 100%;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    display: none;
+}
+
+.who, .what, .how {
+    /* position: relative; */
+    border: 3px solid $main-accent-clr;
+    display: grid;
+    /* place-items: center; */
+    margin-bottom: 4rem;
+}
+
+.who h3, .what h3, .how h3 {
+    position: relative;
+    z-index: 0;
+    font-family: $main-text;
+    font-size: 2rem;
+    transform: translate(10px, -25px);
+    background: white;
+    width: 200px;
+    padding-left: 0.5rem;
+}
+
+.who ul, .what ul, .how ul {
+    width: 100%;
+    /* transform: translateX(100px); */
+    list-style-type: square;
+    padding: 0 3rem;
+}
+
+.who ul li, .what ul li, .how ul li {
+    padding: 0.5rem;
+}
+
+.how h3 {
+    width: 217px;
+}
+
+.about .btn {
+    margin:  3rem auto;
+}
