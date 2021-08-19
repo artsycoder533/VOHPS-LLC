@@ -52,6 +52,7 @@ a {
 * {
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
 }
 
 /* Remove default margin */
@@ -143,20 +144,19 @@ select {
   width: 100%;
 }
 
-.nav {
-  width: 90vw;
-  margin: auto;
-}
-
 .navbar {
   width: 100%;
-  position: fixed;
+  height: 75px;
+  position: sticky;
   top: 0;
   left: 0;
-  background: white;
   z-index: 2;
-  padding: 0.5rem 0;
   box-shadow: 1px 1px 5px darkgray;
+}
+
+.nav {
+  margin: auto;
+  height: 100%;
 }
 
 .mobile-nav {
@@ -165,6 +165,7 @@ select {
   grid-template-columns: auto auto;
   justify-content: space-between;
   align-items: center;
+  margin: 0 5vw;
 }
 
 .brand-wrapper .brand {
@@ -176,13 +177,14 @@ select {
 }
 
 .nav-links {
+  width: 100%;
   list-style-type: none;
   background: white;
   overflow: hidden;
   height: 0;
   align-items: center;
+  transition: all 0.4s linear;
   /* background-color: var(--accent-1); */
-  /* padding-top: 1rem; */
 }
 
 .nav-link:hover {
@@ -211,7 +213,6 @@ select {
 }
 
 .dropdown-content .nav-link {
-  padding: 12px 16px;
   /* display: block; */
   width: 100%;
   text-align: left;
@@ -235,7 +236,8 @@ select {
 
 /* to toggle mobile links visibility */
 .show-links {
-  height: calc(100vh - 75px);
+  padding-bottom: 1rem;
+  height: auto;
 }
 
 a:active {
@@ -692,6 +694,102 @@ FAQ section
 
 .show .open-btn {
   display: none;
+}
+
+/*
+footer
+*/
+footer {
+  display: grid;
+  place-items: center;
+  background: black;
+  color: #525252;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  width: 90vw;
+  place-items: center;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.footer-cta {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.footer-links {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links h4 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem;
+}
+
+.links a {
+  font-size: 1rem;
+  letter-spacing: 0.05;
+  padding: 0.25rem;
+  color: lightgray;
+  display: block;
+}
+
+.links .nav-links:hover {
+  color: #D29402;
+  background: tr;
+}
+
+.footer-cta .logo {
+  width: 5rem;
+}
+
+.btn-footer {
+  width: 100%;
+}
+
+.footer-brand {
+  padding-left: 0.25rem;
+}
+
+.brand-footer {
+  font-size: 1.7rem;
+}
+
+.p-footer {
+  color: #8004CE;
+  font-size: 1.15rem;
+}
+
+small {
+  text-align: center;
+  padding: 0.5rem;
+  color: lightgray;
+}
+
+small a {
+  color: red;
+  display: inline-block;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

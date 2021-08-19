@@ -1,0 +1,98 @@
+@use '../base/' as *;
+@use '../components/' as *;
+
+
+/*
+footer
+*/
+
+footer {
+    display: grid;
+    place-items: center;
+    background: black;
+    color: rgb(82, 82, 82);
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 90vw;
+    place-items: center;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.footer-cta {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.footer-links {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links h4 {
+    text-align: center;
+    font-family: $main-text;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem;
+}
+.links a {
+    font-size: 1rem;
+    letter-spacing: 0.05;
+    padding: 0.25rem;
+    color: lightgray;
+    display: block;
+}
+
+.links .nav-links:hover {
+    color: $main-accent-clr;
+    background: tr;
+}
+.footer-cta .logo {
+    width: 5rem;
+}
+
+.btn-footer {
+    width: 100%;
+}
+
+.footer-brand {
+    padding-left: 0.25rem;
+}
+
+.brand-footer {
+    font-size: 1.7rem;
+}
+
+.p-footer {
+    color: $lighter-purple;
+    font-size: 1.15rem;
+}
+
+small {
+    text-align: center;
+    padding: 0.5rem;
+    color: lightgray;
+}
+
+small a {
+    color: red;
+    display: inline-block;
+    align-items: center;
+}
