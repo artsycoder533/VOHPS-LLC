@@ -21,6 +21,9 @@
 .learn-more-btn{
     background: $transparent;
     border: $border2;
+    text-align: center;
+    display: grid;
+    place-items: center;
 
     &:hover {
         background: $main-accent-clr;

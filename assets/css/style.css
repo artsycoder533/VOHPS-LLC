@@ -119,6 +119,9 @@ select {
 .learn-more-btn {
   background: transparent;
   border: 2x solid #ffffff;
+  text-align: center;
+  display: grid;
+  place-items: center;
 }
 .learn-more-btn:hover {
   background: #D29402;
@@ -405,7 +408,7 @@ a:active {
   height: 100vh;
   top: 0;
   background: #8004CE;
-  background: purple url("/images/hero.jpg") no-repeat fixed right/cover;
+  background: #3E007F url("/images/hero.jpg") no-repeat fixed right/cover;
   background-blend-mode: multiply;
   display: grid;
   place-items: center;
@@ -422,7 +425,7 @@ a:active {
 .hero-text {
   color: white;
   text-align: left;
-  font-size: 2.75rem;
+  font-size: 2.9rem;
   letter-spacing: 0.2rem;
   padding-bottom: 2rem;
   font-family: var(--main-text);
@@ -435,6 +438,14 @@ a:active {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.buttons .learn-more-btn {
+  color: #ffffff;
+}
+.buttons .learn-more-btn:hover {
+  border: 2px solid #ffffff;
+  background: transparent;
+  opacity: 1;
 }
 
 .buttons .btn {
