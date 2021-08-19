@@ -38,7 +38,7 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
   text-align: center;
-  color: white;
+  color: #8004CE;
 }
 
 .center {
@@ -118,7 +118,7 @@ select {
 
 .learn-more-btn {
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 2x solid #ffffff;
 }
 .learn-more-btn:hover {
   background: #D29402;
@@ -454,29 +454,43 @@ SERVICES SECTION
 .services-section {
   width: 90vw;
   max-width: 1400px;
-  margin: auto;
-  border: 2px solid red;
   display: grid;
   /* column-gap: 3rem; */
   row-gap: 3rem;
-}
-
-.services h2 {
-  color: #3E007F;
+  margin: 4rem auto;
 }
 
 .individual, .couples, .group, .evaluations {
-  background-color: lightgray;
+  background-color: #faf5f5;
+  box-shadow: 1px 1px 5px darkgray;
 }
 
 .img-wrapper {
   width: 100%;
-  border: 2px solid blue;
+}
+.img-wrapper h3 {
+  color: "Open Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  transform: translateY(-150%);
+  background: #ffffff;
 }
 
 .img-wrapper img {
   width: 100%;
   object-fit: contain;
+  background: rgba(0, 0, 0, 0.1);
+  mix-blend-mode: multiply;
+}
+
+.button-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.button-container .learn-more-btn {
+  border-color: #8004CE;
+  color: #8004CE;
 }
 
 /*

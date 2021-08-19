@@ -11,26 +11,48 @@ SERVICES SECTION
 .services-section {
     width: 90vw;
     max-width: 1400px;
-    margin: auto;
-    border: 2px solid red;
     display: grid;
     
     /* column-gap: 3rem; */
     row-gap: 3rem;
-}
-.services h2 {
-    color: $dark-purple;
+    margin: 4rem auto;
 }
 
 .individual, .couples, .group, .evaluations {
-    background-color: lightgray;
+    background-color: rgb(250, 245, 245);
+    // border: 2px solid black;
+    // position: relative;
+    box-shadow: $box-shadow;
+
+    
 }
 .img-wrapper {
     width: 100%;
-    border: 2px solid blue;
+    
+
+    h3 {
+        color: $main-text;
+        font-size: 2rem;
+        text-align: center;
+        transform: translateY(-150%);
+        background: $white;
+    }
 }
 
 .img-wrapper img {
     width: 100%;
     object-fit: contain;
+    background: rgba(0, 0, 0, 0.1);
+    mix-blend-mode: multiply;
+}
+
+.button-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    .learn-more-btn{
+        border-color: $lighter-purple;
+        color: $lighter-purple;
+    }
 }
