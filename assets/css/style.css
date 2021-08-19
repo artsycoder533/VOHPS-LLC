@@ -72,7 +72,7 @@ dd {
 }
 
 /* smooth scroll */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -80,6 +80,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -122,9 +123,11 @@ select {
   text-align: center;
   display: grid;
   place-items: center;
+  font-weight: bold;
 }
 .learn-more-btn:hover {
-  background: #D29402;
+  background: transparent;
+  border: 2px solid #8004CE;
 }
 
 .send-message-btn {
@@ -546,10 +549,15 @@ SERVICES SECTION
   width: 90vw;
   max-width: 1400px;
   display: grid;
-  justify-content: center;
   /* column-gap: 3rem; */
   row-gap: 3rem;
   margin: 4rem auto;
+}
+@media screen and (min-width: 992px) {
+  .services-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 3rem;
+  }
 }
 
 .individual, .couples, .group, .evaluations {
@@ -565,11 +573,11 @@ SERVICES SECTION
   width: 100%;
 }
 .img-wrapper h3 {
-  color: "Open Sans", sans-serif;
+  color: #3E007F;
   font-size: 2rem;
   text-align: center;
   transform: translateY(-150%);
-  background: #ffffff;
+  background: #D29402;
 }
 
 .img-wrapper img {
@@ -583,7 +591,6 @@ SERVICES SECTION
   place-items: center;
 }
 .button-container .learn-more-btn {
-  border-color: #8004CE;
   color: #8004CE;
 }
 

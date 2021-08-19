@@ -12,12 +12,17 @@ SERVICES SECTION
     width: 90vw;
     max-width: 1400px;
     display: grid;
-    justify-content: center;
+    // justify-content: center;
     // margin: auto;
     
     /* column-gap: 3rem; */
     row-gap: 3rem;
     margin: 4rem auto;
+
+    @media screen and (min-width: 992px){
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 3rem;
+    }
 }
 
 .individual, .couples, .group, .evaluations {
@@ -38,11 +43,11 @@ SERVICES SECTION
     
 
     h3 {
-        color: $main-text;
+        color: $dark-purple;
         font-size: 2rem;
         text-align: center;
         transform: translateY(-150%);
-        background: $white;
+        background: $main-accent-clr;
     }
 }
 
@@ -57,7 +62,6 @@ SERVICES SECTION
     place-items: center;
 
     .learn-more-btn{
-        border-color: $lighter-purple;
         color: $lighter-purple;
     }
 }

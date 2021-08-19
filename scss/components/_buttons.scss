@@ -24,9 +24,11 @@
     text-align: center;
     display: grid;
     place-items: center;
+    font-weight: bold;
 
     &:hover {
-        background: $main-accent-clr;
+        background: $transparent;
+        border: 2px solid $lighter-purple;
     }
 }
 

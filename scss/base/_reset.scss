@@ -21,7 +21,7 @@ dd {
 }
 
 /* smooth scroll */
-html:focus-within {
+html {
 	scroll-behavior: smooth;
 }
 
@@ -29,6 +29,7 @@ body {
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
+	scroll-behavior: smooth;
 }
 
 ul {
