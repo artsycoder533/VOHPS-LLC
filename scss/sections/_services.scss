@@ -1,0 +1,36 @@
+@use '../base/' as *;
+@use '../components/' as *;
+
+/*
+SERVICES SECTION 
+*/
+.services {
+    
+}
+
+.services-section {
+    width: 90vw;
+    max-width: 1400px;
+    margin: auto;
+    border: 2px solid red;
+    display: grid;
+    
+    /* column-gap: 3rem; */
+    row-gap: 3rem;
+}
+.services h2 {
+    color: $dark-purple;
+}
+
+.individual, .couples, .group, .evaluations {
+    background-color: lightgray;
+}
+.img-wrapper {
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.img-wrapper img {
+    width: 100%;
+    object-fit: contain;
+}

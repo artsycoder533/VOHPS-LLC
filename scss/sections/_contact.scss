@@ -1,0 +1,119 @@
+@use '../base/' as *;
+@use '../components/' as *;
+
+/*
+CONTACT 
+*/
+.contact {
+    width: 100%;
+    background-color: $dark-purple;
+}
+
+.contact-section {
+    padding: 3rem 0;
+    width: 90vw;
+    margin: auto;
+}
+
+.contact-modes {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.contact-info {
+    color: white;
+    font-family: $text-color;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-info address {
+    padding-top: 1rem;
+}
+.contact-info a {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    color: $main-accent-clr;
+}
+
+.contact-info a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.contact-info .btn {
+    width: 100%;
+    margin: 0;
+}
+
+.form {
+    display: grid;
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    color: white;
+    font-family: $main-text;
+}
+
+form h3 {
+    color: $main-accent-clr;
+    font-family: $main-text;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+form input, form textarea {
+    color: white;
+    padding: 1rem;
+}
+
+#form {
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    margin-bottom: 1.5rem;
+}
+
+#message {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+::placeholder {
+    color: white;
+    font-family: $main-text;
+}
+
+/* .send-message {
+    width: 100%;
+    height: 50px; 
+    margin: 1.5rem 0;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.send-message:hover {
+    background-color: var(--accent)
+} */
+
+.map {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.map iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}

@@ -445,4 +445,152 @@ blockquote {
   margin: 3rem auto;
 }
 
+/*
+SERVICES SECTION 
+*/
+.services-section {
+  width: 90vw;
+  max-width: 1400px;
+  margin: auto;
+  border: 2px solid red;
+  display: grid;
+  /* column-gap: 3rem; */
+  row-gap: 3rem;
+}
+
+.services h2 {
+  color: #3E007F;
+}
+
+.individual, .couples, .group, .evaluations {
+  background-color: lightgray;
+}
+
+.img-wrapper {
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.img-wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*
+CONTACT 
+*/
+.contact {
+  width: 100%;
+  background-color: #3E007F;
+}
+
+.contact-section {
+  padding: 3rem 0;
+  width: 90vw;
+  margin: auto;
+}
+
+.contact-modes {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  margin: auto;
+  padding: 3rem 0;
+}
+
+.contact-info {
+  color: white;
+  font-family: #303030;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-info address {
+  padding-top: 1rem;
+}
+
+.contact-info a {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+  color: #D29402;
+}
+
+.contact-info a:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.contact-info .btn {
+  width: 100%;
+  margin: 0;
+}
+
+.form {
+  display: grid;
+  width: 100%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 500px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+form h3 {
+  color: #D29402;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+form input, form textarea {
+  color: white;
+  padding: 1rem;
+}
+
+#form {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  margin-bottom: 1.5rem;
+}
+
+#message {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+::placeholder {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* .send-message {
+    width: 100%;
+    height: 50px; 
+    margin: 1.5rem 0;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.send-message:hover {
+    background-color: var(--accent)
+} */
+.map {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.map iframe {
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
