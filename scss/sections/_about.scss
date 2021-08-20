@@ -6,11 +6,13 @@ ABOUT SECTION
 */
 .about {
     width: 100%;
-    background-color: 	#FCFCFD;
+    background-color:#FCFCFD;
+    // background: rgb(242, 227, 191);
 }
 
 .about-article {
     margin: 2rem 0;
+    margin: auto;
 }
 
 .section-about {
@@ -27,17 +29,44 @@ ABOUT SECTION
 }
 
 blockquote {
-    padding: 1rem 0;
+    padding: 4rem 0;
     text-align: center;
     width: 100%;
     margin-top: 1.5rem;
-    background: rgb(242, 227, 191)
+    // background: rgb(242, 227, 191);
 }
 
 .about-article {
     width: 90vw;
     margin: auto;
+    // display: grid;
+    // grid-template-columns: auto auto;
+
+    @media screen and (min-width: 992px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem 3rem;
+
+
+        .who, .what, .how  {
+            // width: 461px;
+            margin-bottom: 0;
+        }
+
+        .who {
+            .learn-more-btn {
+                transform: translateY(12px);
+            }
+        }
+
+        .logo-wrapper  img{
+            display: block;
+        }
     
+        .learn-more-btn {
+            margin: 0;
+        }
+    }
 }
 
 .logo-wrapper {
@@ -51,22 +80,29 @@ blockquote {
 
 .who, .what, .how {
     /* position: relative; */
-    border: 3px solid $main-accent-clr;
+    
     display: grid;
+    align-items: space-between;
     /* place-items: center; */
     margin-bottom: 4rem;
     // width: 100%;
+
+    ul {
+        border: 3px solid $main-accent-clr;
+    }
 }
 
 .who h3, .what h3, .how h3 {
-    position: relative;
-    z-index: 0;
+    // position: relative;
+    // z-index: 0;
     font-family: $main-text;
     font-size: 2rem;
-    transform: translate(10px, -25px);
+    // transform: translate(10px, -25px);
     background: white;
     width: 200px;
     padding-left: 0.5rem;
+    color: $dark-purple;
+    text-align: center;
 }
 
 .who ul, .what ul, .how ul {
