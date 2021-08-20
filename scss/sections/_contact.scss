@@ -7,7 +7,7 @@ CONTACT
 .contact {
     width: 100%;
     background: rgb(149, 123, 192);
-    background: $dark-purple;
+    // background: $dark-purple;
     background:  $dark-purple url(/images/clouds.jpg) center/cover no-repeat;
     background-blend-mode: multiply;
     min-height: 100vh;
@@ -37,7 +37,7 @@ CONTACT
 
     box-shadow: 5px 5px 30px rgba(0, 0,0,0.6);
     background: transparent;
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(15px) brightness(1.1);
     border-radius: 8px;
 }
 
@@ -57,11 +57,13 @@ CONTACT
     padding-top: 1rem;
 }
 .contact-info a {
-    display: inline-block;
-    text-align: center;
-    padding: 1rem;
+    display: block;
+    text-align: left;
+    padding: 0.5rem 0;
     color: $main-accent-clr;
     font-size: 1rem;
+    // border: 1px solid white;
+
 }
 
 .contact-info a:hover {
@@ -118,10 +120,15 @@ form {
 
     .send-message-btn {
         // border: 2px solid $white;
-        box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);
+        box-shadow: 2px 15px 40px rgba(0, 0,0,0.7);
         color: $main-accent-clr;
         font-weight: bold;
-        border-bottom: 2px solid $dark-purple;
+
+        &:hover {
+            box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);
+            background: transparent;
+            border-bottom: none;
+        }
     }
 }
 
@@ -144,7 +151,7 @@ form input, form textarea {
 
 #form {
     border: none;
-    border-bottom: 2px solid $dark-purple;
+    border-bottom: 2px solid $main-text;
     background: transparent;
     margin-bottom: 1.5rem;
 }
@@ -152,7 +159,7 @@ form input, form textarea {
 #message {
     background: transparent;
     border: none;
-    border-bottom: 2px solid $dark-purple;
+    border-bottom: 2px solid $main-text;
 }
 
 ::placeholder {
@@ -206,6 +213,8 @@ form input, form textarea {
     .map {
         margin-top: 0;
         height: 100%;
+        background:rgba(0, 0,0,0.6);
+
     }
 
     iframe {
@@ -221,8 +230,8 @@ form input, form textarea {
         
         align-items: space-between;
         justify-content: center;
-        padding: 1rem;
-        border-left: 1px solid $dark-purple;
+        padding: 1.5rem;
+
 
         address {
             text-align: left;
@@ -252,5 +261,18 @@ form input, form textarea {
 
     &:hover {
         // transform: skew(15deg);
+    }
+}
+
+.cta {
+    
+    a {
+        display: block;
+        text-align: left;
+        float: left;
+        margin-right: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+        letter-spacing: .05rem;
     }
 }
