@@ -1,0 +1,107 @@
+@use '../base/' as *;
+@use '../components/' as *;
+
+.all-services {
+    width: 90vw;
+    max-width: 1400px;
+    height: 100vh;
+    position: relative;
+    // display: grid;
+    // place-items: center;
+    margin: 150px auto;
+    overflow: hidden;
+    
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn-box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: $dark-purple;
+    font-weight: bold;
+    // padding: 0.8rem 1rem;
+
+        &:hover {
+            text-decoration: underline;
+            // color: $main-accent-clr;
+            opacity: 1;
+        }
+}
+
+.btn-services {
+    border-radius: 0;
+    border-bottom: 3px solid $lighter-purple;
+    color: $main-accent-clr;
+    // transition: $transition-hamburger;
+}
+
+.content-right, .content-left{
+    width: 100%;
+    height: 100%;
+    // border: 2px solid yellow;
+}
+
+.content-right {
+    padding: 1rem 0;
+}
+
+.content-right img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $border-radius;
+}
+// .content-right img {
+//     width: 350px;
+//     // border-radius: 50%;
+
+// }
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateX(100%);
+    transition: $transition-hamburger;
+}
+
+.content p {
+    padding: 1rem;
+}
+
+.content h2 {
+    padding: 1rem;
+}
+
+.alert h3 {
+    text-align: center;
+    padding: 2rem;
+}
+// show/hide 
+.btn-box .active {
+    border-radius: 0;
+    border-bottom: 3px solid $lighter-purple;
+    color: $main-accent-clr;
+    // transition: $transition-hamburger;
+}
+
+.show-content {
+    transform: translateX(0);
+    transition: $transition-hamburger;
+    transition-delay: 0.4s;
+}
+
+// .hide-content {
+//     transform: translateX(100%);
+//     transition: $transition-hamburger;
+// }
