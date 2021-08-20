@@ -896,6 +896,7 @@ FAQ section
 .question {
   width: 100%;
   background-color: #fffcfc;
+  border-radius: 5px;
 }
 
 .question-title {
@@ -917,6 +918,7 @@ FAQ section
   border-top: 1px solid darkgray;
   box-shadow: 2px 1px 20px darkgray;
   transition: all 0.75s ease-in-out;
+  box-shadow: inset 5px 5px 30px darkgray;
 }
 
 .question-text p {

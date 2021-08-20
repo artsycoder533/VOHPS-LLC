@@ -36,7 +36,6 @@ FAQ section
 .questions {
     display: grid;
     gap: 2rem;
-    
 }
 
 
@@ -60,6 +59,7 @@ FAQ section
 .question {
     width: 100%;
     background-color: #fffcfc;
+    border-radius: 5px;
 }
 
 .question-title {
@@ -83,6 +83,8 @@ FAQ section
     // margin-bottom: 2rem;
     box-shadow: $box-shadow;
     transition: $transition-hamburger;
+    box-shadow: inset 5px 5px 30px darkgray;
+    
 }
 
 .question-text p {
