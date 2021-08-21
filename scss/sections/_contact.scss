@@ -19,15 +19,17 @@ CONTACT
     padding: 3rem 0;
     width: 90vw;
     margin: auto;
-
+    
     h2 {
         color: white;
     }
 }
 
 .contact-modes {
+//    border: 3px solid white;
     width: 90vw;
     display: grid;
+    // place-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;

@@ -20,8 +20,9 @@ SERVICES SECTION
     margin: 4rem auto;
 
     @media screen and (min-width: 992px){
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 3rem 3rem;
+
     }
 }
 

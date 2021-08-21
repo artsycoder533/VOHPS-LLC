@@ -14,6 +14,7 @@ FAQ section
     margin: auto;
     max-width: 1400px;
     width: 90vw;
+    // border: 2px solid black;
 }
 
 .section-faq h2 {
@@ -117,4 +118,12 @@ FAQ section
 
 .show .open-btn {
     display: none;
+}
+
+
+// media query
+@media screen and (min-width: 992px){
+    .questions {
+        grid-template-columns: 1fr 1fr;
+    }
 }

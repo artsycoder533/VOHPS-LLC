@@ -207,8 +207,6 @@ select {
 .nav-link:hover {
   /* background: var(--accent-1); */
   color: #D29402;
-  font-weight: bold;
-  padding-left: 2rem;
 }
 
 /* dropdown menu */
@@ -239,6 +237,7 @@ select {
   width: 100%;
   text-align: left;
   padding-left: 50px;
+  margin-left: 50px;
 }
 
 /* caret */
@@ -367,7 +366,6 @@ a:active {
     width: 100%;
     display: flex;
     align-items: center;
-    border: 2px solid red;
   }
 
   .nav-links {
@@ -380,7 +378,7 @@ a:active {
   .nav-link {
     font-size: 1.1rem;
     height: 100%;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
   }
 
   .nav-link:active {
@@ -391,6 +389,9 @@ a:active {
     color: var(--accent);
     background: transparent;
     /* padding: 1rem 1rem 1rem 1rem; */
+    font-weight: bold;
+    color: #D29402;
+    transition: none;
   }
 
   .dropdown-content {
@@ -472,6 +473,7 @@ ABOUT SECTION
 .about {
   width: 100%;
   background-color: #FCFCFD;
+  padding-bottom: 4rem;
 }
 
 .about-article {
@@ -512,6 +514,7 @@ blockquote {
   }
   .about-article .who, .about-article .what, .about-article .how {
     margin-bottom: 0;
+    background: #FCFCFD;
   }
   .about-article .who .learn-more-btn {
     transform: translateY(12px);
@@ -589,7 +592,7 @@ SERVICES SECTION
 }
 @media screen and (min-width: 992px) {
   .services-section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3rem 3rem;
   }
 }
@@ -955,6 +958,11 @@ FAQ section
   display: none;
 }
 
+@media screen and (min-width: 992px) {
+  .questions {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /*
 footer
 */
@@ -1041,21 +1049,32 @@ footer {
 
 small {
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
   color: lightgray;
 }
+small a:visited, small a {
+  color: white;
+}
 
-small a {
+.tag {
   color: red;
   display: inline-block;
   align-items: center;
 }
 
+@media screen and (min-width: 992px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .all-services {
   width: 90vw;
   max-width: 1400px;
+  min-height: 100vh;
   margin: auto;
-  overflow: hidden;
+  display: grid;
+  place-items: center;
+  margin-bottom: 3rem;
 }
 .all-services .alert h3 {
   text-align: center;
@@ -1063,11 +1082,7 @@ small a {
 }
 
 .all-services-section {
-  border: 3 px solid red;
   width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
 }
 
 .btn-box {
@@ -1086,7 +1101,8 @@ small a {
   font-weight: bold;
   width: 100%;
   margin: 0;
-  outline: 1px;
+  border-top: 1px solid darkgrey;
+  box-shadow: 2px 1px 20px darkgray;
 }
 .btn-box button:hover {
   text-decoration: underline;
@@ -1100,9 +1116,9 @@ small a {
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  transform: translateX(100%);
   transition: all 0.75s ease-in-out;
+  box-shadow: 2px 1px 20px darkgray;
+  display: none;
 }
 .content .content-right, .content .content-left {
   width: 100%;
@@ -1113,7 +1129,6 @@ small a {
 }
 .content .content-left {
   height: 100%;
-  border: 2px solid yellow;
 }
 .content .content-left p {
   padding: 1rem;
@@ -1123,26 +1138,15 @@ small a {
 }
 
 .show-content {
-  transform: translateX(0);
-  transition: all 0.75s ease-in-out;
-  transition-delay: 0.4s;
+  display: grid;
 }
 
 .btn-box .active {
   border-radius: 0;
-  border-bottom: 3px solid #8004CE;
-  color: #D29402;
+  background: #D29402;
 }
 
 @media screen and (min-width: 992px) {
-  .all-services {
-    height: 800px;
-  }
-
-  .all-services-section {
-    height: 600px;
-  }
-
   .btn-box {
     flex-direction: row;
     justify-content: space-between;
@@ -1164,14 +1168,15 @@ small a {
 
   .content {
     grid-template-columns: 1fr 1fr;
-    position: absolute;
-    transform: translateX(100%);
     transition: all 0.75s ease-in-out;
   }
   .content .content-left, .content .content-right {
     width: 100%;
     height: 100%;
     padding: 1rem 0;
+  }
+  .content .content-left {
+    background: white;
   }
   .content .content-left p {
     padding: 1rem;
@@ -1188,7 +1193,8 @@ small a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.3rem;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
   }
 
   .show-content {

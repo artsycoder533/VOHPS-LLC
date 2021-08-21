@@ -7,7 +7,7 @@ ABOUT SECTION
 .about {
     width: 100%;
     background-color:#FCFCFD;
-    // background: rgb(242, 227, 191);
+    padding-bottom: 4rem;
 }
 
 .about-article {
@@ -51,6 +51,7 @@ blockquote {
         .who, .what, .how  {
             // width: 461px;
             margin-bottom: 0;
+            background: #FCFCFD;
         }
 
         .who {
@@ -130,3 +131,5 @@ blockquote {
 .about .btn {
     margin:  3rem auto;
 }
+
+

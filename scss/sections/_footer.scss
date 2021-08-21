@@ -87,12 +87,24 @@ footer {
 
 small {
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     color: lightgray;
+    a:visited, a {
+        color: white;
+    }
 }
 
-small a {
+.tag {
     color: red;
     display: inline-block;
     align-items: center;
+}
+
+
+@media screen and (min-width: 992px){
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 }
