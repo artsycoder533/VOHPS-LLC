@@ -11,37 +11,54 @@
     background: $lighter-purple;
     background: $dark-purple url("/images/hero.jpg") no-repeat fixed right/cover;
     background-blend-mode: multiply;
-    display: grid;
-    place-items: center;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // place-items: center;
 }
 
 .hero-text-wrapper {
     width: 90vw;
     height: 100%;
-    margin: auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
+    margin: auto;
 }
 
 .hero-text {
-    color: white;
-    text-align: left;
-    font-size: 2.9rem;
-    letter-spacing: 0.2rem;
-    padding-bottom: 2rem;
-    font-family: var(--main-text);
-    text-transform: capitalize;
-    font-weight: 400;
-    height: 100%;
+    width: 100%;
+
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+        padding-bottom: 3rem;
+        font-family: $main-text;
+        text-transform: capitalize;
+        font-weight: 400;
+        height: 100%;
+        margin: auto;
+    }
+    
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .schedule {
+        margin: 1rem 0;
+    }
 
     .learn-more-btn {
         color: $white;
+        border: 2px solid $white;
+        margin: 1rem 0;
 
         &:hover {
             border: 2px solid $white;
@@ -51,8 +68,51 @@
     }
 }
 
-.buttons .btn {
-    margin: 1rem 0;
-    width: 100%;
+@media screen and (min-width: 768px){
+    .hero-text {
+        
+        h2 {
+            text-align: center;
+            font-size: 4rem;
+        }
+    }
+
+    .buttons {
+
+        a {
+            margin: auto;
+            border: 2px solid $white;
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .hero-text {
+        
+        h2 {
+            text-align: left;
+            font-size: 4rem;
+        }
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2rem;
+        a {
+            margin: auto;
+            border: 2px solid $white;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .hero-text {
+        
+        h2 {
+            text-align: left;
+            font-size: 5rem;
+        }
+    }
 
 }

@@ -426,37 +426,48 @@ a:active {
   background: #8004CE;
   background: #3E007F url("/images/hero.jpg") no-repeat fixed right/cover;
   background-blend-mode: multiply;
-  display: grid;
-  place-items: center;
 }
 
 .hero-text-wrapper {
   width: 90vw;
   height: 100%;
-  margin: auto;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-content: center;
+  margin: auto;
 }
 
 .hero-text {
+  width: 100%;
+}
+.hero-text h2 {
   color: white;
-  text-align: left;
-  font-size: 2.9rem;
+  text-align: center;
+  font-size: 2.5rem;
   letter-spacing: 0.2rem;
-  padding-bottom: 2rem;
-  font-family: var(--main-text);
+  padding-bottom: 3rem;
+  font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
   font-weight: 400;
   height: 100%;
+  margin: auto;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.buttons .schedule {
+  margin: 1rem 0;
 }
 .buttons .learn-more-btn {
   color: #ffffff;
+  border: 2px solid #ffffff;
+  margin: 1rem 0;
 }
 .buttons .learn-more-btn:hover {
   border: 2px solid #ffffff;
@@ -464,11 +475,39 @@ a:active {
   opacity: 1;
 }
 
-.buttons .btn {
-  margin: 1rem 0;
-  width: 100%;
-}
+@media screen and (min-width: 768px) {
+  .hero-text h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
 
+  .buttons a {
+    margin: auto;
+    border: 2px solid #ffffff;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-text h2 {
+    text-align: left;
+    font-size: 4rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .buttons a {
+    margin: auto;
+    border: 2px solid #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-text h2 {
+    text-align: left;
+    font-size: 5rem;
+  }
+}
 /*
 ABOUT SECTION 
 */
