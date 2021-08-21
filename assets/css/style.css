@@ -539,9 +539,12 @@ blockquote {
   align-items: space-between;
   /* place-items: center; */
   margin-bottom: 4rem;
-}
-.who ul, .what ul, .how ul {
   border: 3px solid #D29402;
+}
+.who .list-holder .learn-more-btn, .what .list-holder .learn-more-btn, .how .list-holder .learn-more-btn {
+  display: block;
+  text-align: center;
+  margin: 0;
 }
 
 .who h3, .what h3, .how h3 {
@@ -1051,7 +1054,6 @@ small a {
 .all-services {
   width: 90vw;
   max-width: 1400px;
-  min-height: 100vh;
   margin: auto;
   overflow: hidden;
 }
@@ -1061,9 +1063,9 @@ small a {
 }
 
 .all-services-section {
+  border: 3 px solid red;
   width: 100%;
   height: 100vh;
-  margin: 2rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -1084,6 +1086,7 @@ small a {
   font-weight: bold;
   width: 100%;
   margin: 0;
+  outline: 1px;
 }
 .btn-box button:hover {
   text-decoration: underline;
@@ -1092,6 +1095,7 @@ small a {
 
 .content {
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -1102,9 +1106,14 @@ small a {
 }
 .content .content-right, .content .content-left {
   width: 100%;
+  height: 100%;
 }
 .content .content-right img, .content .content-left img {
   display: none;
+}
+.content .content-left {
+  height: 100%;
+  border: 2px solid yellow;
 }
 .content .content-left p {
   padding: 1rem;
@@ -1126,6 +1135,14 @@ small a {
 }
 
 @media screen and (min-width: 992px) {
+  .all-services {
+    height: 800px;
+  }
+
+  .all-services-section {
+    height: 600px;
+  }
+
   .btn-box {
     flex-direction: row;
     justify-content: space-between;
