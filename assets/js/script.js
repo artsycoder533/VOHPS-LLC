@@ -13,7 +13,7 @@ const navLinks = document.getElementById("nav-links");
 const tabs = document.querySelectorAll(".btn-services");
 
 // parent container
-const services = document.querySelector(".all-services-section");
+const services = document.querySelector(".all-services");
 
 // target all content
 const contents = document.querySelectorAll(".content");
