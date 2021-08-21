@@ -539,7 +539,6 @@ blockquote {
 }
 
 .who, .what, .how {
-  /* position: relative; */
   display: grid;
   align-items: space-between;
   /* place-items: center; */
@@ -667,9 +666,21 @@ SERVICES SECTION
   .services .services-section {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     padding-top: 0;
     gap: 1rem;
+  }
+  .services .services-section .evaluations {
+    transform: translate(115%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .services .services-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .services .services-section .evaluations {
+    transform: translate(0);
   }
 }
 @media screen and (min-width: 992px) {

@@ -80,15 +80,13 @@ blockquote {
 }
 
 .who, .what, .how {
-    /* position: relative; */
-    
     display: grid;
     align-items: space-between;
     /* place-items: center; */
     margin-bottom: 4rem;
     // width: 100%;
 
-     border: 3px solid $main-accent-clr;
+    border: 3px solid $main-accent-clr;
 
     .list-holder {
         .learn-more-btn {
