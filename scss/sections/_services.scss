@@ -4,65 +4,72 @@
 /*
 SERVICES SECTION 
 */
-.services {
-    
+.services { 
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 .services-section {
-    width: 90vw;
-    max-width: 1400px;
-    display: grid;
-    // justify-content: center;
-    // margin: auto;
-    
-    /* column-gap: 3rem; */
-    row-gap: 3rem;
-    margin: 4rem auto;
 
-    @media screen and (min-width: 992px){
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 3rem 3rem;
+    .individual, .couples, .group, .evaluations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        background: $dark-purple;
+        color: $white;
+        padding: 2rem;
+        border: 2px solid $white;
+        margin: 1rem;
 
+        .heading, .icon, .cta-link {
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 2rem;
+            padding: 1.75rem;
+            color: $main-text;
+        }
+
+        .cta-link {
+
+            i {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+
+            a {
+                display: block;
+                margin: 0;
+                width: 100%;
+                height: auto;
+                color: $main-accent-clr;
+
+                &:hover {
+                    border: none;
+                    color: $white;
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        @media screen and (min-width: 768px){
+            // margin: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }
 
-.individual, .couples, .group, .evaluations {
-    width: 100%;
-    background-color: rgb(250, 245, 245);
-    // border: 2px solid black;
-    // position: relative;
-    box-shadow: $box-shadow;
-
-    &:hover {
-        transform: rotateY(20deg);
-    }
-}
 
 
-.img-wrapper {
-    width: 100%;
-    
-
-    h3 {
-        color: $dark-purple;
-        font-size: 2rem;
-        text-align: center;
-        transform: translateY(-150%);
-        background: $main-accent-clr;
-    }
-}
-
-.img-wrapper img {
-    width: 100%;
-    object-fit: contain;
-}
-
-.button-container {
-    width: 100%;
-    display: grid;
-    place-items: center;
-
-    .learn-more-btn{
-        color: $lighter-purple;
-    }
-}
