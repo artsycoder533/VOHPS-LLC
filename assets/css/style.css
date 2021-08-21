@@ -587,10 +587,48 @@ SERVICES SECTION
 .services {
   min-height: 100vh;
   display: grid;
-  place-items: center;
 }
-
-.services-section .individual, .services-section .couples, .services-section .group, .services-section .evaluations {
+.services .cta-holder {
+  width: 100%;
+  background-color: #3E007F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.services .cta-holder .schedule {
+  display: block;
+  margin: 2rem auto;
+  background: #D29402;
+  color: #3E007F;
+  font-weight: bold;
+}
+.services .quote {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(210, 148, 2, 0.6);
+}
+.services .quote blockquote {
+  width: 90vw;
+  max-width: 1400px;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.services .quote blockquote i {
+  transform: translateY(-25%);
+}
+@media screen and (min-width: 992px) {
+  .services .quote blockquote {
+    font-size: 1.75rem;
+  }
+}
+.services .services-section {
+  height: 100%;
+  padding-top: 3rem;
+}
+.services .services-section .individual, .services .services-section .couples, .services .services-section .groups, .services .services-section .evaluations {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -601,38 +639,43 @@ SERVICES SECTION
   border: 2px solid #ffffff;
   margin: 1rem;
 }
-.services-section .individual .heading, .services-section .individual .icon, .services-section .individual .cta-link, .services-section .couples .heading, .services-section .couples .icon, .services-section .couples .cta-link, .services-section .group .heading, .services-section .group .icon, .services-section .group .cta-link, .services-section .evaluations .heading, .services-section .evaluations .icon, .services-section .evaluations .cta-link {
+.services .services-section .individual .heading, .services .services-section .individual .icon, .services .services-section .individual .cta-link, .services .services-section .couples .heading, .services .services-section .couples .icon, .services .services-section .couples .cta-link, .services .services-section .groups .heading, .services .services-section .groups .icon, .services .services-section .groups .cta-link, .services .services-section .evaluations .heading, .services .services-section .evaluations .icon, .services .services-section .evaluations .cta-link {
   text-align: center;
 }
-.services-section .individual .icon, .services-section .couples .icon, .services-section .group .icon, .services-section .evaluations .icon {
+.services .services-section .individual .icon, .services .services-section .couples .icon, .services .services-section .groups .icon, .services .services-section .evaluations .icon {
   font-size: 2rem;
   padding: 1.75rem;
   color: "Open Sans", sans-serif;
 }
-.services-section .individual .cta-link i, .services-section .couples .cta-link i, .services-section .group .cta-link i, .services-section .evaluations .cta-link i {
+.services .services-section .individual .cta-link i, .services .services-section .couples .cta-link i, .services .services-section .groups .cta-link i, .services .services-section .evaluations .cta-link i {
   font-size: 1rem;
   font-weight: bold;
 }
-.services-section .individual .cta-link a, .services-section .couples .cta-link a, .services-section .group .cta-link a, .services-section .evaluations .cta-link a {
+.services .services-section .individual .cta-link a, .services .services-section .couples .cta-link a, .services .services-section .groups .cta-link a, .services .services-section .evaluations .cta-link a {
   display: block;
   margin: 0;
   width: 100%;
   height: auto;
   color: #D29402;
 }
-.services-section .individual .cta-link a:hover, .services-section .couples .cta-link a:hover, .services-section .group .cta-link a:hover, .services-section .evaluations .cta-link a:hover {
+.services .services-section .individual .cta-link a:hover, .services .services-section .couples .cta-link a:hover, .services .services-section .groups .cta-link a:hover, .services .services-section .evaluations .cta-link a:hover {
   border: none;
   color: #ffffff;
   transform: scale(1.2);
 }
-.services-section .individual:hover, .services-section .couples:hover, .services-section .group:hover, .services-section .evaluations:hover {
-  opacity: 0.6;
-}
-@media screen and (min-width: 768px) {
-  .services-section {
+@media screen and (min-width: 992px) {
+  .services .services-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 0;
     gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services {
+    height: auto;
+    margin: 0;
   }
 }
 

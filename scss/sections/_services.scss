@@ -7,69 +7,129 @@ SERVICES SECTION
 .services { 
     min-height: 100vh;
     display: grid;
-    place-items: center;
-}
+    // place-items: center;
+    // margin-bottom: 3rem;
 
-.services-section {
-
-    .individual, .couples, .group, .evaluations {
+    .cta-holder {
+        // height: 100%;
+        width: 100%;
+        background-color: $dark-purple;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: space-around;
-        background: $dark-purple;
-        color: $white;
-        padding: 2rem;
-        border: 2px solid $white;
-        margin: 1rem;
+        align-items: center;
+        margin-top: 3rem;
 
-        .heading, .icon, .cta-link {
-            text-align: center;
+        .schedule {
+            display: block;
+            margin: 2rem auto;
+            background: $main-accent-clr;
+            color: $dark-purple;
+            font-weight: bold;
         }
+    }
 
-        .icon {
-            font-size: 2rem;
-            padding: 1.75rem;
-            color: $main-text;
-        }
+    .quote{
+        display: grid;
+        place-items: center;
+        padding: 1rem;
+        background: rgba(210, 148, 2, 0.6);
 
-        .cta-link {
+        blockquote {
+            width: 90vw;
+            max-width: 1400px;
+            margin: auto;
+            font-size: 1.25rem;
+            font-weight: bold;
 
             i {
-                font-size: 1rem;
-                font-weight: bold;
+                transform: translateY(-25%);
             }
 
-            a {
-                display: block;
-                margin: 0;
-                width: 100%;
-                height: auto;
-                color: $main-accent-clr;
+            @media screen and (min-width: 992px) {
+                font-size: 1.75rem;
+            }
+        }
+    }
 
-                &:hover {
-                    border: none;
-                    color: $white;
-                    transform: scale(1.2);
+    .services-section {
+        height: 100%;
+        padding-top: 3rem;
+        .individual, .couples, .groups, .evaluations {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-around;
+            background: $dark-purple;
+            color: $white;
+            padding: 2rem;
+            border: 2px solid $white;
+            margin: 1rem;
+
+            .heading, .icon, .cta-link {
+                text-align: center;
+            }
+
+            .icon {
+                font-size: 2rem;
+                padding: 1.75rem;
+                color: $main-text;
+            }
+
+            .cta-link {
+
+                i {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                a {
+                    display: block;
+                    margin: 0;
+                    width: 100%;
+                    height: auto;
+                    color: $main-accent-clr;
+
+                    &:hover {
+                        border: none;
+                        color: $white;
+                        transform: scale(1.2);
+                    }
                 }
             }
+
+            &:hover {
+                // opacity: 0.6;
+            }
+
+            @media screen and (min-width: 992px){
+                // transform: translateY(-75%);
+            }
         }
 
-        &:hover {
-            opacity: 0.6;
+        @media screen and (min-width: 992px) {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-top: 0;
+            gap: 1rem;
+
         }
 
-        @media screen and (min-width: 768px){
-            // margin: 2rem;
-        }
+        
     }
 
-    @media screen and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    @media screen and (min-width: 992px){
+        height: auto;
+        margin: 0;
+
+            // .couples, .evaluations, .gr {
+            //     transform: translateY(100%);
+            // }
+        
     }
 }
+
+
 
 
 
