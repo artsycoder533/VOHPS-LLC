@@ -154,9 +154,8 @@ select {
   position: fixed;
   top: 0;
   left: 0;
-  background: white;
+  background: black;
   z-index: 2;
-  box-shadow: 1px 1px 5px darkgray;
 }
 
 .nav {
@@ -173,6 +172,9 @@ select {
   max-width: 90vw;
   margin: auto;
 }
+.mobile-nav .nav-link {
+  color: #ffffff;
+}
 
 .brand-wrapper {
   display: grid;
@@ -183,18 +185,20 @@ select {
 .brand-wrapper .brand {
   font-size: 1rem;
   letter-spacing: 0.05rem;
-  color: #3E007F;
+  color: #8004CE;
 }
 
 .brand-wrapper .brand-subtext {
   font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
   display: none;
 }
 
 .nav-links {
   width: 100%;
   list-style-type: none;
-  background: white;
+  background: black;
   overflow: hidden;
   height: 0;
   align-items: center;
@@ -336,6 +340,7 @@ a:active {
 
   .brand-wrapper .brand-subtext {
     display: inline;
+    color: #8004CE;
   }
 
   .brand-wrapper {
@@ -395,6 +400,13 @@ a:active {
   .dropdown-content {
     position: fixed;
     background: white;
+    background: black;
+  }
+  .dropdown-content .nav-link {
+    color: lightgray;
+  }
+  .dropdown-content .nav-link:hover {
+    color: #D29402;
   }
 
   .dropdown:hover .dropdown-content {
@@ -641,6 +653,7 @@ SERVICES SECTION
   display: grid;
   place-items: center;
   padding: 1rem;
+  background: rgba(210, 148, 2, 0.6);
 }
 .services .quote blockquote {
   width: 90vw;

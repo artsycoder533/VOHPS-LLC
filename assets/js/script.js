@@ -15,6 +15,7 @@ const tabs = document.querySelectorAll(".btn-services");
 // parent container
 const services = document.querySelector(".all-services");
 
+
 // target all content
 const contents = document.querySelectorAll(".content");
 
@@ -28,9 +29,9 @@ services.addEventListener('click', function (e) {
 		});
 		
 		// hide other services
-		    contents.forEach(function (service) {
-			service.classList.remove("show-content");
-			});
+		contents.forEach(function (service) {
+		service.classList.remove("show-content");
+		});
 		
 		//show individual service
 		const element = document.getElementById(id);

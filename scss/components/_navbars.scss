@@ -12,10 +12,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: white;
+
+    // background: white;
+
+    background: black;
     z-index: 2;
     // padding: 0.5rem 0;
-    box-shadow: 1px 1px 5px darkgray;
+    // box-shadow: 1px 1px 5px darkgray;
 } 
 
 .nav {
@@ -32,6 +35,10 @@
     align-items: center;
     max-width: 90vw;
     margin: auto;
+
+    .nav-link {
+        color: $white;
+    }
 } 
 
 .brand-wrapper {
@@ -43,18 +50,24 @@
 .brand-wrapper .brand {
     font-size: 1rem;
     letter-spacing: 0.05rem;
-    color: $dark-purple;
+    color: $lighter-purple;
 }
 
 .brand-wrapper .brand-subtext {
     font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
     display: none;
+    
 }
 
 .nav-links {
     width: 100%;
     list-style-type: none;
-    background: white;
+
+    // background: white;
+    background: black;
+
     overflow: hidden;
     height: 0;
     align-items: center;
@@ -63,6 +76,8 @@
     // padding-top: 1rem; 
     
 }
+
+
 
 .nav-link:hover {
     /* background: var(--accent-1); */
@@ -81,6 +96,7 @@
     // transition: var(--transition-main);
     text-transform: capitalize;
     letter-spacing: 0.1rem;
+
 }
 
 .dropdown-content {
@@ -229,6 +245,7 @@ a:active {
 
     .brand-wrapper .brand-subtext  {
         display: inline;
+        color: $lighter-purple;
     }
 
     .brand-wrapper {
@@ -291,7 +308,16 @@ a:active {
 
     .dropdown-content {
         position: fixed;
-        background: white;   
+        background: white;  
+        background: black; 
+        
+        .nav-link {
+            color: lightgray;
+
+            &:hover {
+                color:$main-accent-clr;
+            }
+        }
     }
 
     .dropdown:hover .dropdown-content {
