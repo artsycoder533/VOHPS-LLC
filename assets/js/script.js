@@ -19,6 +19,23 @@ const services = document.querySelector(".all-services");
 // target all content
 const contents = document.querySelectorAll(".content");
 
+
+// navbar
+caret.addEventListener("click", () => {
+	dropdown.classList.toggle("open");
+	caretRotate1.classList.toggle("caret-open");
+});
+
+caret1.addEventListener("click", () => {
+	dropdown1.classList.toggle("open");
+	caretRotate2.classList.toggle("caret-open");
+});
+
+hamburger.addEventListener("click", () => {
+	hamburgerBtn.classList.toggle("open-hamburger");
+	navLinks.classList.toggle("show-links");
+});
+
 services.addEventListener('click', function (e) {
 	const id = e.target.dataset.id;
 	if (id) {
@@ -68,19 +85,5 @@ questions.forEach(function (question) {
 	});
 });
 
-// navbar
-caret.addEventListener("click", () => {
-	dropdown.classList.toggle("open");
-	caretRotate1.classList.toggle("caret-open");
-});
 
-caret1.addEventListener("click", () => {
-	dropdown1.classList.toggle("open");
-	caretRotate2.classList.toggle("caret-open");
-});
-
-hamburger.addEventListener("click", () => {
-	hamburgerBtn.classList.toggle("open-hamburger");
-	navLinks.classList.toggle("show-links");
-});
 
