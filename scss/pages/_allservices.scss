@@ -1,6 +1,7 @@
 @use '../base/' as *;
 @use '../components/' as *;
 
+
 .all-services {
     // width: 90vw;
     // max-width: 1400px;
@@ -20,12 +21,15 @@
     
     // background: lightgray;
 
-    // .alert h3 {
-    //     text-align: center;
-    //     padding: 3rem;
-    //     background: hsla(269, 100%, 25%, 75%);
-    //     color: white;
-    // }
+    .alert h3 {
+    border: 2px solid white;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+        background: rgba(210, 148, 2, 0.6);
+        color: $dark-purple;
+    }
+    
 
     // .all-services-section{
 
