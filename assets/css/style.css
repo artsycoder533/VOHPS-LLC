@@ -1211,7 +1211,7 @@ footer small a:visited, footer small a {
 }
 @media screen and (min-width: 992px) {
   .all-services .btn-box .btn-services {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 }
 @media screen and (min-width: 768px) {
