@@ -1135,6 +1135,11 @@ footer small a:visited, footer small a {
 .footer-cta .btn-footer {
   margin: 2.5rem auto;
 }
+@media screen and (min-width: 768px) {
+  .footer-cta {
+    justify-content: flex-start;
+  }
+}
 
 .footer-links {
   width: 100%;
