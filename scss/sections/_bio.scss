@@ -1,0 +1,69 @@
+@use '../base/' as *;
+@use '../components/' as *;
+
+.bio {
+    min-height: calc(100vh - 75px);
+    margin-top: 75px;
+    background: $snowwhite;
+
+    .bio-section {
+        display:grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        border-radius: $border-radius;
+        margin-bottom: 3rem;
+
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .bio-photo {
+                // width: 100%;
+                object-fit: center;
+                border-radius: $border-radius;
+            }
+
+            h3 {
+                text-align: center;
+                padding: 2rem;
+                font-size: 1.3rem;
+            }
+
+            .schedule {
+                display: block;
+                text-align: center;
+                width: 100%;
+                // margin: 3rem auto;
+
+                @media screen and (min-width: 992px) {
+                    width: auto;
+                }
+            }
+        }
+        
+
+        @media screen and (min-width: 768px){
+            // padding: 3rem;
+        }
+
+        @media screen and (min-width: 992px){
+            grid-template-columns: auto 1fr;
+            box-shadow: $box-shadow;
+
+            .img-container {
+                padding: 3rem;
+
+                .schedule {
+
+                }
+            }
+
+            .bio-text-holder {
+                padding: 3rem;
+            }
+        }
+        
+    }
+}

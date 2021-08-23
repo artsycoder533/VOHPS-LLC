@@ -1306,4 +1306,54 @@ footer small a:visited, footer small a {
   transition-delay: 0.4ms;
 }
 
+.bio {
+  min-height: calc(100vh - 75px);
+  margin-top: 75px;
+  background: #FFFAFA;
+}
+.bio .bio-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  margin-bottom: 3rem;
+}
+.bio .bio-section .img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bio .bio-section .img-container .bio-photo {
+  object-fit: center;
+  border-radius: 0.3rem;
+}
+.bio .bio-section .img-container h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+.bio .bio-section .img-container .schedule {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .bio .bio-section .img-container .schedule {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bio .bio-section {
+    grid-template-columns: auto 1fr;
+    box-shadow: 2px 1px 20px darkgray;
+  }
+  .bio .bio-section .img-container {
+    padding: 3rem;
+  }
+  .bio .bio-section .bio-text-holder {
+    padding: 3rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
