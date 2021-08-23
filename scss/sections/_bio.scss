@@ -34,11 +34,11 @@
             .schedule {
                 display: block;
                 text-align: center;
-                width: 100%;
-                // margin: 3rem auto;
+                margin: 3rem auto;
 
                 @media screen and (min-width: 992px) {
                     width: auto;
+                    margin: 0;
                 }
             }
         }

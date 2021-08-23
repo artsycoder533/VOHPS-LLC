@@ -1336,11 +1336,12 @@ footer small a:visited, footer small a {
 .bio .bio-section .img-container .schedule {
   display: block;
   text-align: center;
-  width: 100%;
+  margin: 3rem auto;
 }
 @media screen and (min-width: 992px) {
   .bio .bio-section .img-container .schedule {
     width: auto;
+    margin: 0;
   }
 }
 @media screen and (min-width: 992px) {
