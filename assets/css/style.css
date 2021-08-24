@@ -428,8 +428,9 @@ a:active {
 }
 /* HERO SECTION */
 .hero {
+  height: calc(100vh - 75px);
+  margin-top: 75px;
   width: 100%;
-  height: 100vh;
   top: 0;
   background: #8004CE;
   background: #3E007F url("/images/hero.jpg") no-repeat fixed right/cover;
@@ -516,117 +517,6 @@ a:active {
     font-size: 5rem;
   }
 }
-/*
-ABOUT SECTION 
-*/
-.about {
-  width: 100%;
-  background-color: #FCFCFD;
-  padding-bottom: 4rem;
-}
-
-.about-article {
-  margin: 2rem 0;
-  margin: auto;
-}
-
-.section-about {
-  padding: 3rem 0;
-}
-
-.section-about h2 {
-  /* background: lightgray; */
-  color: #8004CE;
-}
-
-.section-about i {
-  font-size: 0.7rem;
-  transform: translateY(-6px);
-}
-
-blockquote {
-  padding: 4rem 0;
-  text-align: center;
-  width: 100%;
-  margin-top: 1.5rem;
-}
-
-.about-article {
-  width: 90vw;
-  margin: auto;
-}
-@media screen and (min-width: 992px) {
-  .about-article {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem 3rem;
-  }
-  .about-article .who, .about-article .what, .about-article .how {
-    margin-bottom: 0;
-    background: #FCFCFD;
-  }
-  .about-article .who .learn-more-btn {
-    transform: translateY(12px);
-  }
-  .about-article .logo-wrapper img {
-    display: block;
-  }
-  .about-article .learn-more-btn {
-    margin: 0;
-  }
-}
-
-.logo-wrapper {
-  width: 100%;
-}
-
-.logo-wrapper img {
-  width: 100%;
-  display: none;
-}
-
-.who, .what, .how {
-  display: grid;
-  align-items: space-between;
-  /* place-items: center; */
-  margin-bottom: 4rem;
-  border: 3px solid #D29402;
-}
-.who .list-holder .learn-more-btn, .what .list-holder .learn-more-btn, .how .list-holder .learn-more-btn {
-  display: block;
-  text-align: center;
-  margin: 0;
-}
-
-.who h3, .what h3, .how h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
-  background: white;
-  width: 200px;
-  padding-left: 0.5rem;
-  color: #3E007F;
-  text-align: center;
-}
-
-.who ul, .what ul, .how ul {
-  width: 100%;
-  /* transform: translateX(100px); */
-  list-style-type: square;
-  padding: 0 3rem;
-}
-
-.who ul li, .what ul li, .how ul li {
-  padding: 0.5rem;
-}
-
-.how h3 {
-  width: 217px;
-}
-
-.about .btn {
-  margin: 3rem auto;
-}
-
 /*
 SERVICES SECTION 
 */
@@ -734,6 +624,140 @@ SERVICES SECTION
     height: auto;
     margin: 0;
   }
+}
+
+/*
+ABOUT SECTION 
+*/
+.about {
+  height: 100vh;
+  width: 100%;
+  background-color: #FCFCFD;
+  display: flex;
+  flex-direction: column;
+}
+.about .quote {
+  background: rgba(128, 4, 206, 0.4);
+}
+.about .quote blockquote {
+  width: 90vw;
+  max-width: 1400px;
+  margin: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.about .quote blockquote i {
+  transform: translateY(-25%);
+}
+@media screen and (min-width: 992px) {
+  .about .quote blockquote {
+    font-size: 1.75rem;
+  }
+}
+
+.about-article {
+  margin: 2rem 0;
+  margin: auto;
+}
+
+.section-about {
+  padding: 3rem 0;
+}
+
+.section-about h2 {
+  /* background: lightgray; */
+  color: #8004CE;
+}
+
+.section-about i {
+  font-size: 0.7rem;
+  transform: translateY(-6px);
+}
+
+blockquote {
+  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.about-article {
+  width: 90vw;
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  .about-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem 3rem;
+  }
+  .about-article .who, .about-article .what, .about-article .how {
+    margin-bottom: 0;
+    background: #FCFCFD;
+  }
+  .about-article .who .learn-more-btn {
+    transform: translateY(12px);
+  }
+  .about-article .logo-wrapper img {
+    display: block;
+  }
+  .about-article .learn-more-btn {
+    margin: 0;
+  }
+}
+
+.logo-wrapper {
+  width: 100%;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  display: none;
+}
+
+.who, .what, .how {
+  display: grid;
+  align-items: space-between;
+  /* place-items: center; */
+  margin-bottom: 4rem;
+  border: 3px solid #D29402;
+}
+.who h3, .what h3, .how h3 {
+  transform: translate(10%, -60%);
+}
+.who .list-holder .learn-more-btn, .what .list-holder .learn-more-btn, .how .list-holder .learn-more-btn {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.who h3, .what h3, .how h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  background: white;
+  width: 200px;
+  padding-left: 0.5rem;
+  color: #3E007F;
+  text-align: center;
+}
+
+.who ul, .what ul, .how ul {
+  width: 100%;
+  /* transform: translateX(100px); */
+  list-style-type: square;
+  padding: 0 3rem;
+}
+
+.who ul li, .what ul li, .how ul li {
+  padding: 0.5rem;
+}
+
+.how h3 {
+  width: 217px;
+}
+
+.about .btn {
+  margin: 3rem auto;
 }
 
 /*

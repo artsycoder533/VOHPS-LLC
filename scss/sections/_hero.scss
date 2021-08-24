@@ -4,8 +4,9 @@
 
 /* HERO SECTION */
 .hero {
+    height: calc(100vh - 75px);
+    margin-top: 75px;
     width: 100%;
-    height: 100vh;
     top: 0;
     // color: $light
     background: $lighter-purple;

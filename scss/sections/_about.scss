@@ -1,13 +1,37 @@
 @use '../base/' as *;
 @use '../components/' as *;
+@use '../sections/services' as *;
 
 /*
 ABOUT SECTION 
 */
 .about {
+    height: 100vh;
     width: 100%;
     background-color:#FCFCFD;
-    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    // padding-bottom: 4rem;
+
+    .quote {
+        background: rgba(128, 4, 206, 0.4);
+
+        blockquote {
+            width: 90vw;
+            max-width: 1400px;
+            margin: auto;
+            font-size: 1.25rem;
+            font-weight: bold;
+
+            i {
+                transform: translateY(-25%);
+            }
+
+            @media screen and (min-width: 992px) {
+                font-size: 1.75rem;
+            }
+        }
+    }
 }
 
 .about-article {
@@ -87,6 +111,10 @@ blockquote {
     // width: 100%;
 
     border: 3px solid $main-accent-clr;
+
+    h3 {
+        transform: translate(10%, -60%);
+    }
 
     .list-holder {
         .learn-more-btn {
