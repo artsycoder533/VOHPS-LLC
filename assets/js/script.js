@@ -8,7 +8,6 @@ const hamburger = document.getElementById("hamburger");
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const navLinks = document.getElementById("nav-links");
 
-
 // target all tabs
 const tabs = document.querySelectorAll(".btn-services");
 
@@ -19,6 +18,7 @@ const services = document.querySelector(".all-services");
 // target all content
 const contents = document.querySelectorAll(".content");
 
+const couplesLink = document.getElementById("couples-tab");
 
 // navbar
 caret.addEventListener("click", () => {
@@ -26,14 +26,20 @@ caret.addEventListener("click", () => {
 	caretRotate1.classList.toggle("caret-open");
 });
 
-caret1.addEventListener("click", () => {
-	dropdown1.classList.toggle("open");
-	caretRotate2.classList.toggle("caret-open");
-});
+// caret1.addEventListener("click", () => {
+// 	dropdown1.classList.toggle("open");
+// 	caretRotate2.classList.toggle("caret-open");
+// });
 
 hamburger.addEventListener("click", () => {
 	hamburgerBtn.classList.toggle("open-hamburger");
 	navLinks.classList.toggle("show-links");
+});
+
+couplesLink.addEventListener('click', function () {
+	const couples = document.querySelector("[data-id='couples']");
+	console.log(couples);
+	couples.click();
 });
 
 services.addEventListener('click', function (e) {

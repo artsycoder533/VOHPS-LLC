@@ -7,7 +7,7 @@ body {
 
 a:visited,
 a:link {
-  color: #3E007F;
+  color: #ffffff;
 }
 
 ul {
@@ -742,6 +742,7 @@ CONTACT
 .contact {
   width: 100%;
   background: #8004CE url(/images/clouds.jpg) center/cover no-repeat;
+  background: #3E007F;
   background-blend-mode: multiply;
   min-height: 100vh;
   display: grid;
