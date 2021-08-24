@@ -154,13 +154,14 @@ select {
   position: fixed;
   top: 0;
   left: 0;
-  background: black;
+  background: transparent;
   z-index: 2;
 }
 
 .nav {
   margin: auto;
   height: 100%;
+  background: transparent;
 }
 
 .mobile-nav {
@@ -185,7 +186,7 @@ select {
 .brand-wrapper .brand {
   font-size: 1rem;
   letter-spacing: 0.05rem;
-  color: #8004CE;
+  color: lightgray;
 }
 
 .brand-wrapper .brand-subtext {
@@ -198,7 +199,7 @@ select {
 .nav-links {
   width: 100%;
   list-style-type: none;
-  background: black;
+  background: transparent;
   overflow: hidden;
   height: 0;
   align-items: center;
@@ -340,7 +341,7 @@ a:active {
 
   .brand-wrapper .brand-subtext {
     display: inline;
-    color: #8004CE;
+    color: lightgray;
   }
 
   .brand-wrapper {
@@ -428,8 +429,7 @@ a:active {
 }
 /* HERO SECTION */
 .hero {
-  height: calc(100vh - 75px);
-  margin-top: 75px;
+  height: 100vh;
   width: 100%;
   top: 0;
   background: #8004CE;

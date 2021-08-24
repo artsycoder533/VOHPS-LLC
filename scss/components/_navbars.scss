@@ -13,9 +13,10 @@
     top: 0;
     left: 0;
 
-    // background: white;
 
-    background: black;
+    // background: black;
+    background: transparent;
+
     z-index: 2;
     // padding: 0.5rem 0;
     // box-shadow: 1px 1px 5px darkgray;
@@ -25,6 +26,7 @@
     // width: 90vw;
     margin: auto;
     height: 100%;
+    background: transparent;
 } 
 
 .mobile-nav {
@@ -50,7 +52,7 @@
 .brand-wrapper .brand {
     font-size: 1rem;
     letter-spacing: 0.05rem;
-    color: $lighter-purple;
+    color: lightgray;
 }
 
 .brand-wrapper .brand-subtext {
@@ -59,6 +61,7 @@
     font-weight: bold;
     display: none;
     
+    
 }
 
 .nav-links {
@@ -66,7 +69,8 @@
     list-style-type: none;
 
     // background: white;
-    background: black;
+    // background: black;
+    background: transparent;
 
     overflow: hidden;
     height: 0;
@@ -245,7 +249,7 @@ a:active {
 
     .brand-wrapper .brand-subtext  {
         display: inline;
-        color: $lighter-purple;
+        color: lightgray;
     }
 
     .brand-wrapper {
