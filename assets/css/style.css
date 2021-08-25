@@ -1253,6 +1253,9 @@ footer small a:visited, footer small a {
   .all-services .btn-box .btn-services {
     height: 4rem;
   }
+  .all-services .btn-box .btn-services .active {
+    border-bottom: 2px solid #8004CE;
+  }
 }
 @media screen and (min-width: 992px) {
   .all-services .btn-box .btn-services {
@@ -1277,7 +1280,8 @@ footer small a:visited, footer small a {
   position: absolute;
   transform: translateX(150%);
 }
-.all-services .content .content-left, .all-services .content .content-right {
+.all-services .content .content-left,
+.all-services .content .content-right {
   height: 100%;
 }
 .all-services .content .content-left p {
