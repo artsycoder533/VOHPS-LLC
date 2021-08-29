@@ -1,0 +1,58 @@
+@use '../base/' as *;
+
+//hamburger button
+.hamburger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hamburger-btn {
+        width: 40px;
+        height: 3.5px;
+        background: $main-accent-clr;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 3.5px;
+            background: $main-accent-clr;
+            transition: $transition-hamburger;
+        }
+
+        &::before {
+            transform: translateY(-12px);
+        }
+
+        &::after {
+            transform: translateY(12px);
+        }
+    }
+
+    .open-hamburger {
+        background: transparent;
+
+        &::before {
+            transform: rotate(45deg);
+            background: $main-accent-clr;
+
+            &:hover {
+                transform: scale(1.6);
+            }
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            background: $main-accent-clr;
+            color: $dark-purple;
+        }
+    }
+
+    @media screen and (min-width: 1100px){
+        display: none;
+    }
+}

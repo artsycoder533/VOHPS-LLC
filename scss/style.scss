@@ -1,12 +1,16 @@
+
 @use './base/base';
 @use './base/reset';
 @use './components/buttons';
+@use './components/hamburger';
+@use './components/dropdown';
 @use './components/navbars';
+@use './layouts/header';
 @use './layouts/hero';
 @use './sections/about';
 @use './sections/services';
 @use './sections/contact';
 @use './sections/faq';
-@use './sections/footer';
+@use './layouts/footer';
 @use './pages/allservices';
 @use './sections/bio';

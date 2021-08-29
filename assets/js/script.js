@@ -1,7 +1,7 @@
 const caret = document.getElementById("caret");
-const caret1 = document.getElementById("caret1");
+// const caret1 = document.getElementById("caret1");
 const caretRotate1 = document.getElementById("caret-1");
-const caretRotate2 = document.getElementById("caret-2");
+// const caretRotate2 = document.getElementById("caret-2");
 const dropdown = document.getElementById("dropdown-content");
 const dropdown1 = document.getElementById("dropdown-content1");
 const hamburger = document.getElementById("hamburger");
@@ -35,25 +35,25 @@ hamburger.addEventListener("click", () => {
 	navLinks.classList.toggle("show-links");
 });
 
-servicesContainer.addEventListener('click', function (e) {
-	const id = e.target.dataset.id;
-	if (id) {
-		// remove active tab
-		tabs.forEach(function (tab) {
-			tab.classList.remove("active");
-			e.target.classList.add("active");
-		});
+// servicesContainer.addEventListener('click', function (e) {
+// 	const id = e.target.dataset.id;
+// 	if (id) {
+// 		// remove active tab
+// 		tabs.forEach(function (tab) {
+// 			tab.classList.remove("active");
+// 			e.target.classList.add("active");
+// 		});
 		
-		// hide other services
-		contents.forEach(function (service) {
-		service.classList.remove("show-content");
-		});
+// 		// hide other services
+// 		contents.forEach(function (service) {
+// 		service.classList.remove("show-content");
+// 		});
 		
-		//show individual service
-		const element = document.getElementById(id);
-		element.classList.add("show-content");
-	}
-});
+// 		//show individual service
+// 		const element = document.getElementById(id);
+// 		element.classList.add("show-content");
+// 	}
+// });
 
 // tabs.forEach(function (tab) {
 // 	const btn = tab.querySelector(".btn-services");

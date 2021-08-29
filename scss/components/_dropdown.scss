@@ -1,0 +1,70 @@
+@use '../base/' as *;
+
+//dropdown menu
+.dropdown {
+
+    &:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn {
+        display: block;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0.75rem 1.2rem;
+        // transition: var(--transition-main);
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+
+        // &:hover {
+        //     display: block;
+        // }
+    }
+
+    .caret {
+        transition: all 0.5s linear;
+    }
+
+    .caret-open {
+        transform: translateX(10px) rotate(-90deg)  scaleX(1.4);
+        color: $main-accent-clr;
+        font-weight: bold;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: static;
+        max-width: 100%;
+        z-index: 1;
+
+        &:hover {
+            display: block;
+        }
+
+        .nav-link {
+            width: 100%;
+            text-align: left;
+            padding-left: 50px;
+            margin-left: 25px;
+
+            @media screen and (min-width: 1100px) {
+                margin-left: 25px;
+                margin-right: 25px;
+                margin-bottom: 1rem;
+                &:hover {
+                    color:$main-accent-clr;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1100px) {
+            position: fixed;
+            background: black; 
+        }
+    }
+
+    .open {
+        display: block;
+    }
+}
