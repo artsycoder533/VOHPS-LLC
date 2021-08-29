@@ -13,17 +13,17 @@ SERVICES SECTION
     .cta-holder {
         // height: 100%;
         width: 100%;
-        background-color: $dark-purple;
+        // background-color: $dark-purple;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
+        // margin-top: 3rem;
 
         .schedule {
             display: block;
             margin: 2rem auto;
-            background: $main-accent-clr;
-            color: $dark-purple;
+            background: $lighter-purple;
+            color: $white;
             font-weight: bold;
         }
     }
@@ -53,14 +53,17 @@ SERVICES SECTION
 
     .services-section {
         height: 100%;
-        padding-top: 3rem;
+        // padding-top: 3rem;
+
         .individual, .couples, .groups, .evaluations {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: space-around;
             background: $dark-purple;
+            background: transparent;
             color: $white;
+            color: black;
             padding: 2rem;
             border: 2px solid $white;
             margin: 1rem;
@@ -121,7 +124,8 @@ SERVICES SECTION
         
         @media screen and (min-width: 1400px){
             grid-template-columns: 1fr 1fr 1fr 1fr;
-
+           
+            
             .evaluations {
                 transform: translate(0);
             }
@@ -133,6 +137,7 @@ SERVICES SECTION
     @media screen and (min-width: 992px){
         height: auto;
         margin: 0;
+        margin-bottom: 4rem;
 
             // .couples, .evaluations, .gr {
             //     transform: translateY(100%);

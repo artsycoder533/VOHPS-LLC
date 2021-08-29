@@ -6,13 +6,13 @@ const dropdown = document.getElementById("dropdown-content");
 const dropdown1 = document.getElementById("dropdown-content1");
 const hamburger = document.getElementById("hamburger");
 const hamburgerBtn = document.getElementById("hamburger-btn");
-// const navLinks = document.getElementById("nav-links");
+const navLinks = document.getElementById("nav-links");
 
 // target all tabs
 const tabs = document.querySelectorAll(".btn-services");
 
 // parent container
-const services = document.querySelector(".all-services");
+const servicesContainer = document.getElementById("all-services");
 
 
 // target all content
@@ -35,7 +35,7 @@ hamburger.addEventListener("click", () => {
 	navLinks.classList.toggle("show-links");
 });
 
-services.addEventListener('click', function (e) {
+servicesContainer.addEventListener('click', function (e) {
 	const id = e.target.dataset.id;
 	if (id) {
 		// remove active tab

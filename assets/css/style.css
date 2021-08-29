@@ -526,17 +526,15 @@ SERVICES SECTION
 }
 .services .cta-holder {
   width: 100%;
-  background-color: #3E007F;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
 }
 .services .cta-holder .schedule {
   display: block;
   margin: 2rem auto;
-  background: #D29402;
-  color: #3E007F;
+  background: #8004CE;
+  color: #ffffff;
   font-weight: bold;
 }
 .services .quote {
@@ -562,7 +560,6 @@ SERVICES SECTION
 }
 .services .services-section {
   height: 100%;
-  padding-top: 3rem;
 }
 .services .services-section .individual, .services .services-section .couples, .services .services-section .groups, .services .services-section .evaluations {
   display: flex;
@@ -570,7 +567,9 @@ SERVICES SECTION
   justify-content: center;
   align-items: space-around;
   background: #3E007F;
+  background: transparent;
   color: #ffffff;
+  color: black;
   padding: 2rem;
   border: 2px solid #ffffff;
   margin: 1rem;
@@ -623,6 +622,7 @@ SERVICES SECTION
   .services {
     height: auto;
     margin: 0;
+    margin-bottom: 4rem;
   }
 }
 
@@ -635,9 +635,6 @@ ABOUT SECTION
   background-color: #FCFCFD;
   display: flex;
   flex-direction: column;
-}
-.about .quote {
-  background: rgba(128, 4, 206, 0.4);
 }
 .about .quote blockquote {
   width: 90vw;
@@ -765,7 +762,6 @@ CONTACT
 */
 .contact {
   width: 100%;
-  background: #8004CE url(/images/clouds.jpg) center/cover no-repeat;
   background: #3E007F;
   background-blend-mode: multiply;
   min-height: 100vh;
