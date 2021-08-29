@@ -505,7 +505,7 @@ a:active {
 }
 @media screen and (min-width: 992px) {
   .hero .hero-text-wrapper .buttons .learn-more-btn {
-    margin: auto;
+    margin: 1rem 0;
     border: 2px solid #ffffff;
   }
 }
