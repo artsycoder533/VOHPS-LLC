@@ -432,12 +432,10 @@ a:active {
   height: 100vh;
   width: 100%;
   top: 0;
-  background: #8004CE;
   background: #3E007F url("/images/hero.jpg") no-repeat fixed right/cover;
   background-blend-mode: multiply;
 }
-
-.hero-text-wrapper {
+.hero .hero-text-wrapper {
   width: 90vw;
   height: 100%;
   display: flex;
@@ -446,11 +444,10 @@ a:active {
   align-content: center;
   margin: auto;
 }
-
-.hero-text {
+.hero .hero-text-wrapper .hero-text {
   width: 100%;
 }
-.hero-text h2 {
+.hero .hero-text-wrapper .hero-text h2 {
   color: white;
   text-align: center;
   font-size: 2.5rem;
@@ -462,61 +459,64 @@ a:active {
   height: 100%;
   margin: auto;
 }
-
-.buttons {
+@media screen and (min-width: 768px) {
+  .hero .hero-text-wrapper .hero-text h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero .hero-text-wrapper .hero-text h2 {
+    text-align: left;
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero .hero-text-wrapper .hero-text h2 {
+    text-align: left;
+    font-size: 5rem;
+  }
+}
+.hero .hero-text-wrapper .buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.buttons .schedule {
+.hero .hero-text-wrapper .buttons .schedule {
   margin: 1rem 0;
 }
-.buttons .learn-more-btn {
+.hero .hero-text-wrapper .buttons .learn-more-btn {
   color: #ffffff;
   border: 2px solid #ffffff;
   margin: 1rem 0;
 }
-.buttons .learn-more-btn:hover {
+.hero .hero-text-wrapper .buttons .learn-more-btn:hover {
   border: 2px solid #ffffff;
   background: transparent;
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
-  .hero-text h2 {
-    text-align: center;
-    font-size: 4rem;
-  }
-
-  .buttons a {
+  .hero .hero-text-wrapper .buttons .learn-more-btn {
     margin: auto;
     border: 2px solid #ffffff;
   }
 }
 @media screen and (min-width: 992px) {
-  .hero-text h2 {
-    text-align: left;
-    font-size: 4rem;
-  }
-
-  .buttons {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 2rem;
-  }
-  .buttons a {
+  .hero .hero-text-wrapper .buttons .learn-more-btn {
     margin: auto;
     border: 2px solid #ffffff;
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero-text h2 {
-    text-align: left;
-    font-size: 5rem;
+@media screen and (min-width: 992px) {
+  .hero .hero-text-wrapper .buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
   }
 }
+
 /*
 SERVICES SECTION 
 */
