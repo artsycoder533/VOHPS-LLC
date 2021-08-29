@@ -2,34 +2,34 @@
 
 //hamburger button
 .hamburger {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .hamburger-btn {
-        width: 40px;
-        height: 3.5px;
+        width: 30px;
+        height: 2.5px;
         background: $main-accent-clr;
 
         &::before,
         &::after {
             content: "";
             position: absolute;
-            width: 40px;
-            height: 3.5px;
+            width: 30px;
+            height: 2.5px;
             background: $main-accent-clr;
             transition: $transition-hamburger;
         }
 
         &::before {
-            transform: translateY(-12px);
+            transform: translateY(-9px);
         }
 
         &::after {
-            transform: translateY(12px);
+            transform: translateY(9px);
         }
     }
 

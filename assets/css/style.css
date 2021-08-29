@@ -148,31 +148,31 @@ select {
 }
 
 .hamburger {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .hamburger .hamburger-btn {
-  width: 40px;
-  height: 3.5px;
+  width: 30px;
+  height: 2.5px;
   background: #D29402;
 }
 .hamburger .hamburger-btn::before, .hamburger .hamburger-btn::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 3.5px;
+  width: 30px;
+  height: 2.5px;
   background: #D29402;
   transition: all 0.75s ease-in-out;
 }
 .hamburger .hamburger-btn::before {
-  transform: translateY(-12px);
+  transform: translateY(-9px);
 }
 .hamburger .hamburger-btn::after {
-  transform: translateY(12px);
+  transform: translateY(9px);
 }
 .hamburger .open-hamburger {
   background: transparent;
@@ -274,7 +274,7 @@ select {
   margin: auto;
 }
 .navbar .nav .nav-header .nav-logo {
-  width: 5.1rem;
+  width: 4rem;
   height: 100%;
   cursor: pointer;
   display: block;
