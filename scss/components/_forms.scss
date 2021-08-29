@@ -1,0 +1,60 @@
+@use '../base' as *;
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    font-family: $main-text;
+
+    h3 {
+        color: $white;
+        font-family: $main-text;
+        // text-transform: uppercase;
+        padding-bottom: 1.5rem;
+        letter-spacing: 0.15rem;
+    }
+
+    input,
+    textarea {
+        color: $main-text;
+        padding: 1rem;
+        background: $snowwhite;
+        box-shadow: inset 5px 5px 5px rgba(0, 0,0,0.6);
+        border-radius: 5px;
+    }
+
+    input {
+        border: none;
+        border-bottom: 2px solid $main-text;
+        // background: transparent;
+        margin-bottom: 1.5rem;
+    }
+
+    textarea {
+        // background: transparent;
+        border: none;
+        border-bottom: 2px solid $main-text;
+    }
+
+    ::placeholder {
+        color: white;
+        font-family: $main-text; 
+    }
+
+    .send-message-btn {
+        // border: 2px solid $white;
+        // box-shadow: 2px 15px 40px rgba(0, 0,0,0.7);
+        background: $main-accent-clr;
+        color: $dark-purple;
+        font-weight: bold;
+        margin-bottom: 0;
+
+        &:hover {
+            // box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);
+            // // background: transparent;
+            // border-bottom: none;
+        }
+    }
+}

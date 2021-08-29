@@ -38,9 +38,9 @@ CONTACT
     // padding: 3rem 0;
     margin-bottom: 7rem;
 
-    box-shadow: 5px 5px 30px rgba(0, 0,0,0.6);
-    background: transparent;
-    backdrop-filter: blur(15px) brightness(1.1);
+    // box-shadow: 5px 5px 30px rgba(0, 0,0,0.6);
+    // background: transparent;
+    // backdrop-filter: blur(15px) brightness(1.1);
     border-radius: 8px;
 }
 
@@ -116,7 +116,7 @@ CONTACT
 
 .contact-container, .form {
     // border: 2px solid white;
-    padding: 2rem;
+    // padding: 2rem;
 }
 
 .form {
@@ -125,76 +125,6 @@ CONTACT
     place-items: center;
     // max-width: 00px;
 }
-
-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    max-width: 500px;
-    color: white;
-    font-family: $main-text;
-
-    .send-message-btn {
-        // border: 2px solid $white;
-        box-shadow: 2px 15px 40px rgba(0, 0,0,0.7);
-        color: $main-accent-clr;
-        font-weight: bold;
-        margin-bottom: 0;
-
-        &:hover {
-            box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);
-            background: transparent;
-            border-bottom: none;
-        }
-    }
-}
-
-form h3 {
-    color: $white;
-    font-family: $main-text;
-    text-transform: uppercase;
-    padding-bottom: 1.5rem;
-    letter-spacing: 0.15rem;
-}
-
-form input, form textarea {
-    color: white;
-    padding: 1rem;
-    // background: black;
-    box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);
-    border-radius: 5px;
-
-}
-
-#form {
-    border: none;
-    border-bottom: 2px solid $main-text;
-    background: transparent;
-    margin-bottom: 1.5rem;
-}
-
-#message {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid $main-text;
-}
-
-::placeholder {
-    color: white;
-    font-family: $main-text;
-}
-
-/* .send-message {
-    width: 100%;
-    height: 50px; 
-    margin: 1.5rem 0;
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-.send-message:hover {
-    background-color: var(--accent)
-} */
 
 .map {
     width: 100%;
