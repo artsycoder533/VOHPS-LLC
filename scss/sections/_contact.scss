@@ -7,220 +7,128 @@ CONTACT
 .contact {
     width: 100%;
     // background: rgb(149, 123, 192);
-    // background: $dark-purple;
-    // background:  $lighter-purple url(/images/clouds.jpg) center/cover no-repeat;
     background: $dark-purple;
-    background-blend-mode: multiply;
+    // background:  $lighter-purple url(/images/clouds.jpg) center/cover no-repeat;
+    // background: $dark-purple;
+    // background-blend-mode: multiply;
     min-height: 100vh;
     display: grid;
     place-items: center;
-}
 
-.contact-section {
-    padding: 3rem 0;
-    width: 90vw;
-    margin: auto;
-    
-    h2 {
-        color: white;
-    }
-}
-
-.contact-modes {
-//    border: 3px solid white;
-    width: 90vw;
-    display: grid;
-    // place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    margin: auto;
-    // padding: 3rem 0;
-    margin-bottom: 7rem;
-
-    // box-shadow: 5px 5px 30px rgba(0, 0,0,0.6);
-    // background: transparent;
-    // backdrop-filter: blur(15px) brightness(1.1);
-    border-radius: 8px;
-}
-
-.contact-info {
-    color: white;
-    font-family: $text-color;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    height: 100%;
-
-    .cta {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        a {
-            margin-right: 0;
-            width: 100%;
-            text-align: center;
-            padding: 0;
+    .contact-section {
+        padding: 3rem 0;
+        width: 90vw;
+        margin: auto;
+        // background: $dark-purple;
+        
+        h2 {
+            color: $white;
         }
     }
 
-    .schedule {
-        background: $main-accent-clr;
-    }
-}
-
-.contact-info address {
-    padding-top: 1rem;
-}
-.contact-info a {
-    display: block;
-    text-align: left;
-    padding: 0.5rem 0;
-    color: $main-accent-clr;
-    font-size: 1rem;
-    // border: 1px solid white;
-
-}
-
-.contact-info a:hover {
-    font-weight: bold;
-    color: white;
-}
-
-.contact-info .btn {
-    width: 100%;
-    margin: 0;
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    height: 100%;
-    place-items: center;
-    // padding: 2rem;
-
-    .contact-info {
-        height: 100%;
-    }
-
-    .map {
-        height: 100%;
-    }
-
-    .contact-info, .map {
-        max-width: 500px;
-    }
-}
-
-
-.contact-container, .form {
-    // border: 2px solid white;
-    // padding: 2rem;
-}
-
-.form {
-    display: grid;
-    width: 100%;
-    place-items: center;
-    // max-width: 00px;
-}
-
-.map {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    // margin-top: 1.5rem;  
-    // box-shadow: $box-shadow;
-}
-
-.map iframe {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    // object-fit: cover;
-}
-
-@media screen and (min-width: 992px){
     .contact-modes {
+    //    border: 3px solid white;
+        // background: $dark-purple;
+        width: 90vw;
+        // width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        padding: 0;
-        // border: 2px solid black;
-       
-        
-    }
+        // place-items: center;
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin: auto;
+        // padding: 3rem 0;
+        // margin-bottom: 7rem;
 
-    .form {
-        display: grid;
-        place-items: center;
-        padding: 2rem;
-    }
+        // box-shadow: 5px 5px 30px rgba(0, 0,0,0.6);
+        // background: transparent;
+        // backdrop-filter: blur(15px) brightness(1.1);
+        // border-radius: 8px;
 
-    .map {
-        margin-top: 0;
-        height: 100%;
-        background:rgba(0, 0,0,0.6);
-
-    }
-
-    iframe {
-        height: 100%;
-        // border-radius: 5px;
+        .form {
+            display: grid;
+            width: 100%;
+            place-items: center;
+            padding: 4rem 0;
+        }
     }
 
     .contact-container {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        height: 100%;
-        // padding: 2rem;
-        
-        align-items: space-between;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        // padding: 1.5rem;
+        // width: 90vw;
+        // max-width: 1400px;
 
-
-        address {
+        .contact-info {
+            color: white;
+            font-family: $text-color;
+            width: 100%;
+            margin: auto;
             text-align: left;
-            padding-top: 0;
-            font-size: 16px;
-            letter-spacing: 0.05rem;
-           
-        }
-    }
-        
-    
+            height: 100%;
 
-    .contact-info {
-        margin: 0;
+            .telephone,
+            .email,
+            .hours,
+            .address {
+                // border: 2px solid red;
+                padding: 1rem;
 
-        .schedule {
+                .underline {
+                    width: 100%;
+                    height: 1px;
+                }
+
+                p {
+                    padding-top: 0.5rem;
+                }
+                h4 {
+                    padding-bottom: 0.25rem;
+                    text-transform: uppercase;
+                }
+
+                a {
+                    &:hover {
+                        font-weight: bold;
+                        color: $main-accent-clr;
+                    }
+                }
+            }
+
             
+            .schedule {
+                background: $main-accent-clr;
+            }
+        }
+
+        .map {
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            // background: transparent;
+
+            iframe {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @media screen and (min-width: 992px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            column-gap: 2rem;
+            align-items: center;
+            padding-bottom: 4rem;
         }
     }
 }
 
-.form {
-    // background: yellow;
-    // padding: 2rem;
-    // border: 2px solid white;
-    
 
-    &:hover {
-        // transform: skew(15deg);
-    }
-}
+// .contact-info .btn {
+//     width: 100%;
+//     margin: 0;
+// }
 
-.cta {
-    
-    a {
-        display: block;
-        text-align: left;
-        float: left;
-        margin-right: 2rem;
-        padding: 1rem;
-        font-weight: bold;
-        letter-spacing: .05rem;
-    }
-}
