@@ -73,6 +73,7 @@ CONTACT
             .address {
                 // border: 2px solid red;
                 padding: 1rem;
+                font-size: 1rem;
 
                 .underline {
                     width: 100%;
@@ -81,7 +82,13 @@ CONTACT
 
                 p {
                     padding-top: 0.5rem;
+                    // text-indent: 0.5rem;
                 }
+
+                li{
+                    // text-indent: 2rem;
+                }
+
                 h4 {
                     padding-bottom: 0.25rem;
                     text-transform: uppercase;

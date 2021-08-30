@@ -785,6 +785,7 @@ CONTACT
 .contact .contact-container .contact-info .hours,
 .contact .contact-container .contact-info .address {
   padding: 1rem;
+  font-size: 1rem;
 }
 .contact .contact-container .contact-info .telephone .underline,
 .contact .contact-container .contact-info .email .underline,
