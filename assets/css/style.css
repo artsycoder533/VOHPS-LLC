@@ -698,9 +698,6 @@ blockquote {
   margin-bottom: 4rem;
   border: 3px solid #D29402;
 }
-.who h3, .what h3, .how h3 {
-  transform: translate(10%, -60%);
-}
 .who .list-holder .learn-more-btn, .what .list-holder .learn-more-btn, .how .list-holder .learn-more-btn {
   display: block;
   text-align: center;
