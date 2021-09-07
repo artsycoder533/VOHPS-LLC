@@ -1,2 +1,2 @@
 # VOHPS-LLC
-This is a website I created for a colleague to promote her private practice.  This website was coded entirely from scratch.  I used HTML5, CSS3, Javascript and DOM Manipulation.
+This is a freelance project I am currently working on for Visions Of Hope Psychological Services, LLC. This website is being built from scratch with HTML5, SASS, and Javascript
