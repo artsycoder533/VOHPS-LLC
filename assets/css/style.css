@@ -609,7 +609,7 @@ SERVICES SECTION
 ABOUT SECTION 
 */
 .about {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #FCFCFD;
   display: flex;
@@ -669,6 +669,7 @@ blockquote {
   }
   .about-article .who, .about-article .what, .about-article .how {
     margin-bottom: 0;
+    padding-bottom: 0;
     background: #FCFCFD;
   }
   .about-article .who .learn-more-btn {
@@ -692,11 +693,9 @@ blockquote {
 }
 
 .who, .what, .how {
-  display: grid;
-  align-items: space-between;
   /* place-items: center; */
   margin-bottom: 4rem;
-  border: 3px solid #D29402;
+  padding-bottom: 0;
 }
 .who .list-holder .learn-more-btn, .what .list-holder .learn-more-btn, .how .list-holder .learn-more-btn {
   display: block;
@@ -709,9 +708,11 @@ blockquote {
   font-size: 2rem;
   background: white;
   width: 200px;
-  padding-left: 0.5rem;
+  padding-left: 0;
   color: #3E007F;
   text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 .who ul, .what ul, .how ul {
@@ -727,10 +728,6 @@ blockquote {
 
 .how h3 {
   width: 217px;
-}
-
-.about .btn {
-  margin: 3rem auto;
 }
 
 /*

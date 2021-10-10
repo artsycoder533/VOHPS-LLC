@@ -6,7 +6,7 @@
 ABOUT SECTION 
 */
 .about {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color:#FCFCFD;
     display: flex;
@@ -75,6 +75,7 @@ blockquote {
         .who, .what, .how  {
             // width: 461px;
             margin-bottom: 0;
+            padding-bottom: 0;
             background: #FCFCFD;
         }
 
@@ -104,13 +105,14 @@ blockquote {
 }
 
 .who, .what, .how {
-    display: grid;
-    align-items: space-between;
+    // display: grid;
+    // align-items: flex-start;
     /* place-items: center; */
-    margin-bottom: 4rem;
+     margin-bottom: 4rem;
     // width: 100%;
-
-    border: 3px solid $main-accent-clr;
+    padding-bottom: 0;
+    // height: 300px;
+    // border: 3px solid $main-accent-clr;
 
     h3 {
         // transform: translate(10%, -60%);
@@ -134,9 +136,13 @@ blockquote {
     // transform: translate(10px, -25px);
     background: white;
     width: 200px;
-    padding-left: 0.5rem;
+    padding-left: 0;
     color: $dark-purple;
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
+    // border: 2px solid red;
 }
 
 .who ul, .what ul, .how ul {
@@ -155,7 +161,7 @@ blockquote {
 }
 
 .about .btn {
-    margin:  3rem auto;
+    // margin:  3rem auto;
 }
 
 
