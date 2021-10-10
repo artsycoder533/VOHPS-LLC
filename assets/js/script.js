@@ -35,38 +35,38 @@ hamburger.addEventListener("click", () => {
 	navLinks.classList.toggle("show-links");
 });
 
-// servicesContainer.addEventListener('click', function (e) {
-// 	const id = e.target.dataset.id;
-// 	if (id) {
-// 		// remove active tab
-// 		tabs.forEach(function (tab) {
-// 			tab.classList.remove("active");
-// 			e.target.classList.add("active");
-// 		});
+servicesContainer.addEventListener('click', function (e) {
+	const id = e.target.dataset.id;
+	if (id) {
+		// remove active tab
+		tabs.forEach(function (tab) {
+			tab.classList.remove("active");
+			e.target.classList.add("active");
+		});
 		
-// 		// hide other services
-// 		contents.forEach(function (service) {
-// 		service.classList.remove("show-content");
-// 		});
+		// hide other services
+		contents.forEach(function (service) {
+		service.classList.remove("show-content");
+		});
 		
-// 		//show individual service
-// 		const element = document.getElementById(id);
-// 		element.classList.add("show-content");
-// 	}
-// });
+		//show individual service
+		const element = document.getElementById(id);
+		element.classList.add("show-content");
+	}
+});
 
-// tabs.forEach(function (tab) {
-// 	const btn = tab.querySelector(".btn-services");
-// 	btn.addEventListener('click', function () {
-// 		services.forEach(function (service) {
-// 			if (service !== tab) {
-// 				service.classList.remove("show-content");
-// 				// tab.classList.add("hide-content");
-// 			}
-// 		})
+tabs.forEach(function (tab) {
+	const btn = tab.querySelector(".btn-services");
+	btn.addEventListener('click', function () {
+		services.forEach(function (service) {
+			if (service !== tab) {
+				service.classList.remove("show-content");
+				// tab.classList.add("hide-content");
+			}
+		})
 		
-// 	})
-// })
+	})
+})
 
 
 // target all questions
