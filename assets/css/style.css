@@ -991,7 +991,7 @@ footer small a:visited, footer small a {
   place-items: center;
 }
 .footer-cta .footer-nav .footer-logo .logo {
-  height: auto;
+  height: 4rem;
 }
 .footer-cta .footer-nav .footer-brand {
   width: 100%;
