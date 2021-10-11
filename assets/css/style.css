@@ -411,7 +411,7 @@ form .send-message-btn {
   height: 100vh;
   width: 100%;
   top: 0;
-  background: #3E007F url("/images/hero.jpg") no-repeat fixed right/cover;
+  background: #3E007F url("images/hero.jpg") no-repeat fixed right/cover;
   background-blend-mode: multiply;
 }
 .hero .hero-text-wrapper {
