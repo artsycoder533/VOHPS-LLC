@@ -7,7 +7,15 @@ const dropdown1 = document.getElementById("dropdown-content1");
 const hamburger = document.getElementById("hamburger");
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const navLinks = document.getElementById("nav-links");
+// target all tabs
+const tabs = document.querySelectorAll(".btn-services");
 
+// parent container
+const servicesContainer = document.querySelector(".all-services");
+//console.log(servicesContainer);
+
+// target all content
+const contents = document.querySelectorAll(".content");
 
 
 
@@ -46,15 +54,7 @@ questions.forEach(function (question) {
 	});
 });
 
-// target all tabs
-const tabs = document.querySelectorAll(".btn-services");
 
-// parent container
-const servicesContainer = document.querySelector(".all-services");
-//console.log(servicesContainer);
-
-// target all content
-const contents = document.querySelectorAll(".content");
 
 
 tabs.forEach(function (tab) {
