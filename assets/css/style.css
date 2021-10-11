@@ -411,8 +411,16 @@ form .send-message-btn {
   height: 100vh;
   width: 100%;
   top: 0;
-  background: #3E007F url("/assets/images/hero.jpg") no-repeat fixed right/cover;
-  background-blend-mode: multiply;
+  background: #3E007F;
+  mix-blend-mode: multiply;
+}
+.hero .hero_img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: multiply;
 }
 .hero .hero-text-wrapper {
   width: 90vw;

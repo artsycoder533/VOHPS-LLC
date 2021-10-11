@@ -4,12 +4,26 @@
 
 /* HERO SECTION */
 .hero {
+    
     height: 100vh;
     // margin-top: 75px;
     width: 100%;
     top: 0;
-    background: $dark-purple url("./assets/images/hero.jpg") no-repeat fixed right/cover;
-    background-blend-mode: multiply;
+    // background: $dark-purple url("/assets/images/hero.jpg") no-repeat fixed right/cover;
+     background: $dark-purple;
+     mix-blend-mode: multiply;
+    // border: 2px solid white;
+
+    .hero_img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        // background: $dark-purple;
+        z-index: -1;
+        //  opacity: 0.2;
+        mix-blend-mode: multiply;
+    }
 
     .hero-text-wrapper { 
         width: 90vw;
@@ -19,9 +33,11 @@
         justify-content: center;
         align-content: center;
         margin: auto; 
+        
 
         .hero-text {
             width: 100%;
+            
 
             h2 {
                 color: white;
