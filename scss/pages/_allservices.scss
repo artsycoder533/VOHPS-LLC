@@ -4,8 +4,9 @@
 .all-services {
 	// width: 90vw;
 	// max-width: 1400px;
-	// min-height: calc(100vh - 75px);
-	min-height: 100vh;
+	min-height: calc(100vh - 75px);
+	// min-height: 100vh;
+	
 	margin-top: 75px;
 
 	// height: 450px;
@@ -15,13 +16,13 @@
 	// display: grid;
 	// align-items: center;
 
-	margin-bottom: 3rem;
+	// margin-bottom: 3rem;
 	// margin-bottom: 22rem;
-
+	// border: 2px solid green;
 	// background: lightgray;
 
 	.alert h3 {
-		border: 2px solid white;
+		// border: 2px solid white;
 		width: 100%;
 		text-align: center;
 		padding: 0.5rem;

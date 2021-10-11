@@ -69,7 +69,7 @@
 
         .nav-links {
             width: 100%;
-            height: 100%;
+            height: 100vh;
             list-style-type: none;
             background: black;
             overflow: hidden;
@@ -79,6 +79,7 @@
             /* background-color: var(--accent-1); */
             // padding-top: 1rem; 
             // display: none;
+            // border: 2px solid red;
 
             .nav-link {
                 display: block;
@@ -113,8 +114,10 @@
 
         .show-links {
             padding-bottom: 1rem;
-            height: auto;
+            height: 100vh;
             transition: $transition-main;
+            // border: 2px solid red;
+            
         }
 
         @media screen and (min-width: 1100px){
