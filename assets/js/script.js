@@ -56,7 +56,8 @@ servicesContainer.addEventListener('click', function (e) {
 });
 
 tabs.forEach(function (tab) {
-	const btn = tab.querySelector(".btn-services");
+	const btn = document.querySelector(".btn-services");
+	//const btn = tab.querySelector(".btn-services");
 	btn.addEventListener('click', function () {
 		services.forEach(function (service) {
 			if (service !== tab) {
