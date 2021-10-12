@@ -25,6 +25,12 @@ caret.addEventListener("click", () => {
 	caretRotate1.classList.toggle("caret-open");
 });
 
+//close navbar when link clicked
+navLinks.addEventListener("click", () => {
+	hamburgerBtn.classList.toggle("open-hamburger");
+	navLinks.classList.remove("show-links");
+});
+
 // caret1.addEventListener("click", () => {
 // 	dropdown1.classList.toggle("open");
 // 	caretRotate2.classList.toggle("caret-open");
