@@ -42,6 +42,11 @@ hamburger.addEventListener("click", () => {
 	navLinks.classList.toggle("show-links");
 });
 
+//sticky header
+window.addEventListener("scroll", () => {
+    const header = document.querySelector(".header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
 
 
 // target all questions
