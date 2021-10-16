@@ -17,8 +17,8 @@ I created this multi-page static website created for Visions of Hope Psychologic
 
 ### Screenshot
 
-- Desktop Screenshot [Desktop Screenshot](./assets/images/vohps.png)
-- Mobile Screenshot [Mobile Screenshot](./assets/images/vohps_mobile.png)
+- Desktop Screenshot: ![Desktop Screenshot](assets/images/vohps.png)
+- Mobile Screenshot: ![Mobile Screenshot](assets/images/vohps_mobile.png)
 
 ### Links
 
