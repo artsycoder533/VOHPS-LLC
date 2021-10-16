@@ -17,8 +17,8 @@ I created this multi-page static website created for Visions of Hope Psychologic
 
 ### Screenshot
 
-- Desktop Screenshot [Desktop Screenchot](vohps.png)
-- Mobile Screenshot [Mobile Screenshot](vohps_mobile.png)
+- Desktop Screenshot [Desktop Screenshot](/assets/images/vohps.png)
+- Mobile Screenshot [Mobile Screenshot](/assets/images/vohps_mobile.png)
 
 ### Links
 
@@ -47,4 +47,4 @@ I would like for the client to continue to hire me to provide updates to their w
 
 ## Author
 
--Portfolio - []()
+- Portfolio - [https://artsycoder533.github.io/portfolio/](https://artsycoder533.github.io/portfolio/)
