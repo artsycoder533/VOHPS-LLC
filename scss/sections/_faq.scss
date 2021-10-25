@@ -59,7 +59,7 @@ FAQ section
 
 .question {
     width: 100%;
-    background-color: #fffcfc;
+    // background-color: #fffcfc;
     border-radius: 5px;
 }
 
@@ -68,7 +68,8 @@ FAQ section
     justify-content: space-between;
     padding: 2rem 1.5rem;
     align-items: center;
-    box-shadow: $box-shadow;
+    border-bottom: 1px solid darkgray;
+    // box-shadow: $box-shadow;
 }
 
 .question-title h4 {
@@ -80,11 +81,11 @@ FAQ section
 
 .question-text {
     padding: 2rem;
-    border-top: 1px solid darkgray;
+    // border-top: 1px solid darkgray;
     // margin-bottom: 2rem;
-    box-shadow: $box-shadow;
+    // box-shadow: $box-shadow;
     transition: $transition-hamburger;
-    box-shadow: inset 5px 5px 30px darkgray;
+    // box-shadow: inset 5px 5px 30px darkgray;
     
 }
 

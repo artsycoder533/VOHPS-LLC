@@ -893,7 +893,6 @@ FAQ section
 
 .question {
   width: 100%;
-  background-color: #fffcfc;
   border-radius: 5px;
 }
 
@@ -902,7 +901,7 @@ FAQ section
   justify-content: space-between;
   padding: 2rem 1.5rem;
   align-items: center;
-  box-shadow: 2px 1px 20px darkgray;
+  border-bottom: 1px solid darkgray;
 }
 
 .question-title h4 {
@@ -913,10 +912,7 @@ FAQ section
 
 .question-text {
   padding: 2rem;
-  border-top: 1px solid darkgray;
-  box-shadow: 2px 1px 20px darkgray;
   transition: all 0.75s ease-in-out;
-  box-shadow: inset 5px 5px 30px darkgray;
 }
 
 .question-text p {
