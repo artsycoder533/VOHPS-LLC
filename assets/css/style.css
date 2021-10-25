@@ -1070,9 +1070,6 @@ footer small a:visited, footer small a {
 .all-services {
   min-height: calc(100vh - 75px);
   margin-top: 75px;
-  overflow: hidden;
-  position: relative;
-  margin: 100 auto;
 }
 .all-services .alert h3 {
   width: 100%;
@@ -1120,12 +1117,16 @@ footer small a:visited, footer small a {
   }
 }
 .all-services .content {
-  position: absolute;
-  transform: translateX(150%);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem 0;
 }
 .all-services .content .content-left,
 .all-services .content .content-right {
   height: 100%;
+}
+.all-services .content .content-left {
+  padding-bottom: 1rem;
 }
 .all-services .content .content-left p {
   padding: 1rem 0;
@@ -1142,18 +1143,17 @@ footer small a:visited, footer small a {
   }
 }
 .all-services .content .content-right img {
-  display: none;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .all-services .content {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
   .all-services .content .content-left {
-    flex-basis: 50%;
     height: 100%;
   }
   .all-services .content .content-right {
+    display: flex;
     flex-basis: 50%;
     height: 100%;
   }
@@ -1170,6 +1170,7 @@ footer small a:visited, footer small a {
 @media screen and (min-width: 992px) {
   .all-services .content {
     grid-template-columns: 1fr 1fr;
+    margin: 1fr;
   }
 }
 .all-services .show-content {
