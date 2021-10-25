@@ -488,7 +488,7 @@ form .send-message-btn {
 }
 .hero .hero-text-wrapper .buttons .learn-more-btn:hover {
   border: 2px solid #ffffff;
-  background: transparent;
+  background: #8004CE;
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
