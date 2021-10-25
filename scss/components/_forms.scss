@@ -22,7 +22,7 @@ form {
         color: $main-text;
         padding: 1rem;
         background: $snowwhite;
-        box-shadow: inset 5px 5px 5px rgba(0, 0,0,0.6);
+        // box-shadow: inset 5px 5px 5px rgba(0, 0,0,0.6);
         border-radius: 5px;
     }
 
@@ -51,6 +51,7 @@ form {
         color: $dark-purple;
         font-weight: bold;
         margin-bottom: 0;
+        
 
         &:hover {
             // box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);
