@@ -1241,7 +1241,6 @@ footer small a:visited, footer small a {
 @media screen and (min-width: 1000px) {
   .bio .bio-section {
     grid-template-columns: auto 1fr;
-    box-shadow: 2px 1px 20px darkgray;
   }
   .bio .bio-section .img-container {
     padding: 3rem;
