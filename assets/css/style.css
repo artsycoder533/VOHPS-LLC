@@ -722,7 +722,7 @@ blockquote {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   background: white;
-  width: 200px;
+  width: 100%;
   padding-left: 0;
   color: #3E007F;
   margin-bottom: 0;
