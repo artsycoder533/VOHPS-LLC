@@ -41,6 +41,14 @@
                     margin: 0;
                 }
             }
+
+            .about-link {
+                display: grid;
+                place-items: center;
+                background: transparent;
+                color: black;
+                text-decoration: underline;
+            }
         }
         
 

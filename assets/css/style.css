@@ -1220,6 +1220,13 @@ footer small a:visited, footer small a {
     margin: 0;
   }
 }
+.bio .bio-section .img-container .about-link {
+  display: grid;
+  place-items: center;
+  background: transparent;
+  color: black;
+  text-decoration: underline;
+}
 @media screen and (min-width: 768px) {
   .bio .bio-section .img-container {
     flex-direction: row;

@@ -11,7 +11,7 @@ const navLinks = document.getElementById("nav-links");
 const tabs = document.querySelectorAll(".btn-services");
 
 // parent container
-const servicesContainer = document.querySelector(".all-services");
+// const servicesContainer = document.querySelector(".all-services");
 //console.log(servicesContainer);
 
 // target all content
