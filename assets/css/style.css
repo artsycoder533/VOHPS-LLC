@@ -435,14 +435,13 @@ form .send-message-btn {
   left: 0;
   display: grid;
   place-items: center;
-  background: #2A0060;
+  background: #1B012C;
   z-index: 2;
 }
 
 .header.sticky {
   /* background-color: rgb(27, 27, 27); */
-  background: #050505;
-  background: #2A0060;
+  background: #1B012C;
   height: 60px;
 }
 
