@@ -637,7 +637,6 @@ ABOUT SECTION
 .about {
   min-height: 100vh;
   width: 100%;
-  background-color: #FCFCFD;
   display: flex;
   flex-direction: column;
 }
@@ -681,6 +680,7 @@ blockquote {
   text-align: center;
   width: 100%;
   margin-top: 1.5rem;
+  color: #8004CE;
 }
 
 .about-article {
@@ -696,7 +696,8 @@ blockquote {
   .about-article .who, .about-article .what, .about-article .how {
     margin-bottom: 0;
     padding-bottom: 0;
-    background: #FCFCFD;
+    border-left: 6px solid #8004CE;
+    padding-left: 2rem;
   }
   .about-article .who .learn-more-btn {
     transform: translateY(12px);
@@ -709,6 +710,15 @@ blockquote {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .who {
+    transform: translateY(-50%);
+  }
+
+  .how {
+    transform: translateY(50%);
+  }
+}
 .logo-wrapper {
   width: 100%;
 }
@@ -732,7 +742,6 @@ blockquote {
 .who h3, .what h3, .how h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
-  background: white;
   width: 100%;
   padding-left: 0;
   color: #3E007F;

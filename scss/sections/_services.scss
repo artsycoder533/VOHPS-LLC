@@ -32,6 +32,7 @@ SERVICES SECTION
         display: grid;
         place-items: center;
         padding: 1rem;
+        // color: $lighter-purple;
         background: rgba(210, 148, 2, 0.6);
 
         blockquote {
@@ -40,6 +41,7 @@ SERVICES SECTION
             margin: auto;
             font-size: 1.25rem;
             font-weight: bold;
+            
 
             i {
                 transform: translateY(-25%);
