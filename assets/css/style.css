@@ -1006,44 +1006,6 @@ footer small a:visited, footer small a {
   padding: 0.5rem;
   color: #3E007F;
 }
-.all-services .btn-box {
-  border-bottom: 1px solid #ccc;
-}
-.all-services .btn-box .btn-services {
-  background: transparent;
-  color: #8004CE;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  height: 2.5rem;
-}
-@media screen and (min-width: 768px) {
-  .all-services .btn-box .btn-services {
-    height: 4rem;
-  }
-  .all-services .btn-box .btn-services .active {
-    border-bottom: 2px solid #8004CE;
-  }
-}
-@media screen and (min-width: 992px) {
-  .all-services .btn-box .btn-services {
-    margin-top: 6rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .all-services .btn-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .all-services .btn-box {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-}
 .all-services .content {
   display: grid;
   grid-template-columns: 1fr;
@@ -1116,12 +1078,6 @@ footer small a:visited, footer small a {
   transform: translateX(0);
   transition: all 0.4s ease-in-out;
   transition-delay: 0.4ms;
-}
-
-.btn-contact {
-  display: grid;
-  place-items: center;
-  margin: 0;
 }
 
 .bio {
