@@ -1155,6 +1155,8 @@ footer small a:visited, footer small a {
 .all-services .content .content-left {
   padding-bottom: 1rem;
   background: white;
+  display: grid;
+  align-items: center;
 }
 .all-services .content .content-left p {
   padding: 1rem 0;
