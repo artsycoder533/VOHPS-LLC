@@ -110,6 +110,8 @@ select {
   height: 4rem;
   text-transform: uppercase;
   display: inline-block;
+  display: grid;
+  place-items: center;
   text-transform: uppercase;
   margin: 1rem;
   border: none;
@@ -560,7 +562,6 @@ SERVICES SECTION
   align-items: center;
 }
 .services .cta-holder .schedule {
-  display: block;
   margin: 2rem auto;
   background: #8004CE;
   color: #ffffff;
@@ -1154,7 +1155,6 @@ footer small a:visited, footer small a {
   font-size: 1.3rem;
 }
 .bio .bio-section .img-container .schedule {
-  display: block;
   text-align: center;
   margin: 3rem auto;
 }

@@ -5,6 +5,8 @@
     height: 4rem;
     text-transform: uppercase;
     display: inline-block;
+    display: grid;
+    place-items: center;
     text-transform: uppercase;
     margin: 1rem;
     border: none;
@@ -66,3 +68,4 @@
         
     }
 }
+
