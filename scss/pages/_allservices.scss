@@ -29,7 +29,7 @@
 		width: 100%;
 		text-align: center;
 		padding: 0.5rem;
-		background: rgba(210, 148, 2, 0.6);
+		// background: rgba(210, 148, 2, 0.6);
 		color: $dark-purple;
 	}
 
@@ -97,7 +97,7 @@
 		grid-template-columns: 1fr;
 		// height: 100%;
 		// border: 2px solid red;
-		margin: 2rem 0;
+		margin: 4rem 0;
 
 		.content-left,
 		.content-right {
