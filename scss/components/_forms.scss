@@ -17,6 +17,13 @@ form {
         text-align: center;
     }
 
+    label {
+        font-weight: bold;
+        color: $main-accent-clr;
+        padding-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
     input,
     textarea {
         color: $main-text;
@@ -40,7 +47,7 @@ form {
     }
 
     ::placeholder {
-        color: white;
+        // color: white;
         font-family: $main-text; 
     }
 

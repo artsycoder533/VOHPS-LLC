@@ -380,6 +380,12 @@ form h3 {
   letter-spacing: 0.15rem;
   text-align: center;
 }
+form label {
+  font-weight: bold;
+  color: #D29402;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
 form input,
 form textarea {
   color: "Open Sans", sans-serif;
@@ -397,7 +403,6 @@ form textarea {
   border-bottom: 2px solid "Open Sans", sans-serif;
 }
 form ::placeholder {
-  color: white;
   font-family: "Open Sans", sans-serif;
 }
 form .send-message-btn {
@@ -660,7 +665,6 @@ ABOUT SECTION
   margin: 2rem 0;
   margin: auto;
 }
-
 .section-about {
   padding: 3rem 0;
 }
@@ -680,7 +684,7 @@ blockquote {
   text-align: center;
   width: 100%;
   margin-top: 1.5rem;
-  color: #8004CE;
+  color: black;
 }
 
 .about-article {
@@ -694,7 +698,6 @@ blockquote {
     gap: 3rem 3rem;
   }
   .about-article .who, .about-article .what, .about-article .how {
-    margin-bottom: 0;
     padding-bottom: 0;
     border-left: 6px solid #8004CE;
     padding-left: 2rem;
@@ -744,7 +747,7 @@ blockquote {
   font-size: 2rem;
   width: 100%;
   padding-left: 0;
-  color: #3E007F;
+  color: #8004CE;
   margin-bottom: 0;
   padding-bottom: 1rem;
 }

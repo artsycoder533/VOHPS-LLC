@@ -38,6 +38,10 @@ ABOUT SECTION
 .about-article {
     margin: 2rem 0;
     margin: auto;
+
+    @media screen and (min-width: 1400px){
+        
+    }
 }
 
 .section-about {
@@ -58,7 +62,7 @@ blockquote {
     text-align: center;
     width: 100%;
     margin-top: 1.5rem;
-    color: $lighter-purple;
+    color: black;
     // background: rgb(242, 227, 191);
 }
 
@@ -76,7 +80,7 @@ blockquote {
 
         .who, .what, .how  {
             // width: 461px;
-            margin-bottom: 0;
+            // margin-bottom: 0;
             padding-bottom: 0;
             border-left: 6px solid $lighter-purple;
             padding-left: 2rem;
@@ -106,6 +110,7 @@ blockquote {
 
     .how {
         transform: translateY(50%);
+        // margin-bottom: 4rem;
     }
 }
 
@@ -152,7 +157,7 @@ blockquote {
     // transform: translate(10px, -25px);
     width: 100%;
     padding-left: 0;
-    color: $dark-purple;
+    color: $lighter-purple;
     // text-align: center;
     margin-bottom: 0;
     padding-bottom: 1rem;
