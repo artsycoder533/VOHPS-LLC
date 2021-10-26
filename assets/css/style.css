@@ -814,76 +814,6 @@ CONTACT
   place-items: center;
   padding: 4rem 0;
 }
-.contact .contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact .contact-container .contact-info {
-  color: white;
-  font-family: #303030;
-  width: 100%;
-  margin: auto;
-  text-align: left;
-  height: 100%;
-}
-.contact .contact-container .contact-info .telephone,
-.contact .contact-container .contact-info .email,
-.contact .contact-container .contact-info .hours,
-.contact .contact-container .contact-info .address {
-  padding: 1rem;
-  font-size: 1rem;
-}
-.contact .contact-container .contact-info .telephone .underline,
-.contact .contact-container .contact-info .email .underline,
-.contact .contact-container .contact-info .hours .underline,
-.contact .contact-container .contact-info .address .underline {
-  width: 100%;
-  height: 1px;
-}
-.contact .contact-container .contact-info .telephone p,
-.contact .contact-container .contact-info .email p,
-.contact .contact-container .contact-info .hours p,
-.contact .contact-container .contact-info .address p {
-  padding-top: 0.5rem;
-}
-.contact .contact-container .contact-info .telephone h4,
-.contact .contact-container .contact-info .email h4,
-.contact .contact-container .contact-info .hours h4,
-.contact .contact-container .contact-info .address h4 {
-  padding-bottom: 0.25rem;
-  text-transform: uppercase;
-}
-.contact .contact-container .contact-info .telephone a:hover,
-.contact .contact-container .contact-info .email a:hover,
-.contact .contact-container .contact-info .hours a:hover,
-.contact .contact-container .contact-info .address a:hover {
-  font-weight: bold;
-  color: #D29402;
-}
-.contact .contact-container .contact-info .schedule {
-  background: #D29402;
-}
-.contact .contact-container .map {
-  width: 100%;
-  height: 100%;
-}
-.contact .contact-container .map iframe {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-}
-@media screen and (min-width: 992px) {
-  .contact .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    width: 100%;
-    column-gap: 2rem;
-    align-items: center;
-    padding-bottom: 4rem;
-  }
-}
 
 /*
 FAQ section
@@ -1258,7 +1188,6 @@ footer small a:visited, footer small a {
 .bio .bio-section .img-container .bio-photo {
   width: 100%;
   object-fit: center;
-  border-radius: 2rem;
 }
 .bio .bio-section .img-container h3 {
   text-align: center;
@@ -1308,6 +1237,82 @@ footer small a:visited, footer small a {
   .bio .bio-section .bio-text-holder {
     padding: 3rem;
     height: 100%;
+  }
+}
+
+.info .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info .contact-container .contact-info {
+  font-family: #303030;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  height: 100%;
+}
+.info .contact-container .contact-info .telephone,
+.info .contact-container .contact-info .email,
+.info .contact-container .contact-info .hours,
+.info .contact-container .contact-info .address {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.info .contact-container .contact-info .telephone .underline,
+.info .contact-container .contact-info .email .underline,
+.info .contact-container .contact-info .hours .underline,
+.info .contact-container .contact-info .address .underline {
+  width: 100%;
+  height: 1px;
+}
+.info .contact-container .contact-info .telephone p,
+.info .contact-container .contact-info .email p,
+.info .contact-container .contact-info .hours p,
+.info .contact-container .contact-info .address p {
+  padding-top: 0.5rem;
+}
+.info .contact-container .contact-info .telephone h4,
+.info .contact-container .contact-info .email h4,
+.info .contact-container .contact-info .hours h4,
+.info .contact-container .contact-info .address h4 {
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.info .contact-container .contact-info .telephone a,
+.info .contact-container .contact-info .email a,
+.info .contact-container .contact-info .hours a,
+.info .contact-container .contact-info .address a {
+  color: black;
+}
+.info .contact-container .contact-info .telephone a:hover,
+.info .contact-container .contact-info .email a:hover,
+.info .contact-container .contact-info .hours a:hover,
+.info .contact-container .contact-info .address a:hover {
+  font-weight: bold;
+  color: #D29402;
+}
+.info .contact-container .contact-info .schedule {
+  background: #D29402;
+}
+.info .contact-container .map {
+  width: 100%;
+  height: 100%;
+}
+.info .contact-container .map iframe {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  .info .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    column-gap: 2rem;
+    align-items: center;
+    padding-bottom: 4rem;
   }
 }
 

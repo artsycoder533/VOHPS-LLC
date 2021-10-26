@@ -1,0 +1,87 @@
+@use '../base/' as *;
+@use '../components/' as *;
+
+.info {
+    .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 90vw;
+    // max-width: 1400px;
+
+        .contact-info {
+            // color: white;
+            font-family: $text-color;
+            width: 100%;
+            margin: auto;
+            text-align: left;
+            height: 100%;
+
+            .telephone,
+            .email,
+            .hours,
+            .address {
+                // border: 2px solid red;
+                padding: 1rem;
+                font-size: 1rem;
+
+                .underline {
+                    width: 100%;
+                    height: 1px;
+                }
+
+                p {
+                    padding-top: 0.5rem;
+                    // text-indent: 0.5rem;
+                }
+
+                li{
+                    // text-indent: 2rem;
+                }
+
+                h4 {
+                    padding-bottom: 0.25rem;
+                    text-transform: uppercase;
+                    
+                }
+
+                a {
+                    color: black;
+
+                    &:hover {
+                        font-weight: bold;
+                        color: $main-accent-clr;
+                    }
+                }
+            }
+
+            
+            .schedule {
+                background: $main-accent-clr;
+            }
+        }
+
+        .map {
+            width: 100%;
+            height: 100%;
+            // border: 2px solid red;
+            // background: transparent;
+
+            iframe {
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @media screen and (min-width: 992px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            column-gap: 2rem;
+            align-items: center;
+            padding-bottom: 4rem;
+        }
+    }
+}
