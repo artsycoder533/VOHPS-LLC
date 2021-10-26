@@ -3,6 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #303030;
+  background: #F5F5F5;
 }
 
 a:visited,
@@ -1134,6 +1135,7 @@ footer small a:visited, footer small a {
 }
 .all-services .content .content-left {
   padding-bottom: 1rem;
+  background: white;
 }
 .all-services .content .content-left p {
   padding: 1rem 0;
@@ -1148,6 +1150,10 @@ footer small a:visited, footer small a {
   .all-services .content .content-left {
     padding: 1rem;
   }
+}
+.all-services .content .content-right {
+  padding: 1rem;
+  background: white;
 }
 .all-services .content .content-right img {
   width: 100%;

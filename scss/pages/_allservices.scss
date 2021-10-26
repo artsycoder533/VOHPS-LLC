@@ -105,8 +105,10 @@
 		}
 
 		.content-left {
-			 padding-bottom: 1rem;
+			padding-bottom: 1rem;
 			// border: 2px solid red;
+			background: white;
+
 			p {
 				padding: 1rem 0;
 				// margin: 3rem 0;
@@ -130,6 +132,8 @@
 		.content-right {
 			// border: 2px solid red;
 			// display: none;
+			padding: 1rem;
+			background: white;
 			
 			img {
 				// display: none;
