@@ -455,7 +455,6 @@ form .send-message-btn {
   width: 100%;
   top: 0;
   background: #8004CE;
-  opacity: 0.8;
   mix-blend-mode: multiply;
 }
 .hero .hero_img {
@@ -464,6 +463,7 @@ form .send-message-btn {
   object-fit: cover;
   position: absolute;
   z-index: -1;
+  opacity: 0.8;
   mix-blend-mode: multiply;
 }
 .hero .hero-text-wrapper {
