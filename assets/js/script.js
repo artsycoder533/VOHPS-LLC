@@ -81,6 +81,20 @@ tabs.forEach(function (tab) {
 	});
 });
 
+const scrollBtn = document.getElementById("scroll");
+
+window.onscroll = function () {
+	if (document.documentElement.scrollTop > 70) {
+		scrollBtn.style.display = "block";
+	} else {
+		scrollBtn.style.display = "none";
+	}
+};
+
+scrollBtn.addEventListener("click", () => {
+	document.documentElement.scrollTop = 0;
+});
+
 // servicesContainer.addEventListener("click", function (e) {
 // 	const id = e.target.dataset.id;
 // 	if (id) {

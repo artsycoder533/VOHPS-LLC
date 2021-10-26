@@ -146,6 +146,19 @@ select {
   background: #D29402;
 }
 
+.btn-scroll {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  background: #8004CE;
+  color: white;
+  font-weight: bold;
+}
+
 .hamburger {
   width: 30px;
   height: 30px;

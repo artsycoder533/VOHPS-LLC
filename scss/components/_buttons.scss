@@ -43,3 +43,16 @@
         background: $main-accent-clr;
     }
 }
+
+.btn-scroll {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    background: $lighter-purple;
+    color: white;
+    font-weight: bold;
+}
