@@ -13,6 +13,8 @@
     transition: $transition-main;
     background: $lighter-purple;
     color: $white;
+    font-weight: bold;
+
     &:hover {
     opacity: $opacity;
     }   
