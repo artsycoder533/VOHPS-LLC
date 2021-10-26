@@ -895,12 +895,25 @@ FAQ section
 
 .faq-btn {
   background: transparent;
+  color: white;
   border: transparent;
   font-size: 1.5rem;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
-.faq-btn:hover {
-  transform: rotate(90deg) scale(1.2);
+
+.open-btn, .close-btn {
+  border: none;
+  background: #8004CE;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.close-btn {
+  display: none;
 }
 
 .question {
@@ -940,10 +953,6 @@ FAQ section
   display: none;
 }
 
-.close-btn {
-  display: none;
-}
-
 /* show  */
 .show .question-text {
   display: block;
@@ -951,7 +960,7 @@ FAQ section
 }
 
 .show .close-btn {
-  display: inline;
+  display: grid;
 }
 
 .show .open-btn {
@@ -960,7 +969,7 @@ FAQ section
 
 @media screen and (min-width: 992px) {
   .questions {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 /*
