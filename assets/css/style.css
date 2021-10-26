@@ -572,8 +572,7 @@ SERVICES SECTION
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
-  background: #3E007F;
-  background: transparent;
+  background: white;
   color: #ffffff;
   color: black;
   padding: 2rem;
