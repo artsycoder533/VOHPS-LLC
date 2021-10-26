@@ -55,6 +55,11 @@ footer {
             place-items: center;
             width: 100%;
 
+            .schedule {
+                display: grid;
+                place-items: center;
+            }
+
             .footer-nav {
                 display: grid;
                 grid-template-columns: auto auto;
@@ -89,26 +94,18 @@ footer {
                 }
             }
 
-            .btn-footer {
-                margin: 2.5rem auto;
-            }
-
             @media screen and (min-width: 768px){
                 justify-content: flex-start;
             }
         }
 
         @media screen and (min-width: 768px){
-            .footer {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
 
         @media screen and (min-width: 1100px){
-            .footer {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
 
