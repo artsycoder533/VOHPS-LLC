@@ -569,10 +569,11 @@ SERVICES SECTION
   display: grid;
   place-items: center;
   padding: 1rem;
+  background: rgba(128, 4, 206, 0.4);
 }
 .services .quote blockquote {
   width: 90vw;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   font-size: 1.25rem;
   font-weight: bold;
