@@ -12,7 +12,9 @@
     letter-spacing: $letter-spacing;
     transition: $transition-main;
     background: $lighter-purple;
+    // background: $main-accent-clr;
     color: $white;
+    // color: black;
     font-weight: bold;
 
     &:hover {
@@ -40,6 +42,7 @@
     margin: 1.5rem 0;
     background: $transparent;
     border: $border2;
+    // color: black;
 
     &:hover {
         background: $main-accent-clr;
