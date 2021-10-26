@@ -452,7 +452,8 @@ form .send-message-btn {
   height: 100vh;
   width: 100%;
   top: 0;
-  background: #3E007F;
+  background: #8004CE;
+  opacity: 0.8;
   mix-blend-mode: multiply;
 }
 .hero .hero_img {
