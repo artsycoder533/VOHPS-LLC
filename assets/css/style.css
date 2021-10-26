@@ -557,6 +557,7 @@ SERVICES SECTION
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 .services .cta-holder .schedule {
   display: grid;
@@ -1069,6 +1070,8 @@ footer small a:visited, footer small a {
 }
 .all-services .content .content-left .schedule {
   margin: 2rem 0 0 0;
+  display: grid;
+  place-items: center;
 }
 @media screen and (min-width: 768px) {
   .all-services .content .content-left {

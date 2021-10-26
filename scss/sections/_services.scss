@@ -17,7 +17,7 @@ SERVICES SECTION
         display: flex;
         justify-content: center;
         align-items: center;
-        // margin-top: 3rem;
+        margin-top: 3rem;
 
         .schedule {
             display: grid;
@@ -34,8 +34,6 @@ SERVICES SECTION
         place-items: center;
         padding: 1rem;
         background: rgba(128, 4, 206, 0.4);
-        // color: $lighter-purple;
-        // background: rgba(210, 148, 2, 0.6);
 
         blockquote {
             width: 90vw;
@@ -57,14 +55,12 @@ SERVICES SECTION
 
     .services-section {
         height: 100%;
-        // padding-top: 3rem;
 
         .individual, .couples, .groups, .evaluations {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: space-around;
-            // background: $dark-purple;
             background: white;
             color: $white;
             color: black;
@@ -83,7 +79,6 @@ SERVICES SECTION
             }
 
             .cta-link {
-
                 i {
                     font-size: 1rem;
                     font-weight: bold;
@@ -103,14 +98,6 @@ SERVICES SECTION
                     }
                 }
             }
-
-            &:hover {
-                // +opacity: 0.6;
-            }
-
-            @media screen and (min-width: 992px){
-                // transform: translateY(-75%);
-            }
         }
 
         @media screen and (min-width: 992px) {
@@ -118,7 +105,6 @@ SERVICES SECTION
             align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
-            // padding-top: 0;
             gap: 1rem;
 
             .evaluations {
@@ -128,25 +114,17 @@ SERVICES SECTION
         
         @media screen and (min-width: 1400px){
             grid-template-columns: 1fr 1fr 1fr 1fr;
-           
-            
+
             .evaluations {
                 transform: translate(0);
             }
         }
-
-        
     }
 
     @media screen and (min-width: 992px){
         height: auto;
         margin: 0;
         margin-bottom: 4rem;
-
-            // .couples, .evaluations, .gr {
-            //     transform: translateY(100%);
-            // }
-        
     }
 }
 
