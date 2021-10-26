@@ -13,6 +13,8 @@
     transition: $transition-main;
     background: $lighter-purple;
     color: $white;
+    font-weight: bold;
+
     &:hover {
     opacity: $opacity;
     }   
@@ -27,13 +29,13 @@
     font-weight: bold;
 
     &:hover {
-        background: $transparent;
+        background: transparent;
         border: 2px solid $lighter-purple;
     }
 }
 
 .send-message-btn {
-    width: 100%;
+    // width: 100%;
     height: 50px;
     margin: 1.5rem 0;
     background: $transparent;
@@ -41,5 +43,23 @@
 
     &:hover {
         background: $main-accent-clr;
+    }
+}
+
+.btn-scroll {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    background: $main-accent-clr;
+    color: black;
+    font-weight: bold;
+    opacity: 0.8;
+
+    @media screen and (min-width: 768px) {
+        
     }
 }

@@ -17,12 +17,19 @@ form {
         text-align: center;
     }
 
+    label {
+        font-weight: bold;
+        color: $main-accent-clr;
+        padding-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
     input,
     textarea {
         color: $main-text;
         padding: 1rem;
         background: $snowwhite;
-        box-shadow: inset 5px 5px 5px rgba(0, 0,0,0.6);
+        // box-shadow: inset 5px 5px 5px rgba(0, 0,0,0.6);
         border-radius: 5px;
     }
 
@@ -40,7 +47,7 @@ form {
     }
 
     ::placeholder {
-        color: white;
+        // color: white;
         font-family: $main-text; 
     }
 
@@ -51,6 +58,7 @@ form {
         color: $dark-purple;
         font-weight: bold;
         margin-bottom: 0;
+        
 
         &:hover {
             // box-shadow: inset 5px 15px 30px rgba(0, 0,0,0.6);

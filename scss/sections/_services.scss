@@ -32,6 +32,7 @@ SERVICES SECTION
         display: grid;
         place-items: center;
         padding: 1rem;
+        // color: $lighter-purple;
         background: rgba(210, 148, 2, 0.6);
 
         blockquote {
@@ -40,6 +41,7 @@ SERVICES SECTION
             margin: auto;
             font-size: 1.25rem;
             font-weight: bold;
+            
 
             i {
                 transform: translateY(-25%);
@@ -60,8 +62,8 @@ SERVICES SECTION
             flex-direction: column;
             justify-content: center;
             align-items: space-around;
-            background: $dark-purple;
-            background: transparent;
+            // background: $dark-purple;
+            background: white;
             color: $white;
             color: black;
             padding: 2rem;
@@ -94,7 +96,7 @@ SERVICES SECTION
 
                     &:hover {
                         border: none;
-                        color: $white;
+                        color: $lighter-purple;
                         transform: scale(1.2);
                     }
                 }

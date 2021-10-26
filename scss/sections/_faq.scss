@@ -14,6 +14,7 @@ FAQ section
     margin: auto;
     max-width: 1400px;
     width: 90vw;
+    // background: white;
     // border: 2px solid black;
 }
 
@@ -42,14 +43,29 @@ FAQ section
 
 .faq-btn {
     background: transparent;
+    color: white;
     border: transparent;
     font-size: 1.5rem;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    // &:hover {
+    //     // color: $main-accent-clr;
+    //     transform: rotate(90deg) scale(1.2);
+    // }
+}
 
-    &:hover {
-        // color: $main-accent-clr;
-        transform: rotate(90deg) scale(1.2);
-    }
+.open-btn, .close-btn {
+    border: none;
+    background: $lighter-purple;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.close-btn {
+    display: none;
 }
 
 .open-btn:hover, .close-btn:hover {
@@ -102,10 +118,6 @@ FAQ section
     display: none;
 }
 
-.close-btn {
-    display: none;
-}
-
 
 /* show  */
 .show .question-text{
@@ -114,7 +126,7 @@ FAQ section
 }
 
 .show .close-btn {
-    display: inline;
+    display: grid;
 }
 
 .show .open-btn {
@@ -125,6 +137,6 @@ FAQ section
 // media query
 @media screen and (min-width: 992px){
     .questions {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
