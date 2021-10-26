@@ -1,5 +1,7 @@
 # VOHPS-LLC
 
+[![wakatime](https://wakatime.com/badge/github/artsycoder533/VOHPS-LLC.svg)](https://wakatime.com/badge/github/artsycoder533/VOHPS-LLC)
+
 ##  Table of contents
 
 - [Overview](#overview)
