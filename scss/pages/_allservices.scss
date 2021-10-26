@@ -98,10 +98,13 @@
 		// height: 100%;
 		// border: 2px solid red;
 		margin: 4rem 0;
+		
+		
 
 		.content-left,
 		.content-right {
 			height: 100%;
+			border-radius: $border-radius;
 		}
 
 		.content-left {

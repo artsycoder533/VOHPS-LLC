@@ -1170,6 +1170,7 @@ footer small a:visited, footer small a {
 .all-services .content .content-left,
 .all-services .content .content-right {
   height: 100%;
+  border-radius: 2rem;
 }
 .all-services .content .content-left {
   padding-bottom: 1rem;
