@@ -84,7 +84,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   scroll-behavior: smooth;
@@ -267,13 +266,12 @@ select {
 /* MOBILE NAVBAR */
 .navbar {
   width: 100%;
-  height: 100%;
+  height: 50px;
 }
 .navbar .nav {
   width: 100%;
   height: 100%;
   display: grid;
-  align-items: center;
 }
 .navbar .nav .nav-header {
   width: 100%;
@@ -901,7 +899,7 @@ FAQ section
 }
 
 .section-faq h2 {
-  color: #3E007F;
+  color: #8004CE;
 }
 
 .img-container {
@@ -1169,7 +1167,9 @@ footer small a:visited, footer small a {
 .all-services .content .content-left,
 .all-services .content .content-right {
   height: 100%;
-  border-radius: 2rem;
+}
+.all-services .content .content-left {
+  padding: 1rem;
 }
 .all-services .content .content-left {
   padding-bottom: 1rem;
