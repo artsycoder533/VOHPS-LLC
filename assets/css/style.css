@@ -156,10 +156,10 @@ select {
   position: fixed;
   right: 15px;
   bottom: 40px;
-  background: #8004CE;
-  color: white;
+  background: #D29402;
+  color: black;
   font-weight: bold;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .hamburger {
   width: 30px;
@@ -791,7 +791,7 @@ CONTACT
 */
 .contact {
   width: 100%;
-  background: #3E007F;
+  background: #8004CE;
   min-height: 100vh;
   display: grid;
   place-items: center;
