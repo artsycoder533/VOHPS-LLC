@@ -1252,7 +1252,8 @@ footer small a:visited, footer small a {
   color: #D29402;
 }
 .info .contact-container .contact-info .schedule {
-  background: #D29402;
+  display: grid;
+  place-items: center;
 }
 .info .contact-container .map {
   width: 100%;
