@@ -2,7 +2,6 @@
 const hamburger = document.getElementById("hamburger");
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const navLinks = document.getElementById("nav-links");
-// const tabs = document.querySelectorAll(".btn-services");
 const contents = document.querySelectorAll(".content");
 const questions = document.querySelectorAll(".question");
 const scrollBtn = document.getElementById("scroll");
@@ -35,19 +34,6 @@ questions.forEach(function (question) {
 		question.classList.toggle("show");
 	});
 });
-
-// tabs.forEach(function (tab) {
-// 	const btn = document.querySelector(".btn-services");
-// 	btn.addEventListener("click", function () {
-//         contents.forEach(function (service) {
-// 			if (service !== tab) {
-// 				service.classList.remove("show-content");
-// 			}
-// 		});
-// 	});
-// });
-
-
 
 window.onscroll = function () {
 	if (document.documentElement.scrollTop > 70) {
