@@ -24,7 +24,7 @@ I created this multi-page static website created for Visions of Hope Psychologic
 
 ### Links
 
-- Live site URL: [https://visionsofhope-va.com/](https://visionsofhope-va.com/)
+- Live site URL: [https://artsycoder533.github.io/VOHPS-LLC/](https://artsycoder533.github.io/VOHPS-LLC/)
 - Github Repository URL: [https://github.com/artsycoder533/VOHPS-LLC.git](https://github.com/artsycoder533/VOHPS-LLC.git)
 
 ## My process
