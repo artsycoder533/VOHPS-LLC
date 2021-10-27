@@ -164,18 +164,18 @@
         </section>
         <section class="contact-modes">
             <div class="form"> 
-                <form name="vohps contact"  method="POST" netlify-honeypot="bot-field" data-netlify="true" data-secure>
+                <form name="vohps contact"  method="POST" data-netlify-recaptcha="true" data-netlify="true">
                     <h3>Have a question? Send us a message!</h3>
                     <label for="name">Name:</label>
-                    <p class="hidden">
+                    <!-- <p class="hidden">
                         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-                    </p>
-                    <input type="text" name="name" id="name" data-secure-field required>
+                    </p> -->
+                    <input type="text" name="name" id="name" required>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" data-secure-field required>
+                    <input type="email" name="email" id="email" required>
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="We are committed to your privacy.  Please only include general non-confidential information." data-secure-field required></textarea>
-                    <!-- <div data-netlify-recaptcha="true"></div> -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="We are committed to your privacy.  Please only include general non-confidential information." required></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="btn send-message-btn" type="submit">Send Message</button>
                 </form>
             </div>
