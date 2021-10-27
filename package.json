@@ -14,7 +14,7 @@
 		"mental",
 		"health",
 		"psychological",
-		"services", 
+		"services",
 		"counseling",
 		"therapy"
 	],
@@ -30,6 +30,9 @@
 		"postcss-cli": "^8.3.1"
 	},
 	"devDependencies": {
+		"install": "file:../../../../AppData/Roaming/npm/node_modules/install",
+		"netlify-cli": "file:../../../../AppData/Roaming/npm/node_modules/netlify-cli",
+		"npm": "file:../../../../AppData/Roaming/npm/node_modules/npm",
 		"sass": "^1.38.0"
 	}
 }
