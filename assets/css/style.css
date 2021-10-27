@@ -711,13 +711,11 @@ ABOUT SECTION
 .about .about-article {
   height: 100%;
   width: 90vw;
-  margin: 2rem 0;
   margin: auto;
   height: 100%;
   display: grid;
   gap: 2rem;
-  margin-bottom: 1.75rem;
-  margin: 1.75rem auto;
+  margin: 5rem auto;
 }
 .about .about-article .who, .about .about-article .what, .about .about-article .how {
   padding-bottom: 0;
@@ -741,6 +739,7 @@ ABOUT SECTION
     gap: 3rem;
   }
 }
+
 /*
 CONTACT 
 */
