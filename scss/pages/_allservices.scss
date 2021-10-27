@@ -2,105 +2,21 @@
 @use '../components/' as *;
 
 .all-services {
-	// width: 90vw;
-	// max-width: 1400px;
 	min-height: calc(100vh - 75px);
-	//  height: 400px;
-	//  height: 100%;
-	// min-height: 100vh;
-	// border: 2px solid red;
 	margin-top: 75px;
-	// position: relative;
-
-	// height: 450px;
-	//  margin: auto;
-	// margin-top: auto;
-	// overflow: hidden;
-	//  display: grid;
-	// align-items: center;
-
-	// margin-bottom: 3rem;
-	// margin-bottom: 22rem;
-	// border: 2px solid green;
-	// background: lightgray;
 
 	.alert h3 {
-		// border: 2px solid white;
 		width: 100%;
 		text-align: center;
 		padding: 0.5rem;
-		// background: rgba(210, 148, 2, 0.6);
 		color: $dark-purple;
 	}
 
-	// .all-services-section{
-
-	// width: 100%;
-	// position: relative;
-	// border: 3px solid red;
-	// margin: 100 auto;
-	// margin:  3rem auto;
-	// overflow: hidden;
-
-	.btn-box {
-		// display: flex;
-		border-bottom: 1px solid #ccc;
-
-		// show/hide
-		// .active {
-		//     border-radius: 0;
-		//     border-bottom: 3px solid $lighter-purple;
-		//     background: $main-accent-clr;
-		//     transition: $transition-hamburger;
-		// }
-
-		.btn-services {
-			background: transparent;
-			color: $lighter-purple;
-			padding: 0;
-			margin: 0;
-			text-align: left;
-			height: 2.5rem;
-
-			@media screen and (min-width: 768px) {
-				height: 4rem;
-				// text-align: center;
-
-				.active {
-					border-bottom: 2px solid $lighter-purple;
-				}
-			}
-
-			@media screen and (min-width: 992px) {
-				margin-top: 6rem;
-			}
-		}
-
-		@media screen and (min-width: 768px) {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-
-			margin-top: 1rem;
-		}
-
-		@media screen and (min-width: 992px) {
-			flex-wrap: nowrap;
-			justify-content: center;
-		}
-	}
-
 	.content {
-		// position: absolute;
-		// transform: translateX(150%);
 		display: grid;
 		grid-template-columns: 1fr;
-		// height: 100%;
-		// border: 2px solid red;
 		margin: 4rem 0;
 		
-		
-
 		.content-left,
 		.content-right {
 			height: 100%;
@@ -112,7 +28,6 @@
 
 		.content-left {
 			padding-bottom: 1rem;
-			// border: 2px solid red;
 			background: white;
 			display: grid;
 			align-items: center;
@@ -120,16 +35,16 @@
 
 			p {
 				padding: 1rem 0;
-				// margin: 3rem 0;
 			}
 
 			h2 {
 				padding: 1rem 0;
-				// border: 2px solid yellow;
 			}
 
 			.schedule {
 				margin: 2rem 0 0 0;
+				display: grid;
+				place-items: center;
 				// width: 100%;
 			}
 
@@ -139,23 +54,18 @@
 		}
 
 		.content-right {
-			// border: 2px solid red;
-			// display: none;
 			padding: 1rem;
 			background: white;
 			
 			img {
-				// display: none;
 				width: 100%;
 			}
 		}
 
 		@media screen and (min-width: 768px) {
-			// display: grid;
 			grid-template-columns: 2fr;
 
 			.content-left {
-				// flex-basis: 50%;
 				height: 100%;
 			}
 			.content-right {
@@ -169,7 +79,6 @@
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
-						// border-radius: $border-radius;
 					}
 				}
 			}
@@ -186,16 +95,8 @@
 		transition: $transition-hamburger;
 		transition-delay: 0.4ms;
 	}
-
-	// @media screen and (min-width: 768px){
-	//     height: 50vh;
-	// }
 }
 
 
-.btn-contact {
-	display: grid;
-	place-items: center;
-	margin: 0;
-}
+
 

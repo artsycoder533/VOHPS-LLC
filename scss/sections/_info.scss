@@ -57,7 +57,9 @@
 
             
             .schedule {
-                background: $main-accent-clr;
+                // background: $main-accent-clr;
+                display: grid;
+                place-items: center;
             }
         }
 

@@ -9,11 +9,8 @@
     // margin-top: 75px;
     width: 100%;
     top: 0;
-    // background: $dark-purple url("/assets/images/hero.jpg") no-repeat fixed right/cover;
     background: $lighter-purple;
-    
     mix-blend-mode: multiply;
-    // border: 2px solid white;
 
     .hero_img {
         width: 100vw;
@@ -22,7 +19,6 @@
         position: absolute;
         // background: $dark-purple;
         z-index: -1;
-        //  opacity: 0.2;
         opacity: 0.8;
         mix-blend-mode: multiply;
     }

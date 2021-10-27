@@ -33,7 +33,6 @@ a {
   height: 0.25rem;
   background-color: #D29402;
   margin: auto;
-  /* transform: translateX(-1.9rem); */
 }
 
 .section-title {
@@ -394,6 +393,7 @@ form {
 }
 form h3 {
   color: #ffffff;
+  color: #FFFAFA;
   font-family: "Open Sans", sans-serif;
   padding-bottom: 1.5rem;
   letter-spacing: 0.15rem;
@@ -404,6 +404,7 @@ form label {
   color: #D29402;
   padding-bottom: 0.5rem;
   font-size: 1.1rem;
+  letter-spacing: 0.1rem;
 }
 form input,
 form textarea {
@@ -438,14 +439,13 @@ form .send-message-btn {
   left: 0;
   display: grid;
   place-items: center;
-  background: transparent;
-  background: #2A0060;
+  background: #1B012C;
   z-index: 2;
 }
 
 .header.sticky {
   /* background-color: rgb(27, 27, 27); */
-  background: #050505;
+  background: #1B012C;
   height: 60px;
 }
 
@@ -560,8 +560,14 @@ SERVICES SECTION
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3rem;
 }
 .services .cta-holder .schedule {
+<<<<<<< HEAD
+=======
+  display: grid;
+  place-items: center;
+>>>>>>> development
   margin: 2rem auto;
   background: #8004CE;
   color: #ffffff;
@@ -748,7 +754,7 @@ CONTACT
 */
 .contact {
   width: 100%;
-  background: #8004CE;
+  background: #1B012C;
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -759,7 +765,7 @@ CONTACT
   margin: auto;
 }
 .contact .contact-section h2 {
-  color: #ffffff;
+  color: #FFFAFA;
 }
 .contact .contact-modes {
   width: 90vw;
@@ -900,73 +906,15 @@ footer {
   margin: auto;
   padding: 2rem 0;
 }
-footer small {
-  text-align: center;
-  padding: 1rem;
-  color: lightgray;
-}
-footer small a:visited, footer small a {
-  color: lightgray;
-}
-
-.tag {
-  color: red;
-  display: inline-block;
-  align-items: center;
-}
-
-.footer {
+footer .footer {
   width: 90vw;
   line-height: 1.75;
 }
-
-.footer-cta {
-  display: grid;
-  place-items: center;
-  width: 100%;
-}
-.footer-cta .footer-nav {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-}
-.footer-cta .footer-nav .footer-logo {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-}
-.footer-cta .footer-nav .footer-logo .logo {
-  height: 4rem;
-}
-.footer-cta .footer-nav .footer-brand {
-  width: 100%;
-}
-.footer-cta .footer-nav .footer-brand h3 {
-  color: #8004CE;
-  font-size: 1.5rem;
-}
-.footer-cta .footer-nav .footer-brand p {
-  color: #8004CE;
-  font-size: 1rem;
-  letter-spacing: 0.2;
-}
-.footer-cta .btn-footer {
-  margin: 2.5rem auto;
-}
-@media screen and (min-width: 768px) {
-  .footer-cta {
-    justify-content: flex-start;
-  }
-}
-
-.footer-links {
+footer .footer .footer-links {
   width: 100%;
   margin-bottom: 1.5rem;
 }
-.footer-links h3 {
+footer .footer .footer-links h3 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -974,33 +922,86 @@ footer small a:visited, footer small a {
   letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 768px) {
-  .footer-links h3 {
+  footer .footer .footer-links h3 {
     text-align: left;
     padding-left: 0;
   }
 }
-.footer-links .links .nav-link {
+footer .footer .footer-links .links .nav-link {
   font-size: 1rem;
   letter-spacing: 0.05;
   padding: 0.25rem;
   color: lightgray;
   display: block;
 }
-.footer-links .links .nav-link:hover {
+footer .footer .footer-links .links .nav-link:hover {
   color: #D29402;
 }
-
+footer .footer .footer-cta {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+footer .footer .footer-cta .schedule {
+  display: grid;
+  place-items: center;
+}
+footer .footer .footer-cta .footer-nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+footer .footer .footer-cta .footer-nav .footer-logo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+footer .footer .footer-cta .footer-nav .footer-logo .logo {
+  height: 4rem;
+}
+footer .footer .footer-cta .footer-nav .footer-brand {
+  width: 100%;
+}
+footer .footer .footer-cta .footer-nav .footer-brand h3 {
+  color: #8004CE;
+  font-size: 1.5rem;
+}
+footer .footer .footer-cta .footer-nav .footer-brand p {
+  color: #8004CE;
+  font-size: 1rem;
+  letter-spacing: 0.2;
+}
 @media screen and (min-width: 768px) {
-  .footer {
+  footer .footer .footer-cta {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 1100px) {
-  .footer {
+  footer .footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+footer small {
+  text-align: center;
+  padding: 1rem;
+  color: lightgray;
+}
+footer small a {
+  text-decoration: underline;
+}
+footer small a:visited, footer small a {
+  color: lightgray;
+}
+
 .all-services {
   min-height: calc(100vh - 75px);
   margin-top: 75px;
@@ -1010,44 +1011,6 @@ footer small a:visited, footer small a {
   text-align: center;
   padding: 0.5rem;
   color: #3E007F;
-}
-.all-services .btn-box {
-  border-bottom: 1px solid #ccc;
-}
-.all-services .btn-box .btn-services {
-  background: transparent;
-  color: #8004CE;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  height: 2.5rem;
-}
-@media screen and (min-width: 768px) {
-  .all-services .btn-box .btn-services {
-    height: 4rem;
-  }
-  .all-services .btn-box .btn-services .active {
-    border-bottom: 2px solid #8004CE;
-  }
-}
-@media screen and (min-width: 992px) {
-  .all-services .btn-box .btn-services {
-    margin-top: 6rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .all-services .btn-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .all-services .btn-box {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
 }
 .all-services .content {
   display: grid;
@@ -1075,6 +1038,8 @@ footer small a:visited, footer small a {
 }
 .all-services .content .content-left .schedule {
   margin: 2rem 0 0 0;
+  display: grid;
+  place-items: center;
 }
 @media screen and (min-width: 768px) {
   .all-services .content .content-left {
@@ -1121,12 +1086,6 @@ footer small a:visited, footer small a {
   transition-delay: 0.4ms;
 }
 
-.btn-contact {
-  display: grid;
-  place-items: center;
-  margin: 0;
-}
-
 .bio {
   min-height: calc(100vh - 75px);
   margin-top: 75px;
@@ -1155,7 +1114,12 @@ footer small a:visited, footer small a {
   font-size: 1.3rem;
 }
 .bio .bio-section .img-container .schedule {
+<<<<<<< HEAD
   text-align: center;
+=======
+  display: grid;
+  place-items: center;
+>>>>>>> development
   margin: 3rem auto;
 }
 @media screen and (min-width: 992px) {
@@ -1252,7 +1216,8 @@ footer small a:visited, footer small a {
   color: #D29402;
 }
 .info .contact-container .contact-info .schedule {
-  background: #D29402;
+  display: grid;
+  place-items: center;
 }
 .info .contact-container .map {
   width: 100%;
