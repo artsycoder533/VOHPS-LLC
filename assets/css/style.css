@@ -108,11 +108,10 @@ select {
   width: 20rem;
   height: 4rem;
   text-transform: uppercase;
-  display: inline-block;
   display: grid;
   place-items: center;
   text-transform: uppercase;
-  margin: 1rem;
+  margin: 1rem auto;
   border: none;
   border-radius: 2rem;
   letter-spacing: 0.1rem;
@@ -123,6 +122,11 @@ select {
 }
 .btn:hover {
   opacity: 0.5;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    margin: 1rem;
+  }
 }
 
 .learn-more-btn {
@@ -140,12 +144,17 @@ select {
 
 .send-message-btn {
   height: 50px;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
   background: transparent;
   border: 2x solid #ffffff;
 }
 .send-message-btn:hover {
   background: #D29402;
+}
+@media screen and (min-width: 768px) {
+  .send-message-btn {
+    margin: 1.5rem 0;
+  }
 }
 
 .btn-scroll {
@@ -563,11 +572,8 @@ SERVICES SECTION
   margin-top: 3rem;
 }
 .services .cta-holder .schedule {
-<<<<<<< HEAD
-=======
   display: grid;
   place-items: center;
->>>>>>> development
   margin: 2rem auto;
   background: #8004CE;
   color: #ffffff;
@@ -715,7 +721,6 @@ ABOUT SECTION
   padding-left: 2rem;
   background: white;
   padding: 2rem 2rem;
-  margin-bottom: 4rem;
 }
 .about .about-article .who h3, .about .about-article .what h3, .about .about-article .how h3 {
   font-family: "Open Sans", sans-serif;
@@ -726,25 +731,23 @@ ABOUT SECTION
   margin-bottom: 0;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   .about .about-article {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem 3rem;
   }
 }
 @media screen and (min-width: 1400px) {
   .about .about-article .who {
-    transform: translateY(-40%);
+    transform: translateY(-50%);
     align-self: flex-start;
     height: 300px;
   }
   .about .about-article .what {
     align-self: center;
-    transform: translateY(10%);
   }
   .about .about-article .how {
-    transform: translateY(60%);
+    transform: translateY(50%);
     align-self: flex-end;
     height: 300px;
   }
@@ -1114,12 +1117,8 @@ footer small a:visited, footer small a {
   font-size: 1.3rem;
 }
 .bio .bio-section .img-container .schedule {
-<<<<<<< HEAD
-  text-align: center;
-=======
   display: grid;
   place-items: center;
->>>>>>> development
   margin: 3rem auto;
 }
 @media screen and (min-width: 992px) {
