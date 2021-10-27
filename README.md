@@ -15,7 +15,7 @@
 
 ## Overview
 
-I created this multi-page static website created for Visions of Hope Psychological Services, LLC, a local private practice based in Richmond, Virginia.
+I created this multi-page static website created for Visions of Hope Psychological Services, LLC, a local private practice based in Richmond, Virginia.  My client was planning to transition from part time to fulltime with her private practice and she needed a website to assist her in gaining exposure to potential clients.
 
 ### Screenshot
 
@@ -24,7 +24,7 @@ I created this multi-page static website created for Visions of Hope Psychologic
 
 ### Links
 
-- Live site URL: [https://artsycoder533.github.io/VOHPS-LLC/](https://artsycoder533.github.io/VOHPS-LLC/)
+- Live site URL: [https://visionsofhope-va.com/](https://visionsofhope-va.com/)
 - Github Repository URL: [https://github.com/artsycoder533/VOHPS-LLC.git](https://github.com/artsycoder533/VOHPS-LLC.git)
 
 ## My process
