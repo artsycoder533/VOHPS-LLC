@@ -164,15 +164,15 @@
         </section>
         <section class="contact-modes">
             <div class="form"> 
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true">
                     <h3>Have a question? Send us a message!</h3>
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required>
-                    <label for="name">Email:</label>
-                    <input type="email" name="name" id="email" required>
-                    <label for="name">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="We are committed to your privacy.  Please only include general non-confidential information."></textarea>
-                    <button class="btn send-message-btn">Send Message</button>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="We are committed to your privacy.  Please only include general non-confidential information." required></textarea>
+                    <button class="btn send-message-btn" type="submit">Send Message</button>
                 </form>
             </div>
         </section>
