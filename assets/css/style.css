@@ -391,6 +391,7 @@ form {
 }
 form h3 {
   color: #ffffff;
+  color: #FFFAFA;
   font-family: "Open Sans", sans-serif;
   padding-bottom: 1.5rem;
   letter-spacing: 0.15rem;
@@ -401,6 +402,7 @@ form label {
   color: #D29402;
   padding-bottom: 0.5rem;
   font-size: 1.1rem;
+  letter-spacing: 0.1rem;
 }
 form input,
 form textarea {
@@ -758,7 +760,7 @@ CONTACT
   margin: auto;
 }
 .contact .contact-section h2 {
-  color: #ffffff;
+  color: #FFFAFA;
 }
 .contact .contact-modes {
   width: 90vw;
