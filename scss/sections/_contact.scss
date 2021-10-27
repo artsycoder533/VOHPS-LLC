@@ -6,11 +6,6 @@ CONTACT
 */
 .contact {
     width: 100%;
-    // background: rgb(149, 123, 192);
-    // background: $lighter-purple;
-    // background:  $lighter-purple url(/images/clouds.jpg) center/cover no-repeat;
-    // background: $dark-purple;
-    // background-blend-mode: multiply;
     background: #1B012C;
     min-height: 100vh;
     display: grid;
@@ -20,7 +15,6 @@ CONTACT
         padding: 3rem 0;
         width: 90vw;
         margin: auto;
-        // background: $dark-purple;
         
         h2 {
             color: $white;
@@ -28,22 +22,11 @@ CONTACT
     }
 
     .contact-modes {
-    //    border: 3px solid white;
-        // background: $dark-purple;
         width: 90vw;
-        // width: 100%;
         display: grid;
-        // place-items: center;
         grid-template-columns: 1fr;
         align-items: center;
         margin: auto;
-        // padding: 3rem 0;
-        // margin-bottom: 7rem;
-
-        // box-shadow: 5px 5px 30px rgba(0, 0,0,0.6);
-        // background: transparent;
-        // backdrop-filter: blur(15px) brightness(1.1);
-        // border-radius: 8px;
 
         .form {
             display: grid;
@@ -52,13 +35,7 @@ CONTACT
             padding: 4rem 0;
         }
     }
-
-
 }
 
 
-// .contact-info .btn {
-//     width: 100%;
-//     margin: 0;
-// }
 
