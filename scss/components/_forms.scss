@@ -63,13 +63,41 @@ form {
     }
 }
 
+// [data-secure-field] iframe {
+//     border: 1px solid #dfdfdf;
+//     height: inherit;
+//     width: inherit;
+//     vertical-align: middle;
+//     position: relative;
+//     line-height: 30px;
+//     height: 30px;
+//     background: $whitesmoke;
+// }
+
+// vgs form styling
 [data-secure-field] iframe {
-    border: 1px solid #dfdfdf;
-    height: inherit;
-    width: inherit;
-    vertical-align: middle;
-    position: relative;
-    line-height: 30px;
-    height: 30px;
-    background: $whitesmoke;
+  border: 0 none transparent;
+  height: inherit;
+  vertical-align: middle;
+  width: inherit;
+}
+
+span[data-secure-field] {
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  display: inline-block;
+  /* height: 27px; */
+  padding: 1px .75rem;
+  position: relative;
+}
+
+form span {
+  display: inline-block;
+  height: 20px;
+  width: 200px;
+  margin-bottom: 15px;
+}
+span iframe {
+  height: 100%;
+  width: 100%;
 }
