@@ -167,11 +167,11 @@
                 <form name="vohps contact"  method="POST" data-netlify-recaptcha="true" data-netlify="true" data-secure>
                     <h3>Have a question? Send us a message!</h3>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" data-secure-field>
+                    <input type="text" name="name" id="name" required data-secure-field>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" data-secure-field>
+                    <input type="email" name="email" id="email" required data-secure-field>
                     <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="We are committed to your privacy.  Please only include general non-confidential information." data-secure-field></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="We are committed to your privacy.  Please only include general non-confidential information." required data-secure-field></textarea>
                     <div data-netlify-recaptcha="true"></div>
                     <button class="btn send-message-btn" type="submit">Send Message</button>
                 </form>
