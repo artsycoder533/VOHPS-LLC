@@ -17,14 +17,8 @@ form {
         text-align: center;
     }
 
-    [data-secure-field]{
-        iframe {
-            height: inherit;
-            width: inherit;
-            position: relative;
-        }
-    }
-    
+   
+
     label {
         font-weight: bold;
         color: $main-accent-clr;
@@ -67,4 +61,14 @@ form {
             
         }
     }
+}
+
+[data-secure-field] iframe {
+    border: 1px solid #dfdfdf;
+    height: inherit;
+    width: inherit;
+    vertical-align: middle;
+    position: relative;
+    line-height: 30px;
+    height: 30px;
 }
