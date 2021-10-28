@@ -17,6 +17,14 @@ form {
         text-align: center;
     }
 
+    [data-secure-field]{
+        iframe {
+            height: inherit;
+            width: inherit;
+            position: relative;
+        }
+    }
+    
     label {
         font-weight: bold;
         color: $main-accent-clr;
