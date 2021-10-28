@@ -48,4 +48,3 @@ scrollBtn.addEventListener("click", () => {
 });
 
 
-// contact form
