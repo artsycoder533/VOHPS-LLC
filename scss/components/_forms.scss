@@ -17,8 +17,6 @@ form {
         text-align: center;
     }
 
-   
-
     label {
         font-weight: bold;
         color: $main-accent-clr;
@@ -63,36 +61,14 @@ form {
     }
 }
 
-// [data-secure-field] iframe {
-//     border: 1px solid #dfdfdf;
-//     height: inherit;
-//     width: inherit;
-//     vertical-align: middle;
-//     position: relative;
-//     line-height: 30px;
-//     height: 30px;
-//     background: $whitesmoke;
-// }
-
-// vgs form styling
-
-// span[data-secure-field] {
-//   background-color: #fff;
-//   border: 1px solid #dfdfdf;
-//   display: inline-block;
-//   /* height: 27px; */
-//   padding: 1px .75rem;
-//   position: relative;
-// }
-
-span iframe {
-  border: 1px solid #dfdfdf;
-    height: inherit;
-    width: inherit;
+[data-secure-field] iframe {
+    border: 1px solid #dfdfdf;
+    height: inehrit;
     vertical-align: middle;
+    width: inherit;
     position: relative;
     line-height: 30px;
     height: 30px;
-    background: $whitesmoke;
+    background: white;
 }
 
