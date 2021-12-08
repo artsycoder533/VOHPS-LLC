@@ -15,7 +15,8 @@
     .hero_img {
         width: 100vw;
         height: 100vh;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         position: absolute;
         // background: $dark-purple;
         z-index: -1;
@@ -77,6 +78,7 @@
 
             .schedule {
                 margin: 1rem 0;
+                
             }
 
             .learn-more-btn {
