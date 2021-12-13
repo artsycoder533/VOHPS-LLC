@@ -607,10 +607,9 @@ SERVICES SECTION
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  gap: 2rem;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .services .services-section .individual,
 .services .services-section .couples,
@@ -673,26 +672,6 @@ SERVICES SECTION
   border: none;
   color: #8004CE;
   transform: scale(1.2);
-}
-@media screen and (min-width: 992px) {
-  .services .services-section {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
-  .services .services-section .evaluations {
-    transform: translate(115%);
-  }
-}
-@media screen and (min-width: 1400px) {
-  .services .services-section {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .services .services-section .evaluations {
-    transform: translate(0);
-  }
 }
 @media screen and (min-width: 992px) {
   .services {

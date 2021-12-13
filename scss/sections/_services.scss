@@ -58,12 +58,9 @@ SERVICES SECTION
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    gap: 2rem;
-    
     justify-content: center;
     align-items: center;
-    // border: 2px solid red;
+    gap: 2rem;
 
     .individual,
     .couples,
@@ -115,24 +112,14 @@ SERVICES SECTION
     }
 
     @media screen and (min-width: 992px) {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      gap: 1rem;
+    //   display: grid;
+    //   align-items: center;
+    //   grid-template-columns: 1fr 1fr;
+    //   grid-template-rows: fr;
+    //   gap: rem;
 
-      .evaluations {
-        transform: translate(115%);
-      }
     }
 
-    @media screen and (min-width: 1400px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-
-      .evaluations {
-        transform: translate(0);
-      }
-    }
   }
   @media screen and (min-width: 992px) {
     height: auto;
