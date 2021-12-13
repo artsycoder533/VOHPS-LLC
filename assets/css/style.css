@@ -605,7 +605,10 @@ SERVICES SECTION
 .services .services-section {
   height: 100%;
 }
-.services .services-section .individual, .services .services-section .couples, .services .services-section .groups, .services .services-section .evaluations {
+.services .services-section .individual,
+.services .services-section .couples,
+.services .services-section .groups,
+.services .services-section .evaluations {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -617,26 +620,49 @@ SERVICES SECTION
   border: 2px solid #ffffff;
   margin: 1rem;
 }
-.services .services-section .individual .heading, .services .services-section .individual .icon, .services .services-section .individual .cta-link, .services .services-section .couples .heading, .services .services-section .couples .icon, .services .services-section .couples .cta-link, .services .services-section .groups .heading, .services .services-section .groups .icon, .services .services-section .groups .cta-link, .services .services-section .evaluations .heading, .services .services-section .evaluations .icon, .services .services-section .evaluations .cta-link {
+.services .services-section .individual .heading,
+.services .services-section .individual .icon,
+.services .services-section .individual .cta-link,
+.services .services-section .couples .heading,
+.services .services-section .couples .icon,
+.services .services-section .couples .cta-link,
+.services .services-section .groups .heading,
+.services .services-section .groups .icon,
+.services .services-section .groups .cta-link,
+.services .services-section .evaluations .heading,
+.services .services-section .evaluations .icon,
+.services .services-section .evaluations .cta-link {
   text-align: center;
 }
-.services .services-section .individual .icon, .services .services-section .couples .icon, .services .services-section .groups .icon, .services .services-section .evaluations .icon {
+.services .services-section .individual .icon,
+.services .services-section .couples .icon,
+.services .services-section .groups .icon,
+.services .services-section .evaluations .icon {
   font-size: 2rem;
   padding: 1.75rem;
   color: "Open Sans", sans-serif;
 }
-.services .services-section .individual .cta-link i, .services .services-section .couples .cta-link i, .services .services-section .groups .cta-link i, .services .services-section .evaluations .cta-link i {
+.services .services-section .individual .cta-link i,
+.services .services-section .couples .cta-link i,
+.services .services-section .groups .cta-link i,
+.services .services-section .evaluations .cta-link i {
   font-size: 1rem;
   font-weight: bold;
 }
-.services .services-section .individual .cta-link a, .services .services-section .couples .cta-link a, .services .services-section .groups .cta-link a, .services .services-section .evaluations .cta-link a {
+.services .services-section .individual .cta-link a,
+.services .services-section .couples .cta-link a,
+.services .services-section .groups .cta-link a,
+.services .services-section .evaluations .cta-link a {
   display: block;
   margin: 0;
   width: 100%;
   height: auto;
   color: #3E007F;
 }
-.services .services-section .individual .cta-link a:hover, .services .services-section .couples .cta-link a:hover, .services .services-section .groups .cta-link a:hover, .services .services-section .evaluations .cta-link a:hover {
+.services .services-section .individual .cta-link a:hover,
+.services .services-section .couples .cta-link a:hover,
+.services .services-section .groups .cta-link a:hover,
+.services .services-section .evaluations .cta-link a:hover {
   border: none;
   color: #8004CE;
   transform: scale(1.2);
@@ -772,10 +798,24 @@ CONTACT
   place-items: center;
   padding: 4rem 0;
 }
+.contact .contact-modes .form .label {
+  color: white;
+}
+.contact .contact-modes .form .checkbox__wrapper {
+  border: 1px solid yellow;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+.contact .contact-modes .form .checkbox__wrapper label {
+  padding: 0;
+  margin-right: 1rem;
+}
 .contact .contact-modes .form .checkbox__wrapper .checkbox {
   width: 25px;
   height: 25px;
-  margin-right: 0.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 /*

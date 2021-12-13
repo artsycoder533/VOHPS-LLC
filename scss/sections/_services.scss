@@ -1,140 +1,133 @@
-@use '../base/' as *;
-@use '../components/' as *;
+@use "../base/" as *;
+@use "../components/" as *;
 
 /*
 SERVICES SECTION 
 */
-.services { 
-    min-height: 100vh;
+.services {
+  min-height: 100vh;
+  display: grid;
+  // place-items: center;
+  // margin-bottom: 3rem;
+
+  .cta-holder {
+    // height: 100%;
+    width: 100%;
+    // background-color: $dark-purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    .schedule {
+      display: grid;
+      place-items: center;
+      margin: 2rem auto;
+      background: $lighter-purple;
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
+  .quote {
     display: grid;
-    // place-items: center;
-    // margin-bottom: 3rem;
+    place-items: center;
+    padding: 1rem;
+    background: rgba(128, 4, 206, 0.4);
 
-    .cta-holder {
-        // height: 100%;
-        width: 100%;
-        // background-color: $dark-purple;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3rem;
+    blockquote {
+      width: 90vw;
+      max-width: 1200px;
+      margin: auto;
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-align: center;
 
-        .schedule {
-            display: grid;
-            place-items: center;
-            margin: 2rem auto;
-            background: $lighter-purple;
-            color: $white;
-            font-weight: bold;
+      i {
+        transform: translateY(-25%);
+      }
+
+      @media screen and (min-width: 992px) {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  .services-section {
+    height: 100%;
+
+    .individual,
+    .couples,
+    .groups,
+    .evaluations {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around;
+      background: white;
+      color: $white;
+      color: black;
+      padding: 2rem;
+      border: 2px solid $white;
+      margin: 1rem;
+
+      .heading,
+      .icon,
+      .cta-link {
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 2rem;
+        padding: 1.75rem;
+        color: $main-text;
+      }
+
+      .cta-link {
+        i {
+          font-size: 1rem;
+          font-weight: bold;
         }
+
+        a {
+          display: block;
+          margin: 0;
+          width: 100%;
+          height: auto;
+          color: $dark-purple;
+
+          &:hover {
+            border: none;
+            color: $lighter-purple;
+            transform: scale(1.2);
+          }
+        }
+      }
     }
 
-    .quote{
-        display: grid;
-        place-items: center;
-        padding: 1rem;
-        background: rgba(128, 4, 206, 0.4);
+    @media screen and (min-width: 992px) {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1rem;
 
-        blockquote {
-            width: 90vw;
-            max-width: 1200px;
-            margin: auto;
-            font-size: 1.25rem;
-            font-weight: bold;
-            text-align: center;
-
-            i {
-                transform: translateY(-25%);
-            }
-
-            @media screen and (min-width: 992px) {
-                font-size: 1.75rem;
-            }
-        }
+      .evaluations {
+        transform: translate(115%);
+      }
     }
 
-    .services-section {
-        height: 100%;
+    @media screen and (min-width: 1400px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 
-        .cta-link{
-            .schedule {
-
-            }
-        }
-
-        .individual, .couples, .groups, .evaluations {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: space-around;
-            background: white;
-            color: $white;
-            color: black;
-            padding: 2rem;
-            border: 2px solid $white;
-            margin: 1rem;
-
-            .heading, .icon, .cta-link {
-                text-align: center;
-            }
-
-            .icon {
-                font-size: 2rem;
-                padding: 1.75rem;
-                color: $main-text;
-            }
-
-            .cta-link {
-                i {
-                    font-size: 1rem;
-                    font-weight: bold;
-                }
-
-                a {
-                    display: block;
-                    margin: 0;
-                    width: 100%;
-                    height: auto;
-                    color: $dark-purple;
-
-                    &:hover {
-                        border: none;
-                        color: $lighter-purple;
-                        transform: scale(1.2);
-                    }
-                }
-            }
-        }
-
-        @media screen and (min-width: 992px) {
-            display: grid;
-            align-items: center;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 1rem;
-
-            .evaluations {
-                transform: translate(115%);
-            }
-        }
-        
-        @media screen and (min-width: 1400px){
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            .evaluations {
-                transform: translate(0);
-            }
-        }
+      .evaluations {
+        transform: translate(0);
+      }
     }
-
-    @media screen and (min-width: 992px){
-        height: auto;
-        margin: 0;
-        margin-bottom: 4rem;
-    }
+  }
+  @media screen and (min-width: 992px) {
+    height: auto;
+    margin: 0;
+    margin-bottom: 4rem;
+  }
 }
-
-
-
-
-
