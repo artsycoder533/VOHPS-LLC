@@ -787,6 +787,9 @@ CONTACT
 .contact .contact-modes .form .label {
   color: white;
 }
+.contact .contact-modes .form .hide__label {
+  display: none;
+}
 .contact .contact-modes .form .checkbox__wrapper {
   align-items: center;
   margin: 0;
