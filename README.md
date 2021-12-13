@@ -15,7 +15,7 @@
 
 ## Overview
 
-I created this multi-page static website created for Visions of Hope Psychological Services, LLC, a local private practice based in Richmond, Virginia.  My client was planning to transition from part time to fulltime with her private practice and she needed a website to assist her in gaining exposure to potential clients.
+This is a multi-page freelance website that I built for Visions of Hope Psychological Services, LLC.  They are a local private practice based in Richmond, Virginia that needed to create their online presence as well as generate leads and provide current and potential clients with a space to learn more information about their private practice. 
 
 ### Screenshot
 
