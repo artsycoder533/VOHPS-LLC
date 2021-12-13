@@ -55,6 +55,15 @@ SERVICES SECTION
 
   .services-section {
     height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 2rem;
+    
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid red;
 
     .individual,
     .couples,
@@ -68,8 +77,8 @@ SERVICES SECTION
       color: $white;
       color: black;
       padding: 2rem;
-      border: 2px solid $white;
-      margin: 1rem;
+      width: 300px;
+      height: 275px;
 
       .heading,
       .icon,

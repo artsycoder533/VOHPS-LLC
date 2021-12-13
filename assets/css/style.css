@@ -604,6 +604,13 @@ SERVICES SECTION
 }
 .services .services-section {
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 .services .services-section .individual,
 .services .services-section .couples,
@@ -617,8 +624,8 @@ SERVICES SECTION
   color: #ffffff;
   color: black;
   padding: 2rem;
-  border: 2px solid #ffffff;
-  margin: 1rem;
+  width: 300px;
+  height: 275px;
 }
 .services .services-section .individual .heading,
 .services .services-section .individual .icon,
