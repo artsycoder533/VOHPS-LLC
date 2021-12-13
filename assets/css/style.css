@@ -469,6 +469,7 @@ form .send-message-btn {
 .hero .hero_img {
   width: 100vw;
   height: 100vh;
+  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   z-index: -1;
@@ -633,7 +634,7 @@ SERVICES SECTION
   margin: 0;
   width: 100%;
   height: auto;
-  color: #D29402;
+  color: #3E007F;
 }
 .services .services-section .individual .cta-link a:hover, .services .services-section .couples .cta-link a:hover, .services .services-section .groups .cta-link a:hover, .services .services-section .evaluations .cta-link a:hover {
   border: none;
@@ -745,7 +746,7 @@ CONTACT
 */
 .contact {
   width: 100%;
-  background: #1B012C;
+  background: #1b012c;
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -770,6 +771,11 @@ CONTACT
   width: 100%;
   place-items: center;
   padding: 4rem 0;
+}
+.contact .contact-modes .form .checkbox__wrapper .checkbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
 }
 
 /*
