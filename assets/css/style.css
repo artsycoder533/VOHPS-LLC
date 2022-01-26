@@ -921,6 +921,39 @@ FAQ section
     grid-template-columns: 1fr;
   }
 }
+.no-surprises {
+  margin-bottom: 3rem;
+}
+.no-surprises .no-overview {
+  padding: 1rem;
+  text-indent: 3rem;
+  max-width: 900px;
+}
+.no-surprises .goodfaith {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.no-surprises .goodfaith .goodfaith-heading {
+  text-align: center;
+}
+.no-surprises .goodfaith .goodfaith-p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.no-surprises .goodfaith .goodfaith-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+}
+.no-surprises .goodfaith .goodfaith-link {
+  color: #3E007F;
+}
+
 /*
 footer
 */
