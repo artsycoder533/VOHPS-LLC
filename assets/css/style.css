@@ -811,6 +811,7 @@ FAQ section
 */
 .faq {
   /* width: 100%; */
+  margin-top: 5rem;
 }
 
 .faq-container {
