@@ -518,6 +518,11 @@ form .send-message-btn {
     font-size: 5rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .hero .hero-text-wrapper .hero-text {
+    width: 70%;
+  }
+}
 .hero .hero-text-wrapper .buttons {
   display: flex;
   flex-direction: column;
@@ -550,7 +555,7 @@ form .send-message-btn {
     border: 2px solid #ffffff;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .hero .hero-text-wrapper .buttons {
     flex-direction: row;
     justify-content: flex-start;
