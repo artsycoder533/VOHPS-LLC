@@ -2,7 +2,7 @@
 @use '../components/' as *;
 
 .bio {
-    min-height: calc(100vh - 75px);
+    // min-height: calc(100vh - 75px);
     margin-top: 75px;
     background: $snowwhite;
 
@@ -13,6 +13,7 @@
         align-items: center;
         border-radius: $border-radius;
         margin-bottom: 3rem;
+        // border: 2px solid red;
 
         .img-container {
             display: flex;
@@ -21,7 +22,8 @@
 
             .bio-photo {
                 width: 100%;
-                object-fit: center;
+                -o-object-fit: center;
+                   object-fit: center;
                 // border-radius: $border-radius;
             }
 
@@ -63,6 +65,9 @@
             .bio-text-holder {
                 width: 100%;
                 padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
         }
 

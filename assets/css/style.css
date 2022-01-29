@@ -816,7 +816,7 @@ FAQ section
 
 .faq-container {
   margin: auto;
-  max-width: 1400px;
+  max-width: 800px;
   width: 90vw;
 }
 
@@ -1146,7 +1146,6 @@ footer small a:visited, footer small a {
 }
 
 .bio {
-  min-height: calc(100vh - 75px);
   margin-top: 75px;
   background: #FFFAFA;
 }
@@ -1165,6 +1164,7 @@ footer small a:visited, footer small a {
 }
 .bio .bio-section .img-container .bio-photo {
   width: 100%;
+  -o-object-fit: center;
   object-fit: center;
 }
 .bio .bio-section .img-container h3 {
@@ -1199,6 +1199,9 @@ footer small a:visited, footer small a {
   .bio .bio-section .bio-text-holder {
     width: 100%;
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1000px) {
