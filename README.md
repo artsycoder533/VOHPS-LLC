@@ -19,8 +19,8 @@ This is a multi-page freelance website that I built for Visions of Hope Psycholo
 
 ### Screenshot
 
-- Desktop Screenshot: ![Desktop Screenshot](assets/images/vohps.png)
-- Mobile Screenshot: ![Mobile Screenshot](assets/images/vohps_mobile.png)
+- Desktop Screenshot: ![Desktop Screenshot](assets/images/desktop_screenshot.png)
+- Mobile Screenshot: ![Mobile Screenshot](assets/images/mobile_screenshot.png)
 
 ### Links
 
